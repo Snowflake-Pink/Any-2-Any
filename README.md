@@ -8,7 +8,7 @@
   <a href="https://github.com/Jiaqi-Chen-00/Any-2-Any/network/members"><img src="https://img.shields.io/github/forks/Jiaqi-Chen-00/Any-2-Any" alt="GitHub Forks"></a>
 </p>
 
-## 🛠️ Configuration
+## Configuration
 
 First, create a new conda environment and install the dependencies:
 
@@ -24,7 +24,7 @@ You should also install the environment we provide in `comfyui_env.yml` for Comf
 
 Finally, move the images from `./resources` to the `ComfyUI/input` folder to make sure you have all the input images we used in experiment.
 
-## 🚀 Execution
+## Execution
 
 Run the following command to execute our pipeline directly with `declarative` style:
 
@@ -88,7 +88,7 @@ bash scripts/eval_comfybench.sh
 
 Make sure that you have set your OpenAI API key in the `config.yaml` file and installed all the required packages and custom nodes like ComfyUI-3D-pack to reproduce our experiment.
 
-## 🤖 Customization
+## Customization
 
 In this section, we provide methods for customizing nodes and references, so that users can explore more abilities of our inference engine beyond the 12 tasks we have set and the tasks set by Comfybench.
 
