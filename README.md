@@ -1,6 +1,13 @@
 <h1 align="center">Symbolic Representation for Any-to-Any Generative Tasks</h1>
 <p align="center">
 
+<p align="center">
+<a href="https://www.python.org/downloads/release/python-3120/"><img src="https://img.shields.io/badge/python-3.12-blue.svg" alt="Python Version 3.12"></a>
+  <a href="https://github.com/Jiaqi-Chen-00/Any-2-Any/issues"><img src="https://img.shields.io/github/issues/Jiaqi-Chen-00/Any-2-Any" alt="GitHub Issues"></a>
+  <a href="https://github.com/Jiaqi-Chen-00/Any-2-Any/stargazers"><img src="https://img.shields.io/github/stars/Jiaqi-Chen-00/Any-2-Any" alt="GitHub Stars"></a>
+  <a href="https://github.com/Jiaqi-Chen-00/Any-2-Any/network/members"><img src="https://img.shields.io/github/forks/Jiaqi-Chen-00/Any-2-Any" alt="GitHub Forks"></a>
+</p>
+
 ## 🛠️ Configuration
 
 First, create a new conda environment and install the dependencies:
@@ -11,16 +18,15 @@ conda activate anytoany
 pip install -r requirements.txt
 ```
 
-Then, modify the `config.yaml` file to set HTTP proxy address, OpenAI API key, and ComfyUI server address. Before executing the workflows, **you should download our well prepared ComfyUI pack from [https://huggingface.co/JiaqiChen/Any-to-Any-ComfyUI-pack/tree/main](https://huggingface.co/JiaqiChen/Any-to-Any-ComfyUI-pack/tree/main)** or manually install nodes and download models from `nodes_and_models.txt` (not recommended because this could easily get stuck on different versions of custom nodes)
+Then, modify the `config.yaml` file to set HTTP proxy address, OpenAI API key, and ComfyUI server address. Before executing the workflows, **download our well-prepared ComfyUI pack from [https://huggingface.co/JiaqiChen/Any-to-Any-ComfyUI-pack/tree/main](https://huggingface.co/JiaqiChen/Any-to-Any-ComfyUI-pack/tree/main)** or manually install nodes and download models from `nodes_and_models.txt` (not recommended because this could easily get stuck with different versions of custom nodes)
 
-You should also install the environment we provide in `comfyui_env.yml` for ComfyUI setup (notice that your CUDA toolkit version must be 11.8 to run the ComfyUI-3D-pack)
+You should also install the environment we provide in `comfyui_env.yml` for ComfyUI setup (note that your CUDA Toolkit version must be 11.8 to run the ComfyUI-3D-pack)
 
-Finally, move the images from `./resources` to `ComfyUI/input`
- to make sure you have all the input images we used in experiment.
+Finally, move the images from `./resources` to the `ComfyUI/input` folder to make sure you have all the input images we used in experiment.
 
 ## 🚀 Execution
 
-Run the following command to execute the our pipeline directly with `declarative` style:
+Run the following command to execute our pipeline directly with `declarative` style:
 
 ```bash
 bash scripts/easy_run.sh
@@ -87,7 +93,7 @@ Make sure that you have set your OpenAI API key in the `config.yaml` file and in
 In this section, we provide methods for customizing nodes and references, so that users can explore more abilities of our inference engine beyond the 12 tasks we have set and the tasks set by Comfybench.
 
 ### Add your own custom nodes template
-modify the `SAVEPATH` in `./tools/generate_custom_node_template.py` and move it to the root dir of your ComfyUI and add the following lines in `ComfyUI/nodes.py` : from
+modify the `SAVEPATH` in `./tools/generate_custom_node_template.py` and move it to the root dir of your ComfyUI and add the following lines in `ComfyUI/nodes.py`: from
 
 ```python
 if hasattr(module, "NODE_CLASS_MAPPINGS") and getattr(module, "NODE_CLASS_MAPPINGS") is not None:
@@ -110,7 +116,7 @@ if hasattr(module, "NODE_CLASS_MAPPINGS") and getattr(module, "NODE_CLASS_MAPPIN
                 print(e)
 ```
 
-we also provide a modified version of `nodes.py` in `./tools` so you don't need to modified the above lines if you replace the file. ( Remeber to backup raw file in case of this not work due to differnt version or other issues)
+we also provide a modified version of `nodes.py` in `./tools` so you don't need to modify the above lines if you replace the file. ( Remember to backup raw file in case of this not work due to differnt version or other issues)
 
 Now start ComfyUI server and it will automatically generate custom node templates to the `SAVEPATH`. 
 
