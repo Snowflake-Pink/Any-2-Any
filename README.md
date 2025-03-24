@@ -8,7 +8,7 @@
   <a href="https://github.com/Jiaqi-Chen-00/Any-2-Any/network/members"><img src="https://img.shields.io/github/forks/Jiaqi-Chen-00/Any-2-Any" alt="GitHub Forks"></a>
 </p>
 
-## Configuration
+## 🛠️ Configuration
 
 First, create a new conda environment and install the dependencies:
 
@@ -24,15 +24,15 @@ You should also install the environment we provide in `comfyui_env.yml` for Comf
 
 Finally, move the images from `./resources` to the `ComfyUI/input` folder to make sure you have all the input images we used in experiment.
 
-## Execution
+## 🚀 Execution
 
-Run the following command to execute our pipeline directly with `declarative` style:
+🔧 Run the following command to execute our pipeline directly with `declarative` style:
 
 ```bash
 bash scripts/easy_run.sh
 ```
 
-or customize your request by:
+💡 or customize your request by:
 
 ```bash
 python main.py \
@@ -41,54 +41,54 @@ python main.py \
     --save_path ./checkpoint/easy_run
 ```
 
-`inference_engine_name` could be  `declarative`, `dataflow` or `pseudo_natural` for the three code types mentioned in our paper.
+🧠 `inference_engine_name` could be  `declarative`, `dataflow` or `pseudo_natural` for the three code types mentioned in our paper.
 
 
-The log file together with the generated workflow will be saved in the specified path. If your ComfyUI server is working properly, the workflow will be executed automatically, and the result will also be saved in the specified path.
+📝 The log file together with the generated workflow will be saved in the specified path. If your ComfyUI server is working properly, the workflow will be executed automatically, and the result will also be saved in the specified path.
 
-To try our multi-task subset, run 
+🎯 To try our multi-task subset, run 
 
 ```bash
 bash scripts/run_multitask_subset.sh
 ```
-This will run 12 tasks including: image inpaint, image merge, image outpaint, image view inference, image with merged models, image to mesh, image to multiview image, image to video, text to audio, text to image, text to mesh and text to video.
+📌 This will run 12 tasks including: image inpaint, image merge, image outpaint, image view inference, image with merged models, image to mesh, image to multiview image, image to video, text to audio, text to image, text to mesh and text to video.
 ## 🔎 Reproduction
 
-### Multi-task Set
+### 📊 Multi-task Set
 
-Run the following commands to reproduce the multitask experiments in the paper:
+🧪 Run the following commands to reproduce the multitask experiments in the paper:
 
 ```bash
 bash scripts/run_multitask.sh
 ```
 
-and then evaluate by
+🧮 and then evaluate by
 
 ```bash
 bash scripts/eval_multitask.sh
 ```
 
-### ComfyBench
+### 🧪 ComfyBench
 
 **Switch reference**: 
 
 > set `use_comfybench_workflow: true` in `config.yaml`
 
-Run the following commands to reproduce the comfybench experiments in the paper:
+📌 Run the following commands to reproduce the comfybench experiments in the paper:
 
 ```bash
 bash scripts/run_comfybench.sh
 ```
 
-and then evaluate by
+📈 and then evaluate by
 
 ```bash
 bash scripts/eval_comfybench.sh
 ```
 
-Make sure that you have set your OpenAI API key in the `config.yaml` file and installed all the required packages and custom nodes like ComfyUI-3D-pack to reproduce our experiment.
+🔑 Make sure that you have set your OpenAI API key in the `config.yaml` file and installed all the required packages and custom nodes like ComfyUI-3D-pack to reproduce our experiment.
 
-## Customization
+## 🤖 Customization
 
 In this section, we provide methods for customizing nodes and references, so that users can explore more abilities of our inference engine beyond the 12 tasks we have set and the tasks set by Comfybench.
 
@@ -122,12 +122,12 @@ Now start ComfyUI server and it will automatically generate custom node template
 
 ### Add your own workflow to reference
 
-* First, modify the path in `tools/raw_to_code_and_md.py` and run. This will generate the `.py` code and `.md` file of your workflow.
+* ✏️ First, modify the path in `tools/raw_to_code_and_md.py` and run. This will generate the `.py` code and `.md` file of your workflow.
 
-* Then, move your workflow to `dataset/workflow/raw`, the `.py` code to `dataset/workflow/code`, the `.md` file to `dataset/workflow/md`.
+* 📂 Then, move your workflow to `dataset/workflow/raw`, the `.py` code to `dataset/workflow/code`, the `.md` file to `dataset/workflow/md`.
 
-* Next, add the description of your workflow in `dataset/workflow/desc`.
+* 📝 Next, add the description of your workflow in `dataset/workflow/desc`.
 
-* Finally, add the path in `dataset/workflow/meta.json` and remove saved database `dataset/workflow/db` folder.
+* 📁 Finally, add the path in `dataset/workflow/meta.json` and remove saved database `dataset/workflow/db` folder.
 
-Following the steps above and then inference engine will retrieve your customize reference.
+🎉 Following the steps above and then inference engine will retrieve your customize reference.
