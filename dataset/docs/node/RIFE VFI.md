@@ -1,0 +1,13 @@
+- `RIFE VFI`: The RIFE VFI node description.
+    - Parameters:
+        - `ckpt_name`: Type should be `['rife40.pth', 'rife41.pth', 'sudo_rife4_269.662_testV1_scale1.pth', 'rife42.pth', 'rife43.pth', 'rife44.pth', 'rife45.pth', 'rife46.pth', 'rife47.pth', 'rife48.pth', 'rife49.pth']`.
+        - `clear_cache_after_n_frames`: Type should be `INT`.
+        - `multiplier`: Type should be `INT`.
+        - `fast_mode`: Type should be `BOOLEAN`.
+        - `ensemble`: Type should be `BOOLEAN`.
+        - `scale_factor`: Type should be `[0.25, 0.5, 1.0, 2.0, 4.0]`.
+    - Inputs:
+        - `frames`: Type should be `IMAGE`.
+        - `optional_interpolation_states`: Type should be `INTERPOLATION_STATES`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

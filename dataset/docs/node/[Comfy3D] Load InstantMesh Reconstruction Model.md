@@ -1,0 +1,6 @@
+- `[Comfy3D] Load InstantMesh Reconstruction Model`: The [Comfy3D] Load InstantMesh Reconstruction Model node description.
+    - Parameters:
+        - `model_name`: Type should be `['instant_mesh_large.ckpt', 'instant_mesh_base.ckpt', 'instant_nerf_large.ckpt', 'instant_nerf_base.ckpt']`.
+    - Inputs:
+    - Outputs:
+        - `lrm_model`: Type should be `LRM_MODEL`.

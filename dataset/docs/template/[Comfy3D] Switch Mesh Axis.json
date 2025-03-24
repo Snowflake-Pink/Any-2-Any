@@ -1,0 +1,72 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Switch Mesh Axis",
+    "title": null,
+    "parameters": {
+        "axis_x_to": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "+x",
+                "-x",
+                "+y",
+                "-y",
+                "+z",
+                "-z"
+            ],
+            "link": null
+        },
+        "axis_y_to": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "+y",
+                "-y",
+                "+z",
+                "-z",
+                "+x",
+                "-x"
+            ],
+            "link": null
+        },
+        "axis_z_to": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "+z",
+                "-z",
+                "+x",
+                "-x",
+                "+y",
+                "-y"
+            ],
+            "link": null
+        },
+        "flip_normal": {
+            "index": 3,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "scale": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        }
+    },
+    "outputs": {
+        "switched_mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

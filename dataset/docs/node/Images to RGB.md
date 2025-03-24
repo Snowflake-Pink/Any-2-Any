@@ -1,0 +1,6 @@
+- `Images to RGB`: The Images to RGB node description.
+    - Parameters:
+    - Inputs:
+        - `images`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

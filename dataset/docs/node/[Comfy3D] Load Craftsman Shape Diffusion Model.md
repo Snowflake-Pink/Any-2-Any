@@ -1,0 +1,6 @@
+- `[Comfy3D] Load Craftsman Shape Diffusion Model`: The [Comfy3D] Load Craftsman Shape Diffusion Model node description.
+    - Parameters:
+        - `model_name`: Type should be `['image-to-shape-diffusion/clip-mvrgb-modln-l256-e64-ne8-nd16-nl6-aligned-vae/model.ckpt']`.
+    - Inputs:
+    - Outputs:
+        - `craftsman_model`: Type should be `CRAFTSMAN_MODEL`.

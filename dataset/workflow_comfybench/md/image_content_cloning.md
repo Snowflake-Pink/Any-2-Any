@@ -1,0 +1,64 @@
+- Nodes:
+    - N1:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "dreamshaper_8.safetensors"
+    - N2:
+        - node_type: "VAELoader"
+        - vae_name: "vae-ft-mse-840000-ema-pruned.safetensors"
+    - N3:
+        - node_type: "IPAdapterModelLoader"
+        - ipadapter_file: "ip-adapter_sd15.safetensors"
+    - N4:
+        - node_type: "CLIPVisionLoader"
+        - clip_name: "CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+    - N6:
+        - node_type: "LoadImage"
+        - image: "woman_portrait.jpg"
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "beautiful renaissance girl, detailed"
+    - N8:
+        - node_type: "CLIPTextEncode"
+        - text: "blurry, horror"
+    - N9:
+        - node_type: "KSampler"
+        - seed: 937143485600286
+        - control_after_generate: "randomize"
+        - steps: 25
+        - cfg: 6
+        - sampler_name: "ddim"
+        - scheduler: "ddim_uniform"
+        - denoise: 1
+    - N10:
+        - node_type: "EmptyLatentImage"
+        - width: 512
+        - height: 512
+        - batch_size: 1
+    - N11:
+        - node_type: "VAEDecode"
+    - N12:
+        - node_type: "SaveImage"
+        - filename_prefix: "IPAdapter"
+    - N16:
+        - node_type: "IPAdapterAdvanced"
+        - weight: 1
+        - weight_type: "linear"
+        - combine_embeds: "concat"
+        - start_at: 0
+        - end_at: 1
+        - embeds_scaling: "V only"
+
+- Links:
+    - L14: N1.clip -> N7.clip
+    - L15: N1.clip -> N8.clip
+    - L16: N10.latent -> N9.latent_image
+    - L17: N16.model -> N9.model
+    - L18: N8.conditioning -> N9.negative
+    - L19: N7.conditioning -> N9.positive
+    - L20: N9.latent -> N11.samples
+    - L21: N2.vae -> N11.vae
+    - L22: N11.image -> N12.images
+    - L23: N4.clip_vision -> N16.clip_vision
+    - L24: N6.image -> N16.image
+    - L25: N3.ipadapter -> N16.ipadapter
+    - L26: N1.model -> N16.model

@@ -1,0 +1,9 @@
+- `[Comfy3D] Resize Image Foreground`: The [Comfy3D] Resize Image Foreground node description.
+    - Parameters:
+        - `foreground_ratio`: Type should be `FLOAT`.
+    - Inputs:
+        - `images`: Type should be `IMAGE`.
+        - `masks`: Type should be `MASK`.
+    - Outputs:
+        - `images`: Type should be `IMAGE`.
+        - `masks`: Type should be `MASK`.

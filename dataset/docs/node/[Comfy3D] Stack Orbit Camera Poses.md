@@ -1,0 +1,29 @@
+- `[Comfy3D] Stack Orbit Camera Poses`: The [Comfy3D] Stack Orbit Camera Poses node description.
+    - Parameters:
+        - `orbit_radius_start`: Type should be `FLOAT`.
+        - `orbit_radius_stop`: Type should be `FLOAT`.
+        - `orbit_radius_step`: Type should be `FLOAT`.
+        - `elevation_start`: Type should be `FLOAT`.
+        - `elevation_stop`: Type should be `FLOAT`.
+        - `elevation_step`: Type should be `FLOAT`.
+        - `azimuth_start`: Type should be `FLOAT`.
+        - `azimuth_stop`: Type should be `FLOAT`.
+        - `azimuth_step`: Type should be `FLOAT`.
+        - `orbit_center_X_start`: Type should be `FLOAT`.
+        - `orbit_center_X_stop`: Type should be `FLOAT`.
+        - `orbit_center_X_step`: Type should be `FLOAT`.
+        - `orbit_center_Y_start`: Type should be `FLOAT`.
+        - `orbit_center_Y_stop`: Type should be `FLOAT`.
+        - `orbit_center_Y_step`: Type should be `FLOAT`.
+        - `orbit_center_Z_start`: Type should be `FLOAT`.
+        - `orbit_center_Z_stop`: Type should be `FLOAT`.
+        - `orbit_center_Z_step`: Type should be `FLOAT`.
+    - Inputs:
+    - Outputs:
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.
+        - `orbit_radius_list`: Type should be `FLOAT`.
+        - `elevation_list`: Type should be `FLOAT`.
+        - `azimuth_list`: Type should be `FLOAT`.
+        - `orbit_center_X_list`: Type should be `FLOAT`.
+        - `orbit_center_Y_list`: Type should be `FLOAT`.
+        - `orbit_center_Z_list`: Type should be `FLOAT`.

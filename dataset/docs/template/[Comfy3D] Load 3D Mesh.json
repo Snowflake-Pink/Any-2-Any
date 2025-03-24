@@ -1,0 +1,57 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load 3D Mesh",
+    "title": null,
+    "parameters": {
+        "mesh_file_path": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "resize": {
+            "index": 1,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "renormal": {
+            "index": 2,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "retex": {
+            "index": 3,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "optimizable": {
+            "index": 4,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "clean": {
+            "index": 5,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "resize_bound": {
+            "index": 6,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,49 @@
+- Nodes:
+    - N3:
+        - node_type: "KSampler"
+        - seed: 856978708266001
+        - control_after_generate: "randomize"
+        - steps: 20
+        - cfg: 2.5
+        - sampler_name: "euler"
+        - scheduler: "karras"
+        - denoise: 1
+    - N8:
+        - node_type: "VAEDecode"
+    - N10:
+        - node_type: "SaveAnimatedWEBP"
+        - filename_prefix: "ComfyUI"
+        - fps: 10
+        - lossless: False
+        - quality: 85
+        - method: "default"
+    - N12:
+        - node_type: "SVD_img2vid_Conditioning"
+        - width: 1024
+        - height: 576
+        - video_frames: 14
+        - motion_bucket_id: 127
+        - fps: 6
+        - augmentation_level: 0
+    - N23:
+        - node_type: "LoadImage"
+        - image: "mountains.png"
+    - N15:
+        - node_type: "ImageOnlyCheckpointLoader"
+        - ckpt_name: "svd.safetensors"
+    - N14:
+        - node_type: "VideoLinearCFGGuidance"
+        - min_cfg: 1
+
+- Links:
+    - L7: N3.latent -> N8.samples
+    - L10: N8.image -> N10.images
+    - L17: N12.negative -> N3.negative
+    - L18: N12.latent -> N3.latent_image
+    - L23: N15.model -> N14.model
+    - L24: N15.clip_vision -> N12.clip_vision
+    - L25: N15.vae -> N12.vae
+    - L26: N15.vae -> N8.vae
+    - L39: N14.model -> N3.model
+    - L40: N12.positive -> N3.positive
+    - L41: N23.image -> N12.init_image

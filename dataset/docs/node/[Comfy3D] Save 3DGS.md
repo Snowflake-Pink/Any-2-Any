@@ -1,0 +1,7 @@
+- `[Comfy3D] Save 3DGS`: The [Comfy3D] Save 3DGS node description.
+    - Parameters:
+        - `save_path`: Type should be `STRING`.
+    - Inputs:
+        - `gs_ply`: Type should be `GS_PLY`.
+    - Outputs:
+        - `save_path`: Type should be `STRING`.

@@ -1,0 +1,65 @@
+- Nodes:
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "majicmixRealistic_v7.safetensors"
+    - N6:
+        - node_type: "CLIPTextEncode"
+        - text: "1girl, "
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "lowres,zombie,horror,nsfw, "
+    - N11:
+        - node_type: "FaceDetailer"
+        - guide_size: 384
+        - guide_size_for: True
+        - max_size: 1024
+        - seed: 266448747412199
+        - control_after_generate: "randomize"
+        - steps: 20
+        - cfg: 4
+        - sampler_name: "euler_ancestral"
+        - scheduler: "normal"
+        - denoise: 0.5
+        - feather: 5
+        - noise_mask: True
+        - force_inpaint: True
+        - bbox_threshold: 0.5
+        - bbox_dilation: 10
+        - bbox_crop_factor: 3
+        - sam_detection_hint: "center-1"
+        - sam_dilation: 0
+        - sam_threshold: 0.93
+        - sam_bbox_expansion: 0
+        - sam_mask_hint_threshold: 0.7000000000000001
+        - sam_mask_hint_use_negative: "False"
+        - drop_size: 10
+        - cycle: ""
+        - inpaint_model: 1
+        - noise_mask_feather: False
+    - N17:
+        - node_type: "SaveImage"
+        - filename_prefix: "ComfyUI"
+    - N18:
+        - node_type: "UltralyticsDetectorProvider"
+        - model_name: "bbox/face_yolov8m.pt"
+    - N19:
+        - node_type: "SAMLoader"
+        - model_name: "sam_vit_b_01ec64.pth"
+        - device_mode: "AUTO"
+    - N26:
+        - node_type: "LoadImage"
+        - image: "woman_portrait.jpg"
+
+- Links:
+    - L13: N4.clip -> N6.clip
+    - L14: N4.clip -> N7.clip
+    - L15: N18.bbox_detector -> N11.bbox_detector
+    - L16: N4.clip -> N11.clip
+    - L17: N26.image -> N11.image
+    - L18: N4.model -> N11.model
+    - L19: N7.conditioning -> N11.negative
+    - L20: N6.conditioning -> N11.positive
+    - L21: N19.sam_model -> N11.sam_model_opt
+    - L22: N18.segm_detector -> N11.segm_detector_opt
+    - L23: N4.vae -> N11.vae
+    - L24: N11.image -> N17.images

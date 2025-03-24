@@ -1,0 +1,10 @@
+- `[Comfy3D] Load Diffusers Pipeline`: The [Comfy3D] Load Diffusers Pipeline node description.
+    - Parameters:
+        - `diffusers_pipeline_name`: Type should be `['MVDreamPipeline', 'Wonder3DMVDiffusionPipeline', 'Zero123PlusPipeline', 'DiffusionPipeline', 'StableDiffusionPipeline', 'Era3DPipeline', 'Unique3DImage2MVCustomPipeline', 'Unique3DImageCustomPipeline']`.
+        - `repo_id`: Type should be `STRING`.
+        - `custom_pipeline`: Type should be `STRING`.
+        - `force_download`: Type should be `BOOLEAN`.
+        - `checkpoint_sub_dir`: Type should be `STRING`.
+    - Inputs:
+    - Outputs:
+        - `pipe`: Type should be `DIFFUSERS_PIPE`.

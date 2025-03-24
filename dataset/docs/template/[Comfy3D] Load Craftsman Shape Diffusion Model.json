@@ -1,0 +1,23 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load Craftsman Shape Diffusion Model",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "image-to-shape-diffusion/clip-mvrgb-modln-l256-e64-ne8-nd16-nl6-aligned-vae/model.ckpt"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "craftsman_model": {
+            "index": 0,
+            "type": "CRAFTSMAN_MODEL",
+            "links": []
+        }
+    }
+}

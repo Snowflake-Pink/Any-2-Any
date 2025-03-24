@@ -1,0 +1,11 @@
+- `GroundingDinoSAMSegment (segment anything)`: The GroundingDinoSAMSegment (segment anything) node description.
+    - Parameters:
+        - `threshold`: Type should be `FLOAT`.
+    - Inputs:
+        - `sam_model`: Type should be `SAM_MODEL`.
+        - `grounding_dino_model`: Type should be `GROUNDING_DINO_MODEL`.
+        - `image`: Type should be `IMAGE`.
+        - `prompt`: Type should be `STRING`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.
+        - `MASK`: Type should be `MASK`.

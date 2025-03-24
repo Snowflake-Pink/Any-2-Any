@@ -1,0 +1,12 @@
+# create nodes by instantiation
+ksampler_22 = KSampler(seed=119275658172907, control_after_generate="""randomize""", steps=34, cfg=8, sampler_name="""euler""", scheduler="""normal""", denoise=1)
+checkpointloadersimple_19 = CheckpointLoaderSimple(ckpt_name="""dreamshaper_8.safetensors""")
+imageSpaceremoveSpacebackgroundSpaceLeftParenrembgRightParen_16 = ImageSpaceRemoveSpaceBackgroundSpaceLeftParenrembgRightParen()
+LeftBracketcomfy3dRightBracketSpaceloadSpacetriplaneSpacegaussianSpacetransformers_40 = LeftBracketComfy3DRightBracketSpaceLoadSpaceTriplaneSpaceGaussianSpaceTransformers(model_name="""model_lvis_rel.ckpt""")
+imagetomask_17 = ImageToMask(channel="""alpha""")
+imagesSpacetoSpacergb_47 = ImagesSpacetoSpaceRGB()
+vaedecode_23 = VAEDecode()
+LeftBracketcomfy3dRightBracketSpacetriplaneSpacegaussianSpacetransformers_41 = LeftBracketComfy3DRightBracketSpaceTriplaneSpaceGaussianSpaceTransformers(cam_dist=1.9)
+LeftBracketcomfy3dRightBracketSpaceswitchSpace3dgsSpaceaxis_42 = LeftBracketComfy3DRightBracketSpaceSwitchSpace3DGSSpaceAxis(axis_x_to="""-y""", axis_y_to="""+z""", axis_z_to="""+x""")
+LeftBracketcomfy3dRightBracketSpaceconvertSpace3dgsSpacetoSpacemeshSpacewithSpacenerfSpaceandSpacemarchingSpacecubes_43 = LeftBracketComfy3DRightBracketSpaceConvertSpace3DGSSpacetoSpaceMeshSpacewithSpaceNeRFSpaceandSpaceMarchingSpaceCubes(gs_config="""big""", training_nerf_iterations=512, training_nerf_resolution=62, marching_cude_grids_resolution=256, marching_cude_grids_batch_size=128, marching_cude_threshold=10, training_mesh_iterations=2048, training_mesh_resolution=512, remesh_after_n_iteration=512, training_albedo_iterations=512, training_albedo_resolution=512, texture_resolution=1024, force_cuda_rast=False)
+LeftBracketcomfy3dRightBracketSpacesaveSpace3dSpacemesh_31 = LeftBracketComfy3DRightBracketSpaceSaveSpace3DSpaceMesh(save_path="""test.obj""")

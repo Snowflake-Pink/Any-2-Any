@@ -1,0 +1,21 @@
+# create nodes by instantiation
+cliploader_20 = CLIPLoader(clip_name="""t5xxl_fp16.safetensors""", type="""sd3""")
+cogvideodecode_60 = CogVideoDecode(enable_vae_tiling=True, tile_sample_min_height=240, tile_sample_min_width=360, tile_overlap_factor_height=0.2, tile_overlap_factor_width=0.2, auto_tile_size=True)
+loadimage_36 = LoadImage(image="""PirateCat.png""")
+cogvideotextencode_30 = CogVideoTextEncode(prompt="""a cat waving its sword""", strength=1, force_offload=False)
+cogvideotextencode_31 = CogVideoTextEncode(prompt="""The video is not of a high quality, it has a low resolution. Watermark present in each frame. Strange motion trajectory. """, strength=1, force_offload=True)
+cogvideoimageencode_62 = CogVideoImageEncode(enable_tiling=False, noise_aug_strength=0, strength=1, start_percent=0, end_percent=1)
+cogvideosampler_63 = CogVideoSampler(num_frames=10, steps=40, cfg=6, seed=200365243842158, control_after_generate="""randomize""", scheduler="""CogVideoXDDIM""", denoise_strength=1)
+saveanimatedwebp_64 = SaveAnimatedWEBP(filename_prefix="""ComfyUI""", fps=7, lossless=True, quality=100, method="""default""")
+downloadandloadcogvideomodel_59 = DownloadAndLoadCogVideoModel(model="""kijai/CogVideoX-5b-1.5-I2V""", precision="""bf16""", quantization="""fp8_e4m3fn""", enable_sequential_cpu_offload=False, attention_mode="""sdpa""", load_device="""main_device""")
+
+# link nodes by invocation
+clip_20 = cliploader_20()
+image_36, mask_36 = loadimage_36()
+model_59, vae_59 = downloadandloadcogvideomodel_59(block_edit=None, lora=None, compile_args=None)
+conditioning_30, clip_30 = cogvideotextencode_30(clip=clip_20)
+samples_62 = cogvideoimageencode_62(vae=vae_59, start_image=image_36, end_image=None)
+conditioning_31, clip_31 = cogvideotextencode_31(clip=clip_30)
+samples_63 = cogvideosampler_63(model=model_59, positive=conditioning_30, negative=conditioning_31, samples=None, image_cond_latents=samples_62, context_options=None, controlnet=None, tora_trajectory=None, fastercache=None, feta_args=None)
+images_60 = cogvideodecode_60(vae=vae_59, samples=samples_63)
+result_64 = saveanimatedwebp_64(images=images_60)

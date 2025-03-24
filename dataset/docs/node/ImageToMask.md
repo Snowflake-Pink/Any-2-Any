@@ -1,0 +1,7 @@
+- `ImageToMask`: The ImageToMask node description.
+    - Parameters:
+        - `channel`: Type should be `['red', 'green', 'blue', 'alpha']`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `MASK`: Type should be `MASK`.

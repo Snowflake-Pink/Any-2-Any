@@ -1,0 +1,10 @@
+- `SaveAnimatedWEBP`: The SaveAnimatedWEBP node description.
+    - Parameters:
+        - `filename_prefix`: Type should be `STRING`.
+        - `fps`: Type should be `FLOAT`.
+        - `lossless`: Type should be `BOOLEAN`.
+        - `quality`: Type should be `INT`.
+        - `method`: Type should be `['default', 'fastest', 'slowest']`.
+    - Inputs:
+        - `images`: Type should be `IMAGE`.
+    - Outputs:

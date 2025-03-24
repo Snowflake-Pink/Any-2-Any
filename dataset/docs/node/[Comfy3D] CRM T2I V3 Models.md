@@ -1,0 +1,18 @@
+- `[Comfy3D] CRM T2I V3 Models`: The [Comfy3D] CRM T2I V3 Models node description.
+    - Parameters:
+        - `prompt`: Type should be `STRING`.
+        - `prompt_neg`: Type should be `STRING`.
+        - `seed`: Type should be `INT`.
+        - `mv_guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+    - Inputs:
+        - `t2iadapter_v2`: Type should be `T2IADAPTER_V2`.
+        - `crm_mvdiffusion_sampler_v3`: Type should be `CRM_MVDIFFUSION_SAMPLER_V3`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+        - `normal_maps`: Type should be `IMAGE`.
+    - Outputs:
+        - `multiview_albedos`: Type should be `IMAGE`.
+        - `multiview_metalness`: Type should be `IMAGE`.
+        - `multiview_roughness`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

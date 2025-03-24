@@ -1,0 +1,114 @@
+{
+    "id": null,
+    "type": "BNK_Unsampler",
+    "title": null,
+    "parameters": {
+        "steps": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "end_at_step": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "cfg": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "sampler_name": {
+            "index": 3,
+            "value": null,
+            "type": [
+                "euler",
+                "euler_cfg_pp",
+                "euler_ancestral",
+                "euler_ancestral_cfg_pp",
+                "heun",
+                "heunpp2",
+                "dpm_2",
+                "dpm_2_ancestral",
+                "lms",
+                "dpm_fast",
+                "dpm_adaptive",
+                "dpmpp_2s_ancestral",
+                "dpmpp_2s_ancestral_cfg_pp",
+                "dpmpp_sde",
+                "dpmpp_sde_gpu",
+                "dpmpp_2m",
+                "dpmpp_2m_cfg_pp",
+                "dpmpp_2m_sde",
+                "dpmpp_2m_sde_gpu",
+                "dpmpp_3m_sde",
+                "dpmpp_3m_sde_gpu",
+                "ddpm",
+                "lcm",
+                "ipndm",
+                "ipndm_v",
+                "deis",
+                "ddim",
+                "uni_pc",
+                "uni_pc_bh2"
+            ],
+            "link": null
+        },
+        "scheduler": {
+            "index": 4,
+            "value": null,
+            "type": [
+                "normal",
+                "karras",
+                "exponential",
+                "sgm_uniform",
+                "simple",
+                "ddim_uniform",
+                "beta",
+                "linear_quadratic"
+            ],
+            "link": null
+        },
+        "normalize": {
+            "index": 5,
+            "value": null,
+            "type": [
+                "disable",
+                "enable"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "model": {
+            "index": 0,
+            "type": "MODEL",
+            "link": null
+        },
+        "positive": {
+            "index": 1,
+            "type": "CONDITIONING",
+            "link": null
+        },
+        "negative": {
+            "index": 2,
+            "type": "CONDITIONING",
+            "link": null
+        },
+        "latent_image": {
+            "index": 3,
+            "type": "LATENT",
+            "link": null
+        }
+    },
+    "outputs": {
+        "LATENT": {
+            "index": 0,
+            "type": "LATENT",
+            "links": []
+        }
+    }
+}

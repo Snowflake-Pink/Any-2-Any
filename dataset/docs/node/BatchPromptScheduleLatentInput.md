@@ -1,0 +1,19 @@
+- `BatchPromptScheduleLatentInput`: The BatchPromptScheduleLatentInput node description.
+    - Parameters:
+        - `text`: Type should be `STRING`.
+        - `print_output`: Type should be `BOOLEAN`.
+        - `start_frame`: Type should be `INT`.
+        - `end_frame`: Type should be `INT`.
+        - `pw_a`: Type should be `FLOAT`.
+        - `pw_b`: Type should be `FLOAT`.
+        - `pw_c`: Type should be `FLOAT`.
+        - `pw_d`: Type should be `FLOAT`.
+    - Inputs:
+        - `clip`: Type should be `CLIP`.
+        - `num_latents`: Type should be `LATENT`.
+        - `pre_text`: Type should be `STRING`.
+        - `app_text`: Type should be `STRING`.
+    - Outputs:
+        - `POS`: Type should be `CONDITIONING`.
+        - `NEG`: Type should be `CONDITIONING`.
+        - `INPUT_LATENTS`: Type should be `LATENT`.

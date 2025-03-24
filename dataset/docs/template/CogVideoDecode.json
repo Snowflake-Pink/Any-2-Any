@@ -1,0 +1,62 @@
+{
+    "id": null,
+    "type": "CogVideoDecode",
+    "title": null,
+    "parameters": {
+        "enable_vae_tiling": {
+            "index": 0,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "tile_sample_min_height": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "tile_sample_min_width": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "tile_overlap_factor_height": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "tile_overlap_factor_width": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "auto_tile_size": {
+            "index": 5,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "vae": {
+            "index": 0,
+            "type": "VAE",
+            "link": null
+        },
+        "samples": {
+            "index": 1,
+            "type": "LATENT",
+            "link": null
+        }
+    },
+    "outputs": {
+        "images": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

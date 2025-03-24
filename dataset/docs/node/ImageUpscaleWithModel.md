@@ -1,0 +1,7 @@
+- `ImageUpscaleWithModel`: The ImageUpscaleWithModel node description.
+    - Parameters:
+    - Inputs:
+        - `upscale_model`: Type should be `UPSCALE_MODEL`.
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

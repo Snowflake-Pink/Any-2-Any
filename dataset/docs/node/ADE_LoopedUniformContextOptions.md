@@ -1,0 +1,15 @@
+- `ADE_LoopedUniformContextOptions`: The ADE_LoopedUniformContextOptions node description.
+    - Parameters:
+        - `context_length`: Type should be `INT`.
+        - `context_stride`: Type should be `INT`.
+        - `context_overlap`: Type should be `INT`.
+        - `closed_loop`: Type should be `BOOLEAN`.
+        - `fuse_method`: Type should be `['pyramid', 'flat', 'delayed reverse sawtooth', 'pyramid-sigma', 'pyramid-sigma inverse', 'gauss-sigma', 'gauss-sigma inverse', 'random']`.
+        - `use_on_equal_length`: Type should be `BOOLEAN`.
+        - `start_percent`: Type should be `FLOAT`.
+        - `guarantee_steps`: Type should be `INT`.
+    - Inputs:
+        - `prev_context`: Type should be `CONTEXT_OPTIONS`.
+        - `view_opts`: Type should be `VIEW_OPTS`.
+    - Outputs:
+        - `CONTEXT_OPTS`: Type should be `CONTEXT_OPTIONS`.

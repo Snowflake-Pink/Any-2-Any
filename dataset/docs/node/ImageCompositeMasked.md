@@ -1,0 +1,11 @@
+- `ImageCompositeMasked`: The ImageCompositeMasked node description.
+    - Parameters:
+        - `x`: Type should be `INT`.
+        - `y`: Type should be `INT`.
+        - `resize_source`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `destination`: Type should be `IMAGE`.
+        - `source`: Type should be `IMAGE`.
+        - `mask`: Type should be `MASK`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

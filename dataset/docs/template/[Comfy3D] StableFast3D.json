@@ -1,0 +1,46 @@
+{
+    "id": null,
+    "type": "[Comfy3D] StableFast3D",
+    "title": null,
+    "parameters": {
+        "texture_resolution": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "remesh_option": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "None",
+                "Triangle"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "sf3d_model": {
+            "index": 0,
+            "type": "SF3D_MODEL",
+            "link": null
+        },
+        "reference_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

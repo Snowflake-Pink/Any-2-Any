@@ -1,0 +1,16 @@
+- `SVD_img2vid_Conditioning`: The SVD_img2vid_Conditioning node description.
+    - Parameters:
+        - `width`: Type should be `INT`.
+        - `height`: Type should be `INT`.
+        - `video_frames`: Type should be `INT`.
+        - `motion_bucket_id`: Type should be `INT`.
+        - `fps`: Type should be `INT`.
+        - `augmentation_level`: Type should be `FLOAT`.
+    - Inputs:
+        - `clip_vision`: Type should be `CLIP_VISION`.
+        - `init_image`: Type should be `IMAGE`.
+        - `vae`: Type should be `VAE`.
+    - Outputs:
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `latent`: Type should be `LATENT`.

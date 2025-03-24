@@ -1,0 +1,23 @@
+- `[Comfy3D] FlexiCubes MVS`: The [Comfy3D] FlexiCubes MVS node description.
+    - Parameters:
+        - `reference_orbit_camera_fovy`: Type should be `FLOAT`.
+        - `training_iterations`: Type should be `INT`.
+        - `batch_size`: Type should be `INT`.
+        - `learning_rate`: Type should be `FLOAT`.
+        - `voxel_grids_resolution`: Type should be `INT`.
+        - `depth_min_distance`: Type should be `FLOAT`.
+        - `depth_max_distance`: Type should be `FLOAT`.
+        - `mask_loss_weight`: Type should be `FLOAT`.
+        - `depth_loss_weight`: Type should be `FLOAT`.
+        - `normal_loss_weight`: Type should be `FLOAT`.
+        - `sdf_regularizer_weight`: Type should be `FLOAT`.
+        - `remove_floaters_weight`: Type should be `FLOAT`.
+        - `cube_stabilizer_weight`: Type should be `FLOAT`.
+        - `force_cuda_rast`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `reference_depth_maps`: Type should be `IMAGE`.
+        - `reference_masks`: Type should be `MASK`.
+        - `reference_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+        - `reference_normal_maps`: Type should be `IMAGE`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

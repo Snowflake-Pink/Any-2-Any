@@ -1,0 +1,13 @@
+# create nodes by instantiation
+checkpointloadersimple_1 = CheckpointLoaderSimple(ckpt_name="""dreamshaper_8.safetensors""")
+vaeloader_2 = VAELoader(vae_name="""vae-ft-mse-840000-ema-pruned.safetensors""")
+ipadaptermodelloader_3 = IPAdapterModelLoader(ipadapter_file="""ip-adapter_sd15.safetensors""")
+clipvisionloader_4 = CLIPVisionLoader(clip_name="""CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors""")
+loadimage_6 = LoadImage(image="""woman_portrait.jpg""")
+cliptextencode_7 = CLIPTextEncode(text="""beautiful renaissance girl, detailed""")
+cliptextencode_8 = CLIPTextEncode(text="""blurry, horror""")
+ksampler_9 = KSampler(seed=937143485600286, control_after_generate="""randomize""", steps=25, cfg=6, sampler_name="""ddim""", scheduler="""ddim_uniform""", denoise=1)
+emptylatentimage_10 = EmptyLatentImage(width=512, height=512, batch_size=1)
+vaedecode_11 = VAEDecode()
+saveimage_12 = SaveImage(filename_prefix="""IPAdapter""")
+ipadapteradvanced_16 = IPAdapterAdvanced(weight=1, weight_type="""linear""", combine_embeds="""concat""", start_at=0, end_at=1, embeds_scaling="""V only""")

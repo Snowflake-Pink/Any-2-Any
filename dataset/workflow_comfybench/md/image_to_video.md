@@ -1,0 +1,70 @@
+- Nodes:
+    - N20:
+        - node_type: "CLIPLoader"
+        - clip_name: "t5xxl_fp16.safetensors"
+        - type: "sd3"
+    - N60:
+        - node_type: "CogVideoDecode"
+        - enable_vae_tiling: True
+        - tile_sample_min_height: 240
+        - tile_sample_min_width: 360
+        - tile_overlap_factor_height: 0.2
+        - tile_overlap_factor_width: 0.2
+        - auto_tile_size: True
+    - N36:
+        - node_type: "LoadImage"
+        - image: "PirateCat.png"
+    - N30:
+        - node_type: "CogVideoTextEncode"
+        - prompt: "a cat waving its sword"
+        - strength: 1
+        - force_offload: False
+    - N31:
+        - node_type: "CogVideoTextEncode"
+        - prompt: "The video is not of a high quality, it has a low resolution. Watermark present in each frame. Strange motion trajectory. "
+        - strength: 1
+        - force_offload: True
+    - N62:
+        - node_type: "CogVideoImageEncode"
+        - enable_tiling: False
+        - noise_aug_strength: 0
+        - strength: 1
+        - start_percent: 0
+        - end_percent: 1
+    - N63:
+        - node_type: "CogVideoSampler"
+        - num_frames: 10
+        - steps: 40
+        - cfg: 6
+        - seed: 200365243842158
+        - control_after_generate: "randomize"
+        - scheduler: "CogVideoXDDIM"
+        - denoise_strength: 1
+    - N64:
+        - node_type: "SaveAnimatedWEBP"
+        - filename_prefix: "ComfyUI"
+        - fps: 7
+        - lossless: True
+        - quality: 100
+        - method: "default"
+    - N59:
+        - node_type: "DownloadAndLoadCogVideoModel"
+        - model: "kijai/CogVideoX-5b-1.5-I2V"
+        - precision: "bf16"
+        - quantization: "fp8_e4m3fn"
+        - enable_sequential_cpu_offload: False
+        - attention_mode: "sdpa"
+        - load_device: "main_device"
+
+- Links:
+    - L54: N20.clip -> N30.clip
+    - L132: N59.vae -> N60.vae
+    - L141: N59.vae -> N62.vae
+    - L144: N59.model -> N63.model
+    - L145: N30.conditioning -> N63.positive
+    - L146: N31.conditioning -> N63.negative
+    - L147: N62.samples -> N63.image_cond_latents
+    - L148: N63.samples -> N60.samples
+    - L149: N30.clip -> N31.clip
+    - L150: N60.images -> N64.images
+    - L151: N36.image -> N62.start_image

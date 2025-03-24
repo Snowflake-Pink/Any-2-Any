@@ -1,0 +1,7 @@
+- `Upscale Model Loader`: The Upscale Model Loader node description.
+    - Parameters:
+        - `model_name`: Type should be `['1x-ITF-SkinDiffDetail-Lite-v1.pth', '4x-UltraSharp.pth', '4xNomos8kHAT-L_otf.pth', '4xNomosUniDAT_otf.pth', '4x_NMKD-Siax_200k.pth', '4x_NMKD-Superscale-SP_178000_G.pth', '4x_foolhardy_Remacri.pth', 'ESRGAN_4x.pth', 'OmniSR_X2_DIV2K.safetensors', 'OmniSR_X3_DIV2K.safetensors', 'OmniSR_X4_DIV2K.safetensors', 'RealESRGAN_x2plus.pth', 'RealESRGAN_x4plus.pth', 'RealESRGAN_x4plus_anime_6B.pth', 'SwinIR_4x.pth', 'last.ckpt', 'realesr-animevideov3.pth', 'realesr-general-wdn-x4v3.pth', 'realesr-general-x4v3.pth']`.
+    - Inputs:
+    - Outputs:
+        - `UPSCALE_MODEL`: Type should be `UPSCALE_MODEL`.
+        - `MODEL_NAME_TEXT`: Type should be `STRING`.

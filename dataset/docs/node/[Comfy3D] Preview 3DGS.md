@@ -1,0 +1,5 @@
+- `[Comfy3D] Preview 3DGS`: The [Comfy3D] Preview 3DGS node description.
+    - Parameters:
+        - `gs_file_path`: Type should be `STRING`.
+    - Inputs:
+    - Outputs:

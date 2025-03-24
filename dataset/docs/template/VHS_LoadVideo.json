@@ -1,0 +1,109 @@
+{
+    "id": null,
+    "type": "VHS_LoadVideo",
+    "title": null,
+    "parameters": {
+        "video": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "baseball_game.mp4",
+                "basketball.mp4",
+                "male_idol.mp4",
+                "passing_car.mp4",
+                "pour_water.mp4",
+                "speaking_man.mp4",
+                "taylor_swift.mp4",
+                "two_babies.mp4"
+            ],
+            "link": null
+        },
+        "force_rate": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "force_size": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "Disabled",
+                "Custom Height",
+                "Custom Width",
+                "Custom",
+                "256x?",
+                "?x256",
+                "256x256",
+                "512x?",
+                "?x512",
+                "512x512"
+            ],
+            "link": null
+        },
+        "custom_width": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "custom_height": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "frame_load_cap": {
+            "index": 5,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "skip_first_frames": {
+            "index": 6,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "select_every_nth": {
+            "index": 7,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "meta_batch": {
+            "index": 0,
+            "type": "VHS_BatchManager",
+            "link": null
+        },
+        "vae": {
+            "index": 1,
+            "type": "VAE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "frame_count": {
+            "index": 1,
+            "type": "INT",
+            "links": []
+        },
+        "audio": {
+            "index": 2,
+            "type": "AUDIO",
+            "links": []
+        },
+        "video_info": {
+            "index": 3,
+            "type": "VHS_VIDEOINFO",
+            "links": []
+        }
+    }
+}

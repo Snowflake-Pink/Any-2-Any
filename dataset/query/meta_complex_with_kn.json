@@ -1,0 +1,842 @@
+{
+    "01101": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a cat in a snowy forest. Then upscale it by 2x. The result should be a high-resolution image of a cat",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01102": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a city street at night. Then upscale it by 2x. The result should be a high-resolution image of a city street.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01103": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a snowy mountain peak with clouds gently moving around it. Then upscale the image by 2x. The result should be a high-resolution image of a snowy mountain.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01104": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of a bird flying over a dense forest during sunrise. Then upscale the video by 2x. The result should be a high-resolution video of a bird flying over the forest.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01105": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of the sun rising over a mountain range with mist in the valleys. Then upscale the video by 2x. The result should be a high-resolution video of a mountain sunrise.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01106": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of a robot spinning in circles on a white background. Then upscale the video by 2x. The result should be a high-resolution video of the spinning robot.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01107": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `warm_bedroom.jpg`, which is a photo of a bedroom with warm lighting. First extend the image by 128 pixels on both left and right sides. Then upscale it by 2x. The result should be a high-resolution image of the bedroom.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_screen_extension.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01108": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `street_car.png` of a red car parked on the street. First replace the red car with a green car. Then upscale the image by 2x. The result should be a high-resolution image of a green car.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01109": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `woman_photo.jpg`, which is a photo of a woman smiling. First refine the face to make it look better. Then upscale it by 2x. The result should be a high-resolution image of the woman as a portrait.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_face_refinement.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01110": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `woman_photo.jpg`, which is a photo of a woman smiling. First convert it into a portrait in a large hall while keeping other details. Then upscale it by 2x. The result should be a high-resolution image of the woman as a portrait.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_portrait_conversion.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01111": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of a girl dancing in a room with colorful lights. Then interpolate the video to increase the frame rate by 3x. The result should be a smoother video of the dancing girl.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    },
+    "01112": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of a bustling city at night with skyscrapers and bright lights. Then interpolate the video to increase the frame rate by 3x. The result should be a smoother video of the city at night.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    },
+    "01113": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of colorful fish swimming in an aquarium with bubbles rising to the surface. Then interpolate the video to increase the frame rate by 3x. The result should be a smoother video of the swimming fish.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    },
+    "01114": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `budapest_city.jpg`, which is a photo of the city of Budapest. First create a 2-second video of the cityscape with the perspective changing. Then interpolate the video to increase the frame rate by 3x. The result should be a smoother video of the cityscape.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    },
+    "01115": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `president_trump.jpg`, which is a photo of President Trump. First create a 2-second video of President Trump speaking based on the image. Then interpolate the video to increase the frame rate by 3x. The result should be a smoother video of President Trump speaking.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    },
+    "01116": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `street_car.png`, which is a photo of a red car parked on the street. First create a 2-second video of the car driving on the street based on the image. Then interpolate the video to increase the frame rate by 3x. The result should be a smoother video of the car driving on the street.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    },
+    "01117": {
+        "complexity": 1,
+        "source": [
+            "video"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given a video `taylor_swift.mp4`, which is a video of Taylor Swift speaking on stage. First upscale the video to 2x. Then interpolate the video to increase the frame rate by 2x. The result should be a high-quality video of Taylor Swift speaking.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    },
+    "01118": {
+        "complexity": 1,
+        "source": [
+            "video"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given a video `male_idol.mp4` of a male idol dancing. First upscale the video to 2x. Then interpolate the video to increase the frame rate by 2x. The result should be a high-quality video of the male idol dancing.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py",
+            "./dataset/workflow_comfybench/keynode/image_super_resolution.py"
+        ]
+    },
+    "01119": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `large_grassland.png` of a large grassland under a clear sky. First follow its style to generate a new image of a grassland. Then convert it into a painting with oil style. The result should be an image of a grassland as a painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py",
+            "./dataset/workflow_comfybench/keynode/creative_image_repaint.py"
+        ]
+    },
+    "01120": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `play_guitar.jpg` of a girl playing the guitar. First generate an image of an old man playing the guitar in a forest with the same pose as the girl. Then convert it into a painting with oil style. The result should be an image of an old man playing the guitar as a painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_pose_cloning.py",
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py"
+        ]
+    },
+    "01121": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `dish_table.png` of a table filled with dishes. First remove the fork on the table. Then convert the image into a painting with watercolor style. The result should be an image of the table without a fork as a watercolor painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/remove_any_object.py",
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py"
+        ]
+    },
+    "01122": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `mountain_stream.png` of a stream flowing through a mountain. First remove the train near the stream. Then convert the image into a painting with watercolor style. The result should be a high-quality image of the stream as a watercolor painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/remove_any_object.py",
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py"
+        ]
+    },
+    "01123": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `street_car.png` of a red car parked on the street. First remove the car from the street. Then convert the image into a painting with oil style. The result should be a high-quality image of the street without the car as an oil painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/remove_any_object.py",
+            "./dataset/workflow_comfybench/keynode/creative_image_repaint.py"
+        ]
+    },
+    "01124": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `dish_table.png` of a table filled with dishes. First replace the dish in the plate with a cake. Then convert the image into a painting with watercolor style. The result should be a high-quality image of the table with a cake as a watercolor painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py",
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py"
+        ]
+    },
+    "01125": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a pagoda in a quiet forest. The pagoda should be placed in the left half of the image, with trees filling other areas. Then convert the image into a painting with oil style. The result should be a high-quality image of the pagoda as an oil painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py"
+        ]
+    },
+    "01126": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a ship floating in the sea. The ship should be placed in the right half of the image, with the sea filling other areas. Then convert the image into a painting with watercolor style. The result should be a high-quality image of the ship as a watercolor painting.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py"
+        ]
+    },
+    "01127": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate an image of a male basketball player shooting in a gym. Then convert it into a 2-second video of the player shooting. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01128": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate an image of a woman riding a motorcycle on a highway. Then convert it into a 2-second video of the woman riding the motorcycle. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01129": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate an image of a dog sitting on a grass field. Then convert it into a 2-second video of the dog looking around. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01130": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate an image of a bus running in a city street. Then convert it into a 2-second video of the bus moving through the street. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01131": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `large_castle.png`, which is a photo of a large castle. First follow the architecture style of the castle to generate a large church. Then convert it into a 2-second video. The result should be a video of a large church.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py",
+            "./dataset/workflow_comfybench/keynode/text_to_video.py"
+        ]
+    },
+    "01132": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `warm_bedroom.jpg`, which is a photo of a bedroom with warm lighting. First follow the style of the bedroom to generate a living room. Then convert it into a 2-second video of the living room. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py",
+            "./dataset/workflow_comfybench/keynode/text_to_video.py"
+        ]
+    },
+    "01133": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `play_guitar.jpg` of a girl playing the guitar. First generate an image of an old man playing the guitar in a forest with the same pose as the girl. Then convert it into a 2-second video. The result should be a video of an old man playing the guitar.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_pose_cloning.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01134": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `jacket_man.jpg`, which is a photo of a man wearing a jacket. First generate a standing robot with the same pose as the man. Then convert it into a 2-second video of the robot moving slightly. The result should be a high-quality video of the robot.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_pose_cloning.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01135": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `standing_cat.jpg`, which is a photo of a standing cat. First replace the background with a cozy living room scene. Then convert it into a 2-second video of the cat looking around in the living room. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/remove_any_object.py",
+            "./dataset/workflow_comfybench/keynode/text_to_video.py"
+        ]
+    },
+    "01136": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `pigeon_scribble.png`, which is a scribble of a pigeon. First repaint the scribble into a realistic gray pigeon. Then convert it into a 2-second video of the pigeon flying. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/scribble_image_repaint.py",
+            "./dataset/workflow_comfybench/keynode/text_to_video.py"
+        ]
+    },
+    "01137": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `woman_photo.jpg`, which is a photo of a woman smiling. First refine the face to make it look better. Then convert it into a 2-second video of the woman smiling. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_face_refinement.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01138": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `woman_photo.jpg`, which is a photo of a woman smiling. First convert it into a portrait in a large hall while keeping other details. Then convert it into a 2-second video of the portrait. The result should be a high-quality video.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_portrait_conversion.py",
+            "./dataset/workflow_comfybench/keynode/image_to_video.py"
+        ]
+    },
+    "01139": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a pagoda in a quiet forest. Then replace the background with a scene of a mountain landscape. The result should be a high-quality image of a pagoda with a mountain background.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_area_composition.py"
+        ]
+    },
+    "01140": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a ship floating in the sea. Then replace the background with a sunset sky. The result should be a high-quality image of a ship in the sea during sunset.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/subtle_image_repaint.py"
+        ]
+    },
+    "01141": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a woman riding a motorcycle on a highway. Then replace the background with a modern city skyline at night. The result should be a high-quality image of a motorcycle rider with a city skyline background.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py"
+        ]
+    },
+    "01142": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of a snowy mountain peak with clouds gently moving around it. Then replace the background with a dense forest scene. The result should be a high-quality video of the snowy mountain with a forest background.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py"
+        ]
+    },
+    "01143": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of a bird flying over a dense forest during sunrise. Then replace the background with a mountain range. The result should be a high-quality video of a bird flying over the mountains.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py"
+        ]
+    },
+    "01144": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "First generate a 2-second video of a ballet dancer performing on stage with spotlights. Then replace the background with a red carpet. The result should be a high-quality video of the ballet dancer on a red carpet.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_video.py",
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py"
+        ]
+    },
+    "01145": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `large_castle.png`, which is a photo of a large castle. First follow the architecture style of the castle to generate a large church. Then replace the background with a mountain landscape. The result should be a high-quality image of a church with a mountain background.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py",
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py"
+        ]
+    },
+    "01146": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `play_guitar.jpg` of a girl playing the guitar. First generate an image of an old man playing the guitar in a forest with the same pose as the girl. Then replace the background with a sunset beach. The result should be a high-quality image of an old man playing the guitar at the beach.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_pose_cloning.py",
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py"
+        ]
+    },
+    "01147": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `president_trump.jpg`, which is a photo of President Trump. First convert it into a portrait while keeping other details. Then replace the background with a scene of a snowy forest. The result should be an image of President Trump as a portrait in a snowy forest.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_portrait_conversion.py",
+            "./dataset/workflow_comfybench/keynode/image_area_composition.py"
+        ]
+    },
+    "01148": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `woman_photo.jpg`, which is a photo of a woman smiling. First convert it into a portrait while keeping other details. Then replace the background with a scene of a night street. The result should be an image of the woman as a portrait in a night street.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_portrait_conversion.py",
+            "./dataset/workflow_comfybench/keynode/image_area_composition.py"
+        ]
+    },
+    "01149": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a book on a table. Then overlay a white text \"Book\" at the top left corner of the image. The result should be an image of a book with the required text.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_text_overlay.py"
+        ]
+    },
+    "01150": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `colorful_logo.png`, which is a sample logo of a bird. First convert it into a cubist art poster with dark colors. Then overlay a white text \"Cubist Poster\" at the center of the poster. The result should be an image of a poster with the required text.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/creative_image_repaint.py",
+            "./dataset/workflow_comfybench/keynode/image_text_overlay.py"
+        ]
+    },
+    "01151": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `mountain_stream.png` of a stream flowing through a mountain. First remove the train near the stream. Then follow its content to generate a new image of a stream in a mountain. The result should be a high-quality image of a mountain stream.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/remove_any_object.py",
+            "./dataset/workflow_comfybench/keynode/image_content_cloning.py"
+        ]
+    },
+    "01152": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `dish_table.png` of a table filled with dishes. First remove the fork on the table. Then follow its content to generate a new image of a table. The result should be a high-quality image of a table.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/remove_any_object.py",
+            "./dataset/workflow_comfybench/keynode/image_content_cloning.py"
+        ]
+    },
+    "01153": {
+        "complexity": 1,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "First generate an image of a beach at sunset with waves gently crashing on the shore. Then follow its style to generate a new image of a sunset over a mountain. The result should be a high-quality image of a mountain sunset.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/text_to_image.py",
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py"
+        ]
+    },
+    "01154": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `flower_scribble.jpg`, which is a scribble of a flower. First repaint the scribble into a realistic red flower. Then follow its style to generate a new image of a large flower field. The result should be a high-quality image of a flower field.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/scribble_image_repaint.py",
+            "./dataset/workflow_comfybench/keynode/creative_image_repaint.py"
+        ]
+    },
+    "01155": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `large_grassland.png` of a large grassland under a clear sky. First follow its style to generate a new image of a grassland. Then extend the image by 128 pixels on both the left and right sides. The result should be a larger image of a grassland.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py",
+            "./dataset/workflow_comfybench/keynode/image_screen_extension.py"
+        ]
+    },
+    "01156": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `play_guitar.jpg` of a girl playing the guitar. First generate an image of an old man playing the guitar in a forest with the same pose as the girl. Then extend the image by 128 pixels on both the left and right sides. The result should be a larger image of an old man playing the guitar.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_pose_cloning.py",
+            "./dataset/workflow_comfybench/keynode/image_screen_extension.py"
+        ]
+    },
+    "01157": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `street_car.png` of a red car parked on the street. First replace the red car with a green car. Then extend the image by 128 pixels on both the left and right sides. The result should be a larger image of a green car.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/replace_any_object.py",
+            "./dataset/workflow_comfybench/keynode/image_screen_extension.py"
+        ]
+    },
+    "01158": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `woman_photo.jpg`, which is a photo of a woman smiling. First convert it into a portrait in a large hall while keeping other details. Then extend the image by 128 pixels on both the left and right sides. The result should be a larger image of the woman as a portrait.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_portrait_conversion.py",
+            "./dataset/workflow_comfybench/keynode/image_screen_extension.py"
+        ]
+    },
+    "01159": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image `woman_photo.jpg`, which is a photo of a woman smiling. First convert it into a portrait in a large hall while keeping other details. Then extend the image by 128 pixels on both the left and right sides. Finally upscale the image by 2x. The result should be a larger image of the woman as a portrait.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/character_portrait_conversion.py",
+            "./dataset/workflow_comfybench/keynode/image_screen_extension.py"
+        ]
+    },
+    "01160": {
+        "complexity": 1,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image `large_castle.png`, which is a photo of a large castle. First follow its style to generate a new image of a large church. Then convert it into a 2-second video of the church. Finally, upscale it by 2x and interpolate it to increase the frame rate by 3x. The result should be a high-quality video of a church.",
+        "keynode": [
+            "./dataset/workflow_comfybench/keynode/image_style_cloning.py",
+            "./dataset/workflow_comfybench/keynode/video_frame_interpolation.py"
+        ]
+    }
+}

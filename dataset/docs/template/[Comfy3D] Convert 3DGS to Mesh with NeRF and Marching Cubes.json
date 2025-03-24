@@ -1,0 +1,114 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes",
+    "title": null,
+    "parameters": {
+        "gs_config": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "big",
+                "default",
+                "small",
+                "tiny"
+            ],
+            "link": null
+        },
+        "training_nerf_iterations": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "training_nerf_resolution": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_grids_resolution": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_grids_batch_size": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_threshold": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "training_mesh_iterations": {
+            "index": 6,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "training_mesh_resolution": {
+            "index": 7,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "remesh_after_n_iteration": {
+            "index": 8,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "training_albedo_iterations": {
+            "index": 9,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "training_albedo_resolution": {
+            "index": 10,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "texture_resolution": {
+            "index": 11,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "force_cuda_rast": {
+            "index": 12,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        },
+        "imgs": {
+            "index": 1,
+            "type": "IMAGE",
+            "links": []
+        },
+        "alphas": {
+            "index": 2,
+            "type": "MASK",
+            "links": []
+        }
+    }
+}

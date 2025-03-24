@@ -1,0 +1,7 @@
+- `[Comfy3D] Load TripoSR Model`: The [Comfy3D] Load TripoSR Model node description.
+    - Parameters:
+        - `model_name`: Type should be `['model.ckpt']`.
+        - `chunk_size`: Type should be `INT`.
+    - Inputs:
+    - Outputs:
+        - `tsr_model`: Type should be `TSR_MODEL`.

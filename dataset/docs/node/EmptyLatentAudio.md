@@ -1,0 +1,7 @@
+- `EmptyLatentAudio`: The EmptyLatentAudio node description.
+    - Parameters:
+        - `seconds`: Type should be `FLOAT`.
+        - `batch_size`: Type should be `INT`.
+    - Inputs:
+    - Outputs:
+        - `LATENT`: Type should be `LATENT`.

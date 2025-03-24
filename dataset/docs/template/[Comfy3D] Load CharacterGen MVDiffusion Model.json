@@ -1,0 +1,21 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load CharacterGen MVDiffusion Model",
+    "title": null,
+    "parameters": {
+        "force_download": {
+            "index": 0,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "character_mv_gen_pipe": {
+            "index": 0,
+            "type": "CHARACTER_MV_GEN_PIPE",
+            "links": []
+        }
+    }
+}

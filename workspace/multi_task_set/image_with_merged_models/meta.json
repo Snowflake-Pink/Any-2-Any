@@ -1,0 +1,102 @@
+{
+    "01001": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Generate an image with bottles containing a galaxy-like visual effect. Please merge two different checkpoints. Save the generated images as 'galaxy_bottles'."
+    },
+    "01002": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Create a high-definition, futuristic image of a bustling neon-lit city at night, with towering skyscrapers, rain-soaked streets, and holographic billboards. The style should be cyberpunk, rich in vibrant colors and contrast. Please merge two different checkpoints."
+    },
+    "01003": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Produce an image of a Norse god standing atop a cliff with thunderous clouds and a glowing hammer. The scene should have dramatic, epic lighting in the style of classical oil paintings. Please merge two different checkpoints."
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Generate a highly detailed, 4K image of a steampunk inventor’s workshop, filled with intricate gears, brass machines, and soft, warm lighting. The style should be vintage and richly textured. Please merge two different checkpoints."
+    },
+    "01005": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Create a beautiful underwater scene featuring a bioluminescent jellyfish forest with mythical creatures swimming around. The image should have a mystical, tranquil feel with soft blue-green hues and glowing details. Please merge two different checkpoints."
+    },
+    "01006": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Design a minimalist, high-contrast image of a lone cactus in a vast desert under a giant, crimson sun. The colors should be bold, with a surreal, almost abstract aesthetic. Please merge two different checkpoints."
+    },
+    "01007": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Produce a hauntingly beautiful portrait of a Victorian woman in dark attire, surrounded by a foggy, candlelit room with antique furniture. The style should be Gothic, with a moody, mysterious vibe. Please merge two different checkpoints."
+    },
+    "01008": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Generate a detailed illustration of an animal tea party in a forest clearing, featuring animals like rabbits and foxes dressed in Victorian attire. The style should be whimsical, with soft, pastel colors and charming details. Please merge two different checkpoints."
+    },
+    "01009": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Create a high-resolution image of an alien planet landscape with two suns and strange rock formations, set against a sky filled with vibrant galaxies. The style should be sci-fi with vibrant colors and atmospheric lighting. Please merge two different checkpoints."
+    },
+    "01010": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Produce an image of a retro-futuristic city with flying cars and curved glass buildings, all in a 1980s-inspired color palette. The style should be bold, with neon hues and a sense of nostalgic futurism. Please merge two different checkpoints."
+    }
+}

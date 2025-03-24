@@ -1,0 +1,36 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Set Diffusers Pipeline Scheduler",
+    "title": null,
+    "parameters": {
+        "diffusers_scheduler_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "EulerAncestralDiscreteScheduler",
+                "Wonder3DMVDiffusionPipeline",
+                "EulerDiscreteScheduler,",
+                "DDIMScheduler,",
+                "DDIMParallelScheduler,",
+                "LCMScheduler,",
+                "KDPM2AncestralDiscreteScheduler,",
+                "KDPM2DiscreteScheduler,"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "pipe": {
+            "index": 0,
+            "type": "DIFFUSERS_PIPE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "pipe": {
+            "index": 0,
+            "type": "DIFFUSERS_PIPE",
+            "links": []
+        }
+    }
+}

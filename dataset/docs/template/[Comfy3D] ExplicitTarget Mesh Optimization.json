@@ -1,0 +1,72 @@
+{
+    "id": null,
+    "type": "[Comfy3D] ExplicitTarget Mesh Optimization",
+    "title": null,
+    "parameters": {
+        "reconstruction_steps": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "coarse_reconstruct_resolution": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "loss_expansion_weight": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "refinement_steps": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "target_warmup_update_num": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "target_update_interval": {
+            "index": 5,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        },
+        "normal_maps": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "normal_masks": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        },
+        "normal_orbit_camera_poses": {
+            "index": 3,
+            "type": "ORBIT_CAMPOSES",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

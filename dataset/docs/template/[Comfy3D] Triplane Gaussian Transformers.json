@@ -1,0 +1,37 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Triplane Gaussian Transformers",
+    "title": null,
+    "parameters": {
+        "cam_dist": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "reference_image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 1,
+            "type": "MASK",
+            "link": null
+        },
+        "tgs_model": {
+            "index": 2,
+            "type": "TGS_MODEL",
+            "link": null
+        }
+    },
+    "outputs": {
+        "gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "links": []
+        }
+    }
+}

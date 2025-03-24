@@ -1,0 +1,9 @@
+- `[Comfy3D] Switch 3DGS Axis`: The [Comfy3D] Switch 3DGS Axis node description.
+    - Parameters:
+        - `axis_x_to`: Type should be `['+x', '-x', '+y', '-y', '+z', '-z']`.
+        - `axis_y_to`: Type should be `['+y', '-y', '+z', '-z', '+x', '-x']`.
+        - `axis_z_to`: Type should be `['+z', '-z', '+x', '-x', '+y', '-y']`.
+    - Inputs:
+        - `gs_ply`: Type should be `GS_PLY`.
+    - Outputs:
+        - `switched_gs_ply`: Type should be `GS_PLY`.

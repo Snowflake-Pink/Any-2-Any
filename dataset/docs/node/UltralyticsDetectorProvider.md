@@ -1,0 +1,7 @@
+- `UltralyticsDetectorProvider`: The UltralyticsDetectorProvider node description.
+    - Parameters:
+        - `model_name`: Type should be `['bbox/face_yolov8m.pt', 'bbox/hand_yolov8s.pt', 'segm/person_yolov8m-seg.pt']`.
+    - Inputs:
+    - Outputs:
+        - `BBOX_DETECTOR`: Type should be `BBOX_DETECTOR`.
+        - `SEGM_DETECTOR`: Type should be `SEGM_DETECTOR`.

@@ -1,0 +1,10 @@
+- `[Comfy3D] InstantMesh Reconstruction Model`: The [Comfy3D] InstantMesh Reconstruction Model node description.
+    - Parameters:
+        - `orbit_camera_fovy`: Type should be `FLOAT`.
+        - `texture_resolution`: Type should be `INT`.
+    - Inputs:
+        - `lrm_model`: Type should be `LRM_MODEL`.
+        - `multiview_images`: Type should be `IMAGE`.
+        - `orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

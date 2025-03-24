@@ -1,0 +1,7 @@
+- `[Comfy3D] Load Large Multiview Gaussian Model`: The [Comfy3D] Load Large Multiview Gaussian Model node description.
+    - Parameters:
+        - `model_name`: Type should be `['model_fp16.safetensors']`.
+        - `lgb_config`: Type should be `['big', 'default', 'small', 'tiny']`.
+    - Inputs:
+    - Outputs:
+        - `lgm_model`: Type should be `LGM_MODEL`.

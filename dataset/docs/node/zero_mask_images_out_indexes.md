@@ -1,0 +1,10 @@
+- `FilterZeroMasksAndCorrespondingImages`: The FilterZeroMasksAndCorrespondingImages node description.
+    - Parameters:
+    - Inputs:
+        - `masks`: Type should be MASK.
+        - `original_images`: Type should be IMAGE.
+    - Outputs:
+        - `non_zero_masks_out`: Type should be MASK.
+        - `non_zero_mask_images_out`: Type should be IMAGE.
+        - `zero_mask_images_out`: Type should be IMAGE.
+        - `zero_mask_images_out_indexes`: Type should be INDEXES.

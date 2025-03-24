@@ -1,0 +1,7 @@
+- `[Comfy3D] Save 3D Mesh`: The [Comfy3D] Save 3D Mesh node description.
+    - Parameters:
+        - `save_path`: Type should be `STRING`.
+    - Inputs:
+        - `mesh`: Type should be `MESH`.
+    - Outputs:
+        - `save_path`: Type should be `STRING`.

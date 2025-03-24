@@ -1,0 +1,20 @@
+{
+    "id": null,
+    "type": "Image Remove Background (rembg)",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

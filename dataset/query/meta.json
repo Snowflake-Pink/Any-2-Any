@@ -1,0 +1,135 @@
+{
+    "image2video_01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'mountains.png', please create a 14 frame video of beautiful scenery from it.",
+        "keynode": "./workspace/multi_task_set/image2video/keynode/task_01001.py"
+    },
+    "image_merge_01001": {
+        "complexity": 4,
+        "source": [
+            "image",
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'mountains.png' and 'sunset.png', extracting their visual features. Then, combine the extracted visual features to generate an image that depicts a beautify scenary with features from both input images. Finally, save the generated image as a file named 'BeautifulScene'.",
+        "keynode": "./workspace/multi_task_set/image_merge/keynode/task_01001.py"
+    },
+    "text2video_01001": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Create a video of a cup of coffee being poured, but instead of coffee, a miniature galaxy swirls out, with stars and planets floating in the liquid.",
+        "keynode": "./workspace/multi_task_set/text2video/keynode/task_01001.py"
+    },
+    "image2multiview_image_01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'marble_statue_rgba.png'. Please generate its multi-view images. The generated images' filename prefix should be 'Comfyui'.",
+        "keynode": "./workspace/multi_task_set/image2multiview_image/keynode/task_01001.py"
+    },
+    "image_inpaint_01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'yosemite_inpaint_example.png'.This image has had part of it erased, please inpainting a woman at the erased part to output a complete image called 'woman_inpainted'.",
+        "keynode": "./workspace/multi_task_set/image_inpaint/keynode/task_01001.py"
+    },
+    "image_with_merged_models_01001": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Generate an image with bottles containing a galaxy-like visual effect. Please merge two different checkpoints. Save the generated images as 'galaxy_bottles'.",
+        "keynode": "./workspace/multi_task_set/image_with_merged_models/keynode/task_01001.py"
+    },
+    "image2mesh_01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content": "You are given an image named 'marble_statue.jpg', please generate its 3D mesh and save the mesh as 'marble_statue_mesh.obj'",
+        "keynode": "./workspace/multi_task_set/image2mesh/keynode/task_01001.py"
+    },
+    "image_outpaint_01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given a image named 'yosemite_outpaint_example.png'.Please outpaint the scenary of the given image and output a image called 'scene_outpainted'.",
+        "keynode": "./workspace/multi_task_set/image_outpaint/keynode/task_01001.py"
+    },
+    "image_view_inference_01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'marble_statue.jpg', please generate a image of the same object but from a different point of view, save the output image as 'statue_different_view'",
+        "keynode": "./workspace/multi_task_set/image_view_inference/keynode/task_01001.py"
+    },
+    "text2mesh_01001": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content": "Generate a 3D mesh of a anime girl with short skirt and daisy blue eyes and save the mesh as 'cute_girl.obj'.",
+        "keynode": "./workspace/multi_task_set/text2mesh/keynode/task_01001.py"
+    },
+    "text2image_01001": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Generate a high-resolution, cinematic image of an anthropomorphic fox in a sci-fi spaceship, wearing a spacesuit, with dramatic lighting and detailed features. The style should be realistic, high quality, in 4k resolution.",
+        "keynode": "./workspace/multi_task_set/text2image/keynode/task_01001.py"
+    },
+    "text2audio_01001": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Generate an electronic dance music audio file inspired by a theme of 'heaven church.' Use an empty latent audio sample as the base, apply conditioning from a text description, and finally save the generated audio file as 'electronic_audio'.",
+        "keynode": "./workspace/multi_task_set/text2audio/keynode/task_01001.py"
+    }
+}

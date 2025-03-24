@@ -1,0 +1,30 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Convolutional Reconstruction Model",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "crm_model": {
+            "index": 0,
+            "type": "CRM_MODEL",
+            "link": null
+        },
+        "multiview_images": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "multiview_CCMs": {
+            "index": 2,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

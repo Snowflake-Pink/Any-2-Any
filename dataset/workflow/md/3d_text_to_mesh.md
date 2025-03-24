@@ -1,0 +1,81 @@
+- Nodes:
+    - N22:
+        - node_type: "KSampler"
+        - seed: 628262893300116
+        - control_after_generate: "randomize"
+        - steps: 34
+        - cfg: 8
+        - sampler_name: "euler"
+        - scheduler: "normal"
+        - denoise: 1
+    - N42:
+        - node_type: "[Comfy3D] Switch 3DGS Axis"
+        - axis_x_to: "-y"
+        - axis_y_to: "-z"
+        - axis_z_to: "+x"
+    - N43:
+        - node_type: "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes"
+        - gs_config: "big"
+        - training_nerf_iterations: 512
+        - training_nerf_resolution: 128
+        - marching_cude_grids_resolution: 256
+        - marching_cude_grids_batch_size: 128
+        - marching_cude_threshold: 10
+        - training_mesh_iterations: 2048
+        - training_mesh_resolution: 512
+        - remesh_after_n_iteration: 512
+        - training_albedo_iterations: 512
+        - training_albedo_resolution: 512
+        - texture_resolution: 1024
+        - force_cuda_rast: False
+    - N19:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "dreamshaper_8.safetensors"
+    - N23:
+        - node_type: "VAEDecode"
+    - N17:
+        - node_type: "ImageToMask"
+        - channel: "alpha"
+    - N16:
+        - node_type: "Image Remove Background (rembg)"
+    - N40:
+        - node_type: "[Comfy3D] Load Triplane Gaussian Transformers"
+        - model_name: "model_lvis_rel.ckpt"
+    - N41:
+        - node_type: "[Comfy3D] Triplane Gaussian Transformers"
+        - cam_dist: 1.9
+    - N47:
+        - node_type: "Images to RGB"
+    - N31:
+        - node_type: "[Comfy3D] Save 3D Mesh"
+        - save_path: "test.obj"
+    - N24:
+        - node_type: "EmptyLatentImage"
+        - width: 1024
+        - height: 1024
+        - batch_size: 1
+    - N21:
+        - node_type: "CLIPTextEncode"
+        - text: "busy, cluttered, bad-quality, messy, fake, multi objects"
+    - N20:
+        - node_type: "CLIPTextEncode"
+        - text: "Full shot, adorable little tabby with a soft, plush coat that feels like velvet. Her big, round eyes gleam with curiosity and mischief, sparkling with shades of green and gold, one cat."
+
+- Links:
+    - L21: N23.image -> N16.image
+    - L24: N19.clip -> N20.clip
+    - L25: N19.clip -> N21.clip
+    - L26: N19.model -> N22.model
+    - L27: N20.conditioning -> N22.positive
+    - L28: N21.conditioning -> N22.negative
+    - L29: N24.latent -> N22.latent_image
+    - L30: N22.latent -> N23.samples
+    - L31: N19.vae -> N23.vae
+    - L47: N40.tgs_model -> N41.tgs_model
+    - L48: N17.mask -> N41.reference_mask
+    - L50: N41.gs_ply -> N42.gs_ply
+    - L51: N42.switched_gs_ply -> N43.gs_ply
+    - L52: N43.mesh -> N31.mesh
+    - L56: N16.image -> N47.images
+    - L58: N47.image -> N41.reference_image
+    - L59: N16.image -> N17.image

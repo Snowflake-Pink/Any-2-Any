@@ -1,0 +1,48 @@
+{
+    "id": null,
+    "type": "Zero123Plus_Diffusion_Model",
+    "title": null,
+    "parameters": {
+        "seed": {
+            "index": 0,
+            "value": null
+        },
+        "guidance_scale": {
+            "index": 1,
+            "value": null
+        },
+        "num_inference_steps": {
+            "index": 2,
+            "value": null
+        }
+    },
+    "inputs": {
+        "zero123plus_pipe": {
+            "index": 0,
+            "type": "DIFFUSERS_PIPE",
+            "link": null
+        },
+        "reference_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "multiviews": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "orbit_camposes": {
+            "index": 1,
+            "type": "ORBIT_CAMPOSES",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "id": null,
+    "type": "StableZero123_Conditioning",
+    "title": null,
+    "parameters": {
+        "width": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "height": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "batch_size": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "elevation": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "azimuth": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "clip_vision": {
+            "index": 0,
+            "type": "CLIP_VISION",
+            "link": null
+        },
+        "init_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "vae": {
+            "index": 2,
+            "type": "VAE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "positive": {
+            "index": 0,
+            "type": "CONDITIONING",
+            "links": []
+        },
+        "negative": {
+            "index": 1,
+            "type": "CONDITIONING",
+            "links": []
+        },
+        "latent": {
+            "index": 2,
+            "type": "LATENT",
+            "links": []
+        }
+    }
+}

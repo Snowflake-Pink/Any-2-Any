@@ -1,0 +1,11 @@
+- `[Comfy3D] Craftsman Shape Diffusion Model`: The [Comfy3D] Craftsman Shape Diffusion Model node description.
+    - Parameters:
+        - `seed`: Type should be `INT`.
+        - `guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+        - `marching_cude_grids_resolution`: Type should be `INT`.
+    - Inputs:
+        - `craftsman_model`: Type should be `CRAFTSMAN_MODEL`.
+        - `multiview_images`: Type should be `IMAGE`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

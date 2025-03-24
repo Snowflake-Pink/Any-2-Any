@@ -1,0 +1,8 @@
+- `[Comfy3D] Make Image Grid`: The [Comfy3D] Make Image Grid node description.
+    - Parameters:
+        - `grid_side_num`: Type should be `INT`.
+        - `use_rows`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `images`: Type should be `IMAGE`.
+    - Outputs:
+        - `image_grid`: Type should be `IMAGE`.

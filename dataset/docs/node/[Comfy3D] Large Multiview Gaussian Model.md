@@ -1,0 +1,7 @@
+- `[Comfy3D] Large Multiview Gaussian Model`: The [Comfy3D] Large Multiview Gaussian Model node description.
+    - Parameters:
+    - Inputs:
+        - `multiview_images`: Type should be `IMAGE`.
+        - `lgm_model`: Type should be `LGM_MODEL`.
+    - Outputs:
+        - `gs_ply`: Type should be `GS_PLY`.

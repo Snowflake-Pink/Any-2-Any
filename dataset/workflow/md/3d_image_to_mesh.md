@@ -1,0 +1,44 @@
+- Nodes:
+    - N1:
+        - node_type: "[Comfy3D] Triplane Gaussian Transformers"
+        - cam_dist: 1.9000000000000001
+    - N3:
+        - node_type: "[Comfy3D] Load Triplane Gaussian Transformers"
+        - model_name: "model_lvis_rel.ckpt"
+    - N5:
+        - node_type: "[Comfy3D] Switch 3DGS Axis"
+        - axis_x_to: "-y"
+        - axis_y_to: "-z"
+        - axis_z_to: "+x"
+    - N6:
+        - node_type: "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes"
+        - gs_config: "big"
+        - training_nerf_iterations: 512
+        - training_nerf_resolution: 128
+        - marching_cude_grids_resolution: 256
+        - marching_cude_grids_batch_size: 128
+        - marching_cude_threshold: 10
+        - training_mesh_iterations: 2048
+        - training_mesh_resolution: 512
+        - remesh_after_n_iteration: 512
+        - training_albedo_iterations: 512
+        - training_albedo_resolution: 512
+        - texture_resolution: 1024
+        - force_cuda_rast: False
+    - N7:
+        - node_type: "[Comfy3D] Save 3D Mesh"
+        - save_path: "pirate_cat.obj"
+    - N2:
+        - node_type: "InvertMask"
+    - N4:
+        - node_type: "LoadImage"
+        - image: "PirateCat.png"
+
+- Links:
+    - L1: N4.mask -> N2.mask
+    - L2: N4.image -> N1.reference_image
+    - L3: N2.mask -> N1.reference_mask
+    - L4: N3.tgs_model -> N1.tgs_model
+    - L5: N1.gs_ply -> N5.gs_ply
+    - L6: N5.switched_gs_ply -> N6.gs_ply
+    - L7: N6.mesh -> N7.mesh

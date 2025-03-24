@@ -1,0 +1,34 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load Large Multiview Gaussian Model",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "model_fp16.safetensors"
+            ],
+            "link": null
+        },
+        "lgb_config": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "big",
+                "default",
+                "small",
+                "tiny"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "lgm_model": {
+            "index": 0,
+            "type": "LGM_MODEL",
+            "links": []
+        }
+    }
+}

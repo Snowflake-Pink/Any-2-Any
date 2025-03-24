@@ -1,0 +1,87 @@
+- Nodes:
+    - N3:
+        - node_type: "KSampler"
+        - seed: 381979438476462
+        - control_after_generate: "randomize"
+        - steps: 18
+        - cfg: 6
+        - sampler_name: "ddpm"
+        - scheduler: "karras"
+        - denoise: 1
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "majicmixRealistic_v7.safetensors"
+    - N5:
+        - node_type: "EmptyLatentImage"
+        - width: 768
+        - height: 512
+        - batch_size: 1
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "blurry, illustration, distorted, cropped"
+    - N8:
+        - node_type: "VAEDecode"
+    - N11:
+        - node_type: "VAELoader"
+        - vae_name: "vae-ft-mse-840000-ema-pruned.safetensors"
+    - N17:
+        - node_type: "CLIPTextEncode"
+        - text: "Godzilla raising from the water, near a Caribbean beach  high resolution, high quality, detailed, 4k"
+    - N18:
+        - node_type: "CLIPTextEncode"
+        - text: "a photo of a Caribbean beach  high resolution, high quality, detailed, 4k"
+    - N25:
+        - node_type: "ConditioningSetArea"
+        - width: 384
+        - height: 512
+        - x: 384
+        - y: 0
+        - strength: 1
+    - N26:
+        - node_type: "ConditioningCombine"
+    - N30:
+        - node_type: "KSampler"
+        - seed: 613509121902569
+        - control_after_generate: "randomize"
+        - steps: 15
+        - cfg: 8
+        - sampler_name: "dpmpp_2m"
+        - scheduler: "karras"
+        - denoise: 0.35000000000000003
+    - N31:
+        - node_type: "VAEDecode"
+    - N32:
+        - node_type: "SaveImage"
+        - filename_prefix: "ComfyUI"
+    - N33:
+        - node_type: "PreviewImage"
+    - N37:
+        - node_type: "ConditioningSetArea"
+        - width: 512
+        - height: 512
+        - x: 0
+        - y: 0
+        - strength: 1
+
+- Links:
+    - L22: N5.latent -> N3.latent_image
+    - L23: N4.model -> N3.model
+    - L24: N7.conditioning -> N3.negative
+    - L25: N26.conditioning -> N3.positive
+    - L26: N4.clip -> N7.clip
+    - L27: N3.latent -> N8.samples
+    - L28: N11.vae -> N8.vae
+    - L29: N4.clip -> N17.clip
+    - L30: N4.clip -> N18.clip
+    - L31: N17.conditioning -> N25.conditioning
+    - L32: N25.conditioning -> N26.conditioning_1
+    - L33: N37.conditioning -> N26.conditioning_2
+    - L34: N3.latent -> N30.latent_image
+    - L35: N4.model -> N30.model
+    - L36: N7.conditioning -> N30.negative
+    - L37: N17.conditioning -> N30.positive
+    - L38: N30.latent -> N31.samples
+    - L39: N11.vae -> N31.vae
+    - L40: N31.image -> N32.images
+    - L41: N8.image -> N33.images
+    - L42: N18.conditioning -> N37.conditioning

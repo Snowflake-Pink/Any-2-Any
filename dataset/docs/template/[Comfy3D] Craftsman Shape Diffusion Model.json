@@ -1,0 +1,50 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Craftsman Shape Diffusion Model",
+    "title": null,
+    "parameters": {
+        "seed": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "guidance_scale": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "num_inference_steps": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_grids_resolution": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "craftsman_model": {
+            "index": 0,
+            "type": "CRAFTSMAN_MODEL",
+            "link": null
+        },
+        "multiview_images": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,10 @@
+- `[Comfy3D] Fast Clean Mesh`: The [Comfy3D] Fast Clean Mesh node description.
+    - Parameters:
+        - `apply_smooth`: Type should be `BOOLEAN`.
+        - `smooth_step`: Type should be `INT`.
+        - `apply_sub_divide`: Type should be `BOOLEAN`.
+        - `sub_divide_threshold`: Type should be `FLOAT`.
+    - Inputs:
+        - `mesh`: Type should be `MESH`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

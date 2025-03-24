@@ -1,0 +1,45 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Fast Clean Mesh",
+    "title": null,
+    "parameters": {
+        "apply_smooth": {
+            "index": 0,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "smooth_step": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "apply_sub_divide": {
+            "index": 2,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "sub_divide_threshold": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

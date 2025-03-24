@@ -1,0 +1,7 @@
+- `[Comfy3D] Get Camposes From List Indexed`: The [Comfy3D] Get Camposes From List Indexed node description.
+    - Parameters:
+        - `indexes`: Type should be `STRING`.
+    - Inputs:
+        - `original_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+    - Outputs:
+        - `ORBIT_CAMPOSES`: Type should be `ORBIT_CAMPOSES`.

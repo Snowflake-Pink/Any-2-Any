@@ -1,0 +1,30 @@
+{
+    "id": null,
+    "type": "UltralyticsDetectorProvider",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "bbox/face_yolov8m.pt",
+                "bbox/hand_yolov8s.pt",
+                "segm/person_yolov8m-seg.pt"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "BBOX_DETECTOR": {
+            "index": 0,
+            "type": "BBOX_DETECTOR",
+            "links": []
+        },
+        "SEGM_DETECTOR": {
+            "index": 1,
+            "type": "SEGM_DETECTOR",
+            "links": []
+        }
+    }
+}

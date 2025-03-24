@@ -1,0 +1,6 @@
+- `[Comfy3D] Load Convolutional Reconstruction Model`: The [Comfy3D] Load Convolutional Reconstruction Model node description.
+    - Parameters:
+        - `model_name`: Type should be `['CRM.pth']`.
+    - Inputs:
+    - Outputs:
+        - `crm_model`: Type should be `CRM_MODEL`.

@@ -1,0 +1,49 @@
+{
+    "id": null,
+    "type": "BNK_CLIPTextEncodeAdvanced",
+    "title": null,
+    "parameters": {
+        "token_normalization": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "none",
+                "mean",
+                "length",
+                "length+mean"
+            ],
+            "link": null
+        },
+        "weight_interpretation": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "comfy",
+                "A1111",
+                "compel",
+                "comfy++",
+                "down_weight"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "text": {
+            "index": 0,
+            "type": "STRING",
+            "link": null
+        },
+        "clip": {
+            "index": 1,
+            "type": "CLIP",
+            "link": null
+        }
+    },
+    "outputs": {
+        "CONDITIONING": {
+            "index": 0,
+            "type": "CONDITIONING",
+            "links": []
+        }
+    }
+}

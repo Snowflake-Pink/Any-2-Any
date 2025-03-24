@@ -1,0 +1,23 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load Convolutional Reconstruction Model",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "CRM.pth"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "crm_model": {
+            "index": 0,
+            "type": "CRM_MODEL",
+            "links": []
+        }
+    }
+}

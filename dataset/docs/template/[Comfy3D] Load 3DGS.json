@@ -1,0 +1,21 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load 3DGS",
+    "title": null,
+    "parameters": {
+        "gs_file_path": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "links": []
+        }
+    }
+}

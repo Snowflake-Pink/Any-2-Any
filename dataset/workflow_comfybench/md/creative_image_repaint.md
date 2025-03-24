@@ -1,0 +1,62 @@
+- Nodes:
+    - N1:
+        - node_type: "LoadImage"
+        - image: "letter_r.jpg"
+    - N2:
+        - node_type: "CLIPTextEncode"
+        - text: "a logo for a game app, bright color"
+    - N3:
+        - node_type: "CLIPTextEncode"
+        - text: "watermark, blurry, distorted"
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "majicmixRealistic_v7.safetensors"
+    - N5:
+        - node_type: "VAELoader"
+        - vae_name: "vae-ft-mse-840000-ema-pruned.safetensors"
+    - N6:
+        - node_type: "VAEEncode"
+    - N7:
+        - node_type: "KSampler"
+        - seed: 903203409270830
+        - control_after_generate: "randomize"
+        - steps: 25
+        - cfg: 7
+        - sampler_name: "dpmpp_2m"
+        - scheduler: "karras"
+        - denoise: 1
+    - N8:
+        - node_type: "VAEDecode"
+    - N9:
+        - node_type: "SaveImage"
+        - filename_prefix: "green_apple"
+    - N10:
+        - node_type: "ControlNetLoader"
+        - control_net_name: "control_v11p_sd15_lineart_fp16.safetensors"
+    - N11:
+        - node_type: "ControlNetApplyAdvanced"
+        - strength: 0.5
+        - start_percent: 0
+        - end_percent: 1
+    - N12:
+        - node_type: "AIO_Preprocessor"
+        - preprocessor: "LineArtPreprocessor"
+        - resolution: 512
+
+- Links:
+    - L17: N4.clip -> N2.clip
+    - L18: N4.clip -> N3.clip
+    - L19: N1.image -> N6.pixels
+    - L20: N5.vae -> N6.vae
+    - L21: N6.latent -> N7.latent_image
+    - L22: N4.model -> N7.model
+    - L23: N11.negative -> N7.negative
+    - L24: N11.positive -> N7.positive
+    - L25: N7.latent -> N8.samples
+    - L26: N5.vae -> N8.vae
+    - L27: N8.image -> N9.images
+    - L28: N10.control_net -> N11.control_net
+    - L29: N12.image -> N11.image
+    - L30: N3.conditioning -> N11.negative
+    - L31: N2.conditioning -> N11.positive
+    - L32: N1.image -> N12.image

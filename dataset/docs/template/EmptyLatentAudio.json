@@ -1,0 +1,27 @@
+{
+    "id": null,
+    "type": "EmptyLatentAudio",
+    "title": null,
+    "parameters": {
+        "seconds": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "batch_size": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "LATENT": {
+            "index": 0,
+            "type": "LATENT",
+            "links": []
+        }
+    }
+}

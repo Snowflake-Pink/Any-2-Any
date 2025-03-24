@@ -1,0 +1,29 @@
+{
+    "id": null,
+    "type": "SAMModelLoader (segment anything)",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "sam_vit_h (2.56GB)",
+                "sam_vit_l (1.25GB)",
+                "sam_vit_b (375MB)",
+                "sam_hq_vit_h (2.57GB)",
+                "sam_hq_vit_l (1.25GB)",
+                "sam_hq_vit_b (379MB)",
+                "mobile_sam(39MB)"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "SAM_MODEL": {
+            "index": 0,
+            "type": "SAM_MODEL",
+            "links": []
+        }
+    }
+}

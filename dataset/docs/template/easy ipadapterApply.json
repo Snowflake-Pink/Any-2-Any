@@ -1,0 +1,133 @@
+{
+    "id": null,
+    "type": "easy ipadapterApply",
+    "title": null,
+    "parameters": {
+        "preset": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "LIGHT - SD1.5 only (low strength)",
+                "STANDARD (medium strength)",
+                "VIT-G (medium strength)",
+                "PLUS (high strength)",
+                "PLUS (kolors genernal)",
+                "PLUS FACE (portraits)",
+                "FULL FACE - SD1.5 only (portraits stronger)",
+                "COMPOSITION",
+                "FACEID",
+                "FACEID PLUS - SD1.5 only",
+                "FACEID PLUS KOLORS",
+                "FACEID PLUS V2",
+                "FACEID PORTRAIT (style transfer)",
+                "FACEID PORTRAIT UNNORM - SDXL only (strong)"
+            ],
+            "link": null
+        },
+        "lora_strength": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "provider": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "CPU",
+                "CUDA",
+                "ROCM",
+                "DirectML",
+                "OpenVINO",
+                "CoreML"
+            ],
+            "link": null
+        },
+        "weight": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "weight_faceidv2": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "start_at": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "end_at": {
+            "index": 6,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "cache_mode": {
+            "index": 7,
+            "value": null,
+            "type": [
+                "insightface only",
+                "clip_vision only",
+                "ipadapter only",
+                "all",
+                "none"
+            ],
+            "link": null
+        },
+        "use_tiled": {
+            "index": 8,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "model": {
+            "index": 0,
+            "type": "MODEL",
+            "link": null
+        },
+        "image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "attn_mask": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        },
+        "optional_ipadapter": {
+            "index": 3,
+            "type": "IPADAPTER",
+            "link": null
+        }
+    },
+    "outputs": {
+        "model": {
+            "index": 0,
+            "type": "MODEL",
+            "links": []
+        },
+        "images": {
+            "index": 1,
+            "type": "IMAGE",
+            "links": []
+        },
+        "masks": {
+            "index": 2,
+            "type": "MASK",
+            "links": []
+        },
+        "ipadapter": {
+            "index": 3,
+            "type": "IPADAPTER",
+            "links": []
+        }
+    }
+}

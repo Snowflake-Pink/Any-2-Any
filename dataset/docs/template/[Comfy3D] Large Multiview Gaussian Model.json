@@ -1,0 +1,25 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Large Multiview Gaussian Model",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "multiview_images": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "lgm_model": {
+            "index": 1,
+            "type": "LGM_MODEL",
+            "link": null
+        }
+    },
+    "outputs": {
+        "gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "links": []
+        }
+    }
+}

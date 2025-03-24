@@ -1,0 +1,26 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load InstantMesh Reconstruction Model",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "instant_mesh_large.ckpt",
+                "instant_mesh_base.ckpt",
+                "instant_nerf_large.ckpt",
+                "instant_nerf_base.ckpt"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "lrm_model": {
+            "index": 0,
+            "type": "LRM_MODEL",
+            "links": []
+        }
+    }
+}

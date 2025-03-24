@@ -1,0 +1,10 @@
+- `[Comfy3D] Image Add Pure Color Background`: The [Comfy3D] Image Add Pure Color Background node description.
+    - Parameters:
+        - `R`: Type should be `INT`.
+        - `G`: Type should be `INT`.
+        - `B`: Type should be `INT`.
+    - Inputs:
+        - `images`: Type should be `IMAGE`.
+        - `masks`: Type should be `MASK`.
+    - Outputs:
+        - `images`: Type should be `IMAGE`.

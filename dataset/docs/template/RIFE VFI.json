@@ -1,0 +1,80 @@
+{
+    "id": null,
+    "type": "RIFE VFI",
+    "title": null,
+    "parameters": {
+        "ckpt_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "rife40.pth",
+                "rife41.pth",
+                "sudo_rife4_269.662_testV1_scale1.pth",
+                "rife42.pth",
+                "rife43.pth",
+                "rife44.pth",
+                "rife45.pth",
+                "rife46.pth",
+                "rife47.pth",
+                "rife48.pth",
+                "rife49.pth"
+            ],
+            "link": null
+        },
+        "clear_cache_after_n_frames": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "multiplier": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "fast_mode": {
+            "index": 3,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "ensemble": {
+            "index": 4,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "scale_factor": {
+            "index": 5,
+            "value": null,
+            "type": [
+                0.25,
+                0.5,
+                1.0,
+                2.0,
+                4.0
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "frames": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "optional_interpolation_states": {
+            "index": 1,
+            "type": "INTERPOLATION_STATES",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

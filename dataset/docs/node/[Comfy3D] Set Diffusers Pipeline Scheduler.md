@@ -1,0 +1,7 @@
+- `[Comfy3D] Set Diffusers Pipeline Scheduler`: The [Comfy3D] Set Diffusers Pipeline Scheduler node description.
+    - Parameters:
+        - `diffusers_scheduler_name`: Type should be `['EulerAncestralDiscreteScheduler', 'Wonder3DMVDiffusionPipeline', 'EulerDiscreteScheduler,', 'DDIMScheduler,', 'DDIMParallelScheduler,', 'LCMScheduler,', 'KDPM2AncestralDiscreteScheduler,', 'KDPM2DiscreteScheduler,']`.
+    - Inputs:
+        - `pipe`: Type should be `DIFFUSERS_PIPE`.
+    - Outputs:
+        - `pipe`: Type should be `DIFFUSERS_PIPE`.

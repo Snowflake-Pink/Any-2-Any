@@ -1,0 +1,568 @@
+{
+  "last_node_id": 20,
+  "last_link_id": 29,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": {
+        "0": 177,
+        "1": 479
+      },
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            24
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            3
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "Cat_Coffee_rgba.png",
+        "image"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "InvertMask",
+      "pos": {
+        "0": 542,
+        "1": 545
+      },
+      "size": {
+        "0": 210,
+        "1": 26
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 3,
+          "label": "mask"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            25
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InvertMask"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 1,
+      "type": "[Comfy3D] Load Large Multiview Gaussian Model",
+      "pos": {
+        "0": 898,
+        "1": 796
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lgm_model",
+          "type": "LGM_MODEL",
+          "links": [
+            22
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "lgm_model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] Load Large Multiview Gaussian Model"
+      },
+      "widgets_values": [
+        "model_fp16.safetensors",
+        "big"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "[Comfy3D] MVDream Model",
+      "pos": {
+        "0": 809,
+        "1": 460
+      },
+      "size": {
+        "0": 405.5999755859375,
+        "1": 286
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mvdream_pipe",
+          "type": "DIFFUSERS_PIPE",
+          "link": 23,
+          "label": "mvdream_pipe"
+        },
+        {
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": 24,
+          "label": "reference_image"
+        },
+        {
+          "name": "reference_mask",
+          "type": "MASK",
+          "link": 25,
+          "label": "reference_mask"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "multiview_images",
+          "type": "IMAGE",
+          "links": [
+            26
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "multiview_images"
+        },
+        {
+          "name": "orbit_camposes",
+          "type": "ORBIT_CAMPOSES",
+          "links": null,
+          "shape": 3,
+          "label": "orbit_camposes"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] MVDream Model"
+      },
+      "widgets_values": [
+        "",
+        "ugly, blurry, pixelated obscure, unnatural colors, poor lighting, dull, unclear, cropped, lowres, low quality, artifacts, duplicate",
+        0,
+        "fixed",
+        5,
+        30,
+        0,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 12,
+      "type": "[Comfy3D] Switch 3DGS Axis",
+      "pos": {
+        "0": 1560,
+        "1": 759
+      },
+      "size": {
+        "0": 210,
+        "1": 106
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "gs_ply",
+          "type": "GS_PLY",
+          "link": 19,
+          "label": "gs_ply"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "switched_gs_ply",
+          "type": "GS_PLY",
+          "links": [
+            13
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "switched_gs_ply"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] Switch 3DGS Axis"
+      },
+      "widgets_values": [
+        "+x",
+        "-y",
+        "-z"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "[Comfy3D] Save 3D Mesh",
+      "pos": {
+        "0": 1996.1025390625,
+        "1": 214.90586853027344
+      },
+      "size": {
+        "0": 242.42886352539062,
+        "1": 58
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "link": 29,
+          "label": "mesh"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "save_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "save_path"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] Save 3D Mesh"
+      },
+      "widgets_values": [
+        "LGMTest/FatCat.obj"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "[Comfy3D] Save 3DGS",
+      "pos": {
+        "0": 1856,
+        "1": 759
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "gs_ply",
+          "type": "GS_PLY",
+          "link": 13,
+          "label": "gs_ply"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "save_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "save_path"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] Save 3DGS"
+      },
+      "widgets_values": [
+        "LGMTest/FatCat.ply"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "[Comfy3D] Load Diffusers Pipeline",
+      "pos": {
+        "0": 382,
+        "1": 284
+      },
+      "size": {
+        "0": 375.3948669433594,
+        "1": 154
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "DIFFUSERS_PIPE",
+          "links": [
+            23
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "pipe"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] Load Diffusers Pipeline"
+      },
+      "widgets_values": [
+        "MVDreamPipeline",
+        "ashawkey/imagedream-ipmv-diffusers",
+        "",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "[Comfy3D] Large Multiview Gaussian Model",
+      "pos": {
+        "0": 1270,
+        "1": 461
+      },
+      "size": {
+        "0": 252,
+        "1": 46
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "multiview_images",
+          "type": "IMAGE",
+          "link": 26,
+          "label": "multiview_images"
+        },
+        {
+          "name": "lgm_model",
+          "type": "LGM_MODEL",
+          "link": 22,
+          "label": "lgm_model"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "gs_ply",
+          "type": "GS_PLY",
+          "links": [
+            19,
+            28
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "gs_ply"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] Large Multiview Gaussian Model"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 20,
+      "type": "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes",
+      "pos": {
+        "0": 1568,
+        "1": 217
+      },
+      "size": {
+        "0": 411.6000061035156,
+        "1": 387.6719665527344
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "gs_ply",
+          "type": "GS_PLY",
+          "link": 28,
+          "label": "gs_ply"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "links": [
+            29
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "mesh"
+        },
+        {
+          "name": "imgs",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3,
+          "label": "imgs"
+        },
+        {
+          "name": "alphas",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "alphas"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes"
+      },
+      "widgets_values": [
+        "big",
+        512,
+        128,
+        256,
+        128,
+        10,
+        2048,
+        512,
+        512,
+        512,
+        512,
+        1024,
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      3,
+      4,
+      1,
+      5,
+      0,
+      "MASK"
+    ],
+    [
+      13,
+      12,
+      0,
+      9,
+      0,
+      "GS_PLY"
+    ],
+    [
+      19,
+      17,
+      0,
+      12,
+      0,
+      "GS_PLY"
+    ],
+    [
+      22,
+      1,
+      0,
+      17,
+      1,
+      "LGM_MODEL"
+    ],
+    [
+      23,
+      2,
+      0,
+      18,
+      0,
+      "DIFFUSERS_PIPE"
+    ],
+    [
+      24,
+      4,
+      0,
+      18,
+      1,
+      "IMAGE"
+    ],
+    [
+      25,
+      5,
+      0,
+      18,
+      2,
+      "MASK"
+    ],
+    [
+      26,
+      18,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      17,
+      0,
+      20,
+      0,
+      "GS_PLY"
+    ],
+    [
+      29,
+      20,
+      0,
+      14,
+      0,
+      "MESH"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6830134553650711,
+      "offset": [
+        -471.82194025038353,
+        -115.10635323535897
+      ]
+    },
+    "info": {
+      "name": "workflow",
+      "author": "",
+      "description": "",
+      "version": "1",
+      "created": "2024-11-01T13:46:49.176Z",
+      "modified": "2024-11-01T13:46:49.176Z",
+      "software": "ComfyUI"
+    }
+  },
+  "version": 0.4
+}

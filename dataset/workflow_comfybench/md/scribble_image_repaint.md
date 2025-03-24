@@ -1,0 +1,60 @@
+- Nodes:
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "dreamshaper_8.safetensors"
+    - N5:
+        - node_type: "EmptyLatentImage"
+        - width: 512
+        - height: 512
+        - batch_size: 1
+    - N6:
+        - node_type: "CLIPTextEncode"
+        - text: "a bird, open wings,"
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "horror,lowres, zombie,"
+    - N8:
+        - node_type: "VAEDecode"
+    - N9:
+        - node_type: "SaveImage"
+        - filename_prefix: "Comfy"
+    - N17:
+        - node_type: "KSampler"
+        - seed: 797967395221167
+        - control_after_generate: "randomize"
+        - steps: 27
+        - cfg: 4
+        - sampler_name: "dpmpp_2m_sde"
+        - scheduler: "karras"
+        - denoise: 1
+    - N26:
+        - node_type: "ControlNetApply"
+        - strength: 0.8
+    - N27:
+        - node_type: "ControlNetLoader"
+        - control_net_name: "control_v11p_sd15_scribble_fp16.safetensors"
+    - N28:
+        - node_type: "LoadImage"
+        - image: "simple_graffiti.png"
+    - N31:
+        - node_type: "GetImageSize+"
+    - N32:
+        - node_type: "ImageInvert"
+
+- Links:
+    - L17: N31.height -> N5.height
+    - L18: N31.width -> N5.width
+    - L19: N4.clip -> N6.clip
+    - L20: N4.clip -> N7.clip
+    - L21: N17.latent -> N8.samples
+    - L22: N4.vae -> N8.vae
+    - L23: N8.image -> N9.images
+    - L24: N5.latent -> N17.latent_image
+    - L25: N4.model -> N17.model
+    - L26: N7.conditioning -> N17.negative
+    - L27: N26.conditioning -> N17.positive
+    - L28: N6.conditioning -> N26.conditioning
+    - L29: N27.control_net -> N26.control_net
+    - L30: N32.image -> N26.image
+    - L31: N28.image -> N31.image
+    - L32: N28.image -> N32.image

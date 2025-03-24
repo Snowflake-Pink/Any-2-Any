@@ -1,0 +1,58 @@
+- Nodes:
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "dreamshaper_8.safetensors"
+    - N6:
+        - node_type: "CLIPTextEncode"
+        - text: "an image of iceberg"
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "illustration, painting, text, watermark, copyright, signature, notes"
+    - N11:
+        - node_type: "ImagePadForOutpaint"
+        - left: 256
+        - top: 0
+        - right: 256
+        - bottom: 0
+        - feathering: 0
+    - N12:
+        - node_type: "VAEEncodeForInpaint"
+        - grow_mask_by: 16
+    - N21:
+        - node_type: "KSampler"
+        - seed: 1
+        - control_after_generate: "randomize"
+        - steps: 20
+        - cfg: 7
+        - sampler_name: "dpmpp_2m"
+        - scheduler: "karras"
+        - denoise: 1
+    - N23:
+        - node_type: "VAEDecode"
+    - N25:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "dreamshaper_8Inpainting.safetensors"
+    - N70:
+        - node_type: "VAELoader"
+        - vae_name: "vae-ft-mse-840000-ema-pruned.safetensors"
+    - N78:
+        - node_type: "LoadImage"
+        - image: "iceberg.jpg"
+    - N79:
+        - node_type: "SaveImage"
+        - filename_prefix: "ComfyUI"
+
+- Links:
+    - L14: N4.clip -> N6.clip
+    - L15: N4.clip -> N7.clip
+    - L16: N78.image -> N11.image
+    - L17: N11.mask -> N12.mask
+    - L18: N11.image -> N12.pixels
+    - L19: N70.vae -> N12.vae
+    - L20: N12.latent -> N21.latent_image
+    - L21: N25.model -> N21.model
+    - L22: N7.conditioning -> N21.negative
+    - L23: N6.conditioning -> N21.positive
+    - L24: N21.latent -> N23.samples
+    - L25: N70.vae -> N23.vae
+    - L26: N23.image -> N79.images

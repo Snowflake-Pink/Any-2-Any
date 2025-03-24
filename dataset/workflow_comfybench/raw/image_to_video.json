@@ -1,0 +1,605 @@
+{
+  "last_node_id": 64,
+  "last_link_id": 151,
+  "nodes": [
+    {
+      "id": 20,
+      "type": "CLIPLoader",
+      "pos": {
+        "0": -2,
+        "1": 304
+      },
+      "size": {
+        "0": 451.30548095703125,
+        "1": 82
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            54
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CLIP"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "t5xxl_fp16.safetensors",
+        "sd3"
+      ]
+    },
+    {
+      "id": 60,
+      "type": "CogVideoDecode",
+      "pos": {
+        "0": 1523,
+        "1": -6
+      },
+      "size": {
+        "0": 315,
+        "1": 198
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 132,
+          "label": "vae"
+        },
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 148,
+          "label": "samples"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            150
+          ],
+          "slot_index": 0,
+          "label": "images"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CogVideoDecode"
+      },
+      "widgets_values": [
+        true,
+        240,
+        360,
+        0.2,
+        0.2,
+        true
+      ]
+    },
+    {
+      "id": 36,
+      "type": "LoadImage",
+      "pos": {
+        "0": 335,
+        "1": 731
+      },
+      "size": {
+        "0": 402.06353759765625,
+        "1": 396.6225891113281
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            151
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "PirateCat.png",
+        "image"
+      ]
+    },
+    {
+      "id": 30,
+      "type": "CogVideoTextEncode",
+      "pos": {
+        "0": 493,
+        "1": 303
+      },
+      "size": {
+        "0": 471.90142822265625,
+        "1": 168.08047485351562
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 54,
+          "label": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "links": [
+            145
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "conditioning"
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            149
+          ],
+          "slot_index": 1,
+          "label": "clip"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CogVideoTextEncode"
+      },
+      "widgets_values": [
+        "a cat waving its sword",
+        1,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 31,
+      "type": "CogVideoTextEncode",
+      "pos": {
+        "0": 492,
+        "1": 527
+      },
+      "size": {
+        "0": 463.01251220703125,
+        "1": 144
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 149,
+          "label": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "links": [
+            146
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "conditioning"
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "label": "clip"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CogVideoTextEncode"
+      },
+      "widgets_values": [
+        "The video is not of a high quality, it has a low resolution. Watermark present in each frame. Strange motion trajectory. ",
+        1,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 62,
+      "type": "CogVideoImageEncode",
+      "pos": {
+        "0": 1149,
+        "1": 711
+      },
+      "size": {
+        "0": 315,
+        "1": 194
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 141,
+          "label": "vae"
+        },
+        {
+          "name": "start_image",
+          "type": "IMAGE",
+          "link": 151,
+          "label": "start_image"
+        },
+        {
+          "name": "end_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7,
+          "label": "end_image"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "links": [
+            147
+          ],
+          "label": "samples"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CogVideoImageEncode"
+      },
+      "widgets_values": [
+        false,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 63,
+      "type": "CogVideoSampler",
+      "pos": {
+        "0": 1123,
+        "1": -31
+      },
+      "size": {
+        "0": 330,
+        "1": 574
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "COGVIDEOMODEL",
+          "link": 144,
+          "label": "model"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 145,
+          "label": "positive"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 146,
+          "label": "negative"
+        },
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": null,
+          "shape": 7,
+          "label": "samples"
+        },
+        {
+          "name": "image_cond_latents",
+          "type": "LATENT",
+          "link": 147,
+          "shape": 7,
+          "label": "image_cond_latents"
+        },
+        {
+          "name": "context_options",
+          "type": "COGCONTEXT",
+          "link": null,
+          "shape": 7,
+          "label": "context_options"
+        },
+        {
+          "name": "controlnet",
+          "type": "COGVIDECONTROLNET",
+          "link": null,
+          "shape": 7,
+          "label": "controlnet"
+        },
+        {
+          "name": "tora_trajectory",
+          "type": "TORAFEATURES",
+          "link": null,
+          "shape": 7,
+          "label": "tora_trajectory"
+        },
+        {
+          "name": "fastercache",
+          "type": "FASTERCACHEARGS",
+          "link": null,
+          "shape": 7,
+          "label": "fastercache"
+        },
+        {
+          "name": "feta_args",
+          "type": "FETAARGS",
+          "link": null,
+          "shape": 7,
+          "label": "feta_args"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "links": [
+            148
+          ],
+          "label": "samples"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CogVideoSampler"
+      },
+      "widgets_values": [
+        10,
+        40,
+        6,
+        200365243842158,
+        "randomize",
+        "CogVideoXDDIM",
+        1
+      ]
+    },
+    {
+      "id": 64,
+      "type": "SaveAnimatedWEBP",
+      "pos": {
+        "0": 1958,
+        "1": 2
+      },
+      "size": {
+        "0": 363.1128845214844,
+        "1": 623.158447265625
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 150,
+          "label": "images"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveAnimatedWEBP"
+      },
+      "widgets_values": [
+        "ComfyUI",
+        7,
+        true,
+        100,
+        "default",
+        null
+      ]
+    },
+    {
+      "id": 59,
+      "type": "DownloadAndLoadCogVideoModel",
+      "pos": {
+        "0": 649,
+        "1": -31
+      },
+      "size": {
+        "0": 315,
+        "1": 218
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "block_edit",
+          "type": "TRANSFORMERBLOCKS",
+          "link": null,
+          "shape": 7,
+          "label": "block_edit"
+        },
+        {
+          "name": "lora",
+          "type": "COGLORA",
+          "link": null,
+          "shape": 7,
+          "label": "lora"
+        },
+        {
+          "name": "compile_args",
+          "type": "COMPILEARGS",
+          "link": null,
+          "shape": 7,
+          "label": "compile_args"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "COGVIDEOMODEL",
+          "links": [
+            144
+          ],
+          "label": "model"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            132,
+            141
+          ],
+          "slot_index": 1,
+          "label": "vae"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DownloadAndLoadCogVideoModel"
+      },
+      "widgets_values": [
+        "kijai/CogVideoX-5b-1.5-I2V",
+        "bf16",
+        "fp8_e4m3fn",
+        false,
+        "sdpa",
+        "main_device"
+      ]
+    }
+  ],
+  "links": [
+    [
+      54,
+      20,
+      0,
+      30,
+      0,
+      "CLIP"
+    ],
+    [
+      132,
+      59,
+      1,
+      60,
+      0,
+      "VAE"
+    ],
+    [
+      141,
+      59,
+      1,
+      62,
+      0,
+      "VAE"
+    ],
+    [
+      144,
+      59,
+      0,
+      63,
+      0,
+      "COGVIDEOMODEL"
+    ],
+    [
+      145,
+      30,
+      0,
+      63,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      146,
+      31,
+      0,
+      63,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      147,
+      62,
+      0,
+      63,
+      4,
+      "LATENT"
+    ],
+    [
+      148,
+      63,
+      0,
+      60,
+      1,
+      "LATENT"
+    ],
+    [
+      149,
+      30,
+      1,
+      31,
+      0,
+      "CLIP"
+    ],
+    [
+      150,
+      60,
+      0,
+      64,
+      0,
+      "IMAGE"
+    ],
+    [
+      151,
+      36,
+      0,
+      62,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8264462809917362,
+      "offset": [
+        -512.5041301692498,
+        79.0315449425575
+      ]
+    }
+  },
+  "version": 0.4
+}

@@ -1,0 +1,103 @@
+{
+    "01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'yosemite_inpaint_example.png'.This image has had part of it erased, please inpainting a woman at the erased part to output a complete image called 'woman_inpainted'."
+    },
+    "01002": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'mountain_landscape_inpaint.png'. Please inpaint a floating castle in the sky above the mountain and output a complete image called 'castle_inpainted'."
+    },
+    "01003": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content":  "You are given an image named 'city_park_inpaint.png'. Please inpaint a friendly alien standing beside the bench, and output a complete image called 'alien_inpainted'."
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'forest_path_inpaint.png'. Please inpaint a glowing portal between the trees and output a complete image called 'portal_inpainted'."
+    },
+    "01005": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'lake_scene_inpaint.png'. Please inpaint flowers with pink petals floating on the lake, and output a complete image called 'flower_inpainted'."
+    },
+    "01006": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'cafe_table_inpaint.png'. Please inpaint long, textured crack on the wooden table, and output a complete image called 'crack_inpainted'."
+    },
+    "01007": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'ancient_ruins_inpaint.png'. Please inpaint a modern time traveler with a smartphone exploring the ruins, and output a complete image called 'traveler_inpainted'."
+    },
+    "01008": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'open_meadow_inpaint.png'. Please inpaint a rainbow-colored unicorn grazing in the meadow, and output a complete image called 'unicorn_inpainted'."
+    },
+    "01009": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'office_desk_inpaint.png'. Please inpaint a lush on the desk, and output a complete image called 'lush_inpainted'."
+    },
+    "01010": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'museum_statue_inpaint.png'. Please inpaint a hat over on the main ancient statue, and output a complete image called 'statue_inpainted'."
+
+    }
+}

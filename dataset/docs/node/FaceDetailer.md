@@ -1,0 +1,48 @@
+- `FaceDetailer`: The FaceDetailer node description.
+    - Parameters:
+        - `guide_size`: Type should be `FLOAT`.
+        - `guide_size_for`: Type should be `BOOLEAN`.
+        - `max_size`: Type should be `FLOAT`.
+        - `seed`: Type should be `INT`.
+        - `steps`: Type should be `INT`.
+        - `cfg`: Type should be `FLOAT`.
+        - `sampler_name`: Type should be `['euler', 'euler_cfg_pp', 'euler_ancestral', 'euler_ancestral_cfg_pp', 'heun', 'heunpp2', 'dpm_2', 'dpm_2_ancestral', 'lms', 'dpm_fast', 'dpm_adaptive', 'dpmpp_2s_ancestral', 'dpmpp_2s_ancestral_cfg_pp', 'dpmpp_sde', 'dpmpp_sde_gpu', 'dpmpp_2m', 'dpmpp_2m_cfg_pp', 'dpmpp_2m_sde', 'dpmpp_2m_sde_gpu', 'dpmpp_3m_sde', 'dpmpp_3m_sde_gpu', 'ddpm', 'lcm', 'ipndm', 'ipndm_v', 'deis', 'ddim', 'uni_pc', 'uni_pc_bh2']`.
+        - `scheduler`: Type should be `['normal', 'karras', 'exponential', 'sgm_uniform', 'simple', 'ddim_uniform', 'beta', 'linear_quadratic', 'AYS SDXL', 'AYS SD1', 'AYS SVD', 'GITS[coeff=1.2]']`.
+        - `denoise`: Type should be `FLOAT`.
+        - `feather`: Type should be `INT`.
+        - `noise_mask`: Type should be `BOOLEAN`.
+        - `force_inpaint`: Type should be `BOOLEAN`.
+        - `bbox_threshold`: Type should be `FLOAT`.
+        - `bbox_dilation`: Type should be `INT`.
+        - `bbox_crop_factor`: Type should be `FLOAT`.
+        - `sam_detection_hint`: Type should be `['center-1', 'horizontal-2', 'vertical-2', 'rect-4', 'diamond-4', 'mask-area', 'mask-points', 'mask-point-bbox', 'none']`.
+        - `sam_dilation`: Type should be `INT`.
+        - `sam_threshold`: Type should be `FLOAT`.
+        - `sam_bbox_expansion`: Type should be `INT`.
+        - `sam_mask_hint_threshold`: Type should be `FLOAT`.
+        - `sam_mask_hint_use_negative`: Type should be `['False', 'Small', 'Outter']`.
+        - `drop_size`: Type should be `INT`.
+        - `wildcard`: Type should be `STRING`.
+        - `cycle`: Type should be `INT`.
+        - `inpaint_model`: Type should be `BOOLEAN`.
+        - `noise_mask_feather`: Type should be `INT`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+        - `model`: Type should be `MODEL`.
+        - `clip`: Type should be `CLIP`.
+        - `vae`: Type should be `VAE`.
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `bbox_detector`: Type should be `BBOX_DETECTOR`.
+        - `sam_model_opt`: Type should be `SAM_MODEL`.
+        - `segm_detector_opt`: Type should be `SEGM_DETECTOR`.
+        - `detailer_hook`: Type should be `DETAILER_HOOK`.
+        - `scheduler_func_opt`: Type should be `SCHEDULER_FUNC`.
+    - Outputs:
+        - `image`: Type should be `IMAGE`.
+        - `cropped_refined`: Type should be `IMAGE`.
+        - `cropped_enhanced_alpha`: Type should be `IMAGE`.
+        - `mask`: Type should be `MASK`.
+        - `detailer_pipe`: Type should be `DETAILER_PIPE`.
+        - `cnet_images`: Type should be `IMAGE`.
+

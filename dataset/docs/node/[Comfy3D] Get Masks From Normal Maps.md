@@ -1,0 +1,6 @@
+- `[Comfy3D] Get Masks From Normal Maps`: The [Comfy3D] Get Masks From Normal Maps node description.
+    - Parameters:
+    - Inputs:
+        - `normal_maps`: Type should be `IMAGE`.
+    - Outputs:
+        - `normal_masks`: Type should be `MASK`.

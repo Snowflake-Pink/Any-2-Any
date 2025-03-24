@@ -1,0 +1,17 @@
+- `[Comfy3D] Instant NGP`: The [Comfy3D] Instant NGP node description.
+    - Parameters:
+        - `reference_orbit_camera_fovy`: Type should be `FLOAT`.
+        - `training_iterations`: Type should be `INT`.
+        - `training_resolution`: Type should be `INT`.
+        - `marching_cude_grids_resolution`: Type should be `INT`.
+        - `marching_cude_grids_batch_size`: Type should be `INT`.
+        - `marching_cude_threshold`: Type should be `FLOAT`.
+        - `texture_resolution`: Type should be `INT`.
+        - `background_color`: Type should be `FLOAT`.
+        - `force_cuda_rast`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+        - `reference_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

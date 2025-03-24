@@ -1,0 +1,17 @@
+- `IPAdapterAdvanced`: The IPAdapterAdvanced node description.
+    - Parameters:
+        - `weight`: Type should be `FLOAT`.
+        - `weight_type`: Type should be `['linear', 'ease in', 'ease out', 'ease in-out', 'reverse in-out', 'weak input', 'weak output', 'weak middle', 'strong middle', 'style transfer', 'composition', 'strong style transfer', 'style and composition', 'style transfer precise', 'composition precise']`.
+        - `combine_embeds`: Type should be `['concat', 'add', 'subtract', 'average', 'norm average']`.
+        - `start_at`: Type should be `FLOAT`.
+        - `end_at`: Type should be `FLOAT`.
+        - `embeds_scaling`: Type should be `['V only', 'K+V', 'K+V w/ C penalty', 'K+mean(V) w/ C penalty']`.
+    - Inputs:
+        - `model`: Type should be `MODEL`.
+        - `ipadapter`: Type should be `IPADAPTER`.
+        - `image`: Type should be `IMAGE`.
+        - `image_negative`: Type should be `IMAGE`.
+        - `attn_mask`: Type should be `MASK`.
+        - `clip_vision`: Type should be `CLIP_VISION`.
+    - Outputs:
+        - `MODEL`: Type should be `MODEL`.

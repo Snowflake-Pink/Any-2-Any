@@ -1,0 +1,32 @@
+{
+    "id": null,
+    "type": "ImageToMask",
+    "title": null,
+    "parameters": {
+        "channel": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "MASK": {
+            "index": 0,
+            "type": "MASK",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,13 @@
+- `CogVideoDecode`: The CogVideoDecode node description.
+    - Parameters:
+        - `enable_vae_tiling`: Type should be `BOOLEAN`.
+        - `tile_sample_min_height`: Type should be `INT`.
+        - `tile_sample_min_width`: Type should be `INT`.
+        - `tile_overlap_factor_height`: Type should be `FLOAT`.
+        - `tile_overlap_factor_width`: Type should be `FLOAT`.
+        - `auto_tile_size`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `vae`: Type should be `VAE`.
+        - `samples`: Type should be `LATENT`.
+    - Outputs:
+        - `images`: Type should be `IMAGE`.

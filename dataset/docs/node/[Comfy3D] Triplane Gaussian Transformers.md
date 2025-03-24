@@ -1,0 +1,9 @@
+- `[Comfy3D] Triplane Gaussian Transformers`: The [Comfy3D] Triplane Gaussian Transformers node description.
+    - Parameters:
+        - `cam_dist`: Type should be `FLOAT`.
+    - Inputs:
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+        - `tgs_model`: Type should be `TGS_MODEL`.
+    - Outputs:
+        - `gs_ply`: Type should be `GS_PLY`.

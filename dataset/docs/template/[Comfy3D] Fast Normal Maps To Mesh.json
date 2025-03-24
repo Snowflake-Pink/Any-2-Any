@@ -1,0 +1,25 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Fast Normal Maps To Mesh",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "front_side_back_normal_maps": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "front_side_back_normal_masks": {
+            "index": 1,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

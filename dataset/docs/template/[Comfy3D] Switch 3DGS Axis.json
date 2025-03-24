@@ -1,0 +1,60 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Switch 3DGS Axis",
+    "title": null,
+    "parameters": {
+        "axis_x_to": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "+x",
+                "-x",
+                "+y",
+                "-y",
+                "+z",
+                "-z"
+            ],
+            "link": null
+        },
+        "axis_y_to": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "+y",
+                "-y",
+                "+z",
+                "-z",
+                "+x",
+                "-x"
+            ],
+            "link": null
+        },
+        "axis_z_to": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "+z",
+                "-z",
+                "+x",
+                "-x",
+                "+y",
+                "-y"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "link": null
+        }
+    },
+    "outputs": {
+        "switched_gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "links": []
+        }
+    }
+}

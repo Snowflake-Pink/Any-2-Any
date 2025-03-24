@@ -1,0 +1,18 @@
+proxy:
+  http_proxy: ""
+  https_proxy: ""
+
+openai:
+  base_url: null
+  api_key: ""
+  embedding_model: "text-embedding-3-large"
+  completion_model: "chatgpt-4o-latest"
+
+comfyui:
+  server_address: "127.0.0.1:8188"
+
+claude:
+  api_key: ""
+  completion_model: "claude-3-5-sonnet-20241022"
+
+use_comfybench_workflow: false

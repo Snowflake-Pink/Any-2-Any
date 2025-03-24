@@ -1,0 +1,8 @@
+- `AIO_Preprocessor`: The AIO_Preprocessor node description.
+    - Parameters:
+        - `preprocessor`: Type should be `['none', 'MediaPipe-FaceMeshPreprocessor', 'ShufflePreprocessor', 'BAE-NormalMapPreprocessor', 'HEDPreprocessor', 'FakeScribblePreprocessor', 'BinaryPreprocessor', 'ColorPreprocessor', 'ScribblePreprocessor', 'Scribble_XDoG_Preprocessor', 'Scribble_PiDiNet_Preprocessor', 'DepthAnythingV2Preprocessor', 'AnyLineArtPreprocessor_aux', 'ImageLuminanceDetector', 'ImageIntensityDetector', 'LeReS-DepthMapPreprocessor', 'Manga2Anime_LineArt_Preprocessor', 'AnimeFace_SemSegPreprocessor', 'DWPreprocessor', 'AnimalPosePreprocessor', 'OneFormer-COCO-SemSegPreprocessor', 'OneFormer-ADE20K-SemSegPreprocessor', 'OpenposePreprocessor', 'LineartStandardPreprocessor', 'CannyEdgePreprocessor', 'MeshGraphormer-DepthMapPreprocessor', 'DSINE-NormalMapPreprocessor', 'M-LSDPreprocessor', 'MiDaS-NormalMapPreprocessor', 'MiDaS-DepthMapPreprocessor', 'Zoe-DepthMapPreprocessor', 'Metric3D-DepthMapPreprocessor', 'Metric3D-NormalMapPreprocessor', 'DensePosePreprocessor', 'UniFormer-SemSegPreprocessor', 'SemSegPreprocessor', 'TEEDPreprocessor', 'LineArtPreprocessor', 'DepthAnythingPreprocessor', 'Zoe_DepthAnythingPreprocessor', 'PiDiNetPreprocessor', 'AnimeLineArtPreprocessor', 'TilePreprocessor', 'TTPlanet_TileGF_Preprocessor', 'TTPlanet_TileSimple_Preprocessor', 'SAMPreprocessor']`.
+        - `resolution`: Type should be `INT`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

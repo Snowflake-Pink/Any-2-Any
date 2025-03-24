@@ -1,0 +1,10 @@
+# create nodes by instantiation
+checkpointloadersimple_4 = CheckpointLoaderSimple(ckpt_name="""majicmixRealistic_v7.safetensors""")
+cliptextencode_6 = CLIPTextEncode(text="""Urban roadside night view""")
+cliptextencode_7 = CLIPTextEncode(text="""Person""")
+loadimage_11 = LoadImage(image="""titled_book.png""")
+easySpaceimagerembg_12 = easySpaceimageRemBg(image_output="""RMBG-1.4""", save_prefix="""Preview""", torchscript_jit="""ComfyUI""")
+imageresizePLUS_14 = ImageResizePLUS(width=1024, height=1024, interpolation="""nearest""", method="""keep proportion""", condition="""always""", multiple_of=0)
+ksampler_16 = KSampler(seed=21208813937248, control_after_generate="""randomize""", steps=25, cfg=2, sampler_name="""dpmpp_2m_sde""", scheduler="""karras""", denoise=0.9)
+vaedecode_17 = VAEDecode()
+emptylatentimage_42 = EmptyLatentImage(width=512, height=512, batch_size=1)

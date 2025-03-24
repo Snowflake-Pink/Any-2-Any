@@ -1,0 +1,14 @@
+- `[Comfy3D] Unique3D MVDiffusion Model`: The [Comfy3D] Unique3D MVDiffusion Model node description.
+    - Parameters:
+        - `seed`: Type should be `INT`.
+        - `guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+        - `image_resolution`: Type should be `[256, 512]`.
+        - `radius`: Type should be `FLOAT`.
+        - `preprocess_images`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `unique3d_pipe`: Type should be `DIFFUSERS_PIPE`.
+        - `reference_image`: Type should be `IMAGE`.
+    - Outputs:
+        - `multiviews`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

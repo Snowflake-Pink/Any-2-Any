@@ -1,0 +1,196 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Gaussian Splatting 3D",
+    "title": null,
+    "parameters": {
+        "reference_orbit_camera_fovy": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "training_iterations": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "batch_size": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "ms_ssim_loss_weight": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "alpha_loss_weight": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "offset_loss_weight": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "offset_opacity_loss_weight": {
+            "index": 6,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "invert_background_probability": {
+            "index": 7,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "feature_learning_rate": {
+            "index": 8,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "opacity_learning_rate": {
+            "index": 9,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "scaling_learning_rate": {
+            "index": 10,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "rotation_learning_rate": {
+            "index": 11,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "position_learning_rate_init": {
+            "index": 12,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "position_learning_rate_final": {
+            "index": 13,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "position_learning_rate_delay_mult": {
+            "index": 14,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "position_learning_rate_max_steps": {
+            "index": 15,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "initial_gaussians_num": {
+            "index": 16,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "K_nearest_neighbors": {
+            "index": 17,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "percent_dense": {
+            "index": 18,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "density_start_iterations": {
+            "index": 19,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "density_end_iterations": {
+            "index": 20,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "densification_interval": {
+            "index": 21,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "opacity_reset_interval": {
+            "index": 22,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "densify_grad_threshold": {
+            "index": 23,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "gaussian_sh_degree": {
+            "index": 24,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "reference_images": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_masks": {
+            "index": 1,
+            "type": "MASK",
+            "link": null
+        },
+        "reference_orbit_camera_poses": {
+            "index": 2,
+            "type": "ORBIT_CAMPOSES",
+            "link": null
+        },
+        "points_cloud_to_initialize_gaussian": {
+            "index": 3,
+            "type": "POINTCLOUD",
+            "link": null
+        },
+        "ply_to_initialize_gaussian": {
+            "index": 4,
+            "type": "GS_PLY",
+            "link": null
+        },
+        "mesh_to_initialize_gaussian": {
+            "index": 5,
+            "type": "MESH",
+            "link": null
+        }
+    },
+    "outputs": {
+        "gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "links": []
+        }
+    }
+}

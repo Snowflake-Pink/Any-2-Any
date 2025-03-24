@@ -1,0 +1,8 @@
+- `LaMaInpaint`: The LaMaInpaint node description.
+    - Parameters:
+        - `device_mode`: Type should be `['AUTO', 'Prefer GPU', 'CPU']`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+        - `mask`: Type should be `MASK`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

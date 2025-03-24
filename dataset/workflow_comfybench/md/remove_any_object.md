@@ -1,0 +1,33 @@
+- Nodes:
+    - N33:
+        - node_type: "LoadImage"
+        - image: "bedroom.jpg"
+    - N84:
+        - node_type: "LaMaInpaint"
+        - device_mode: "Prefer GPU"
+    - N101:
+        - node_type: "GroundingDinoSAMSegment (segment anything)"
+        - prompt: "chair"
+        - threshold: 0.2
+    - N102:
+        - node_type: "GroundingDinoModelLoader (segment anything)"
+        - model_name: "GroundingDINO_SwinT_OGC (694MB)"
+    - N103:
+        - node_type: "SAMModelLoader (segment anything)"
+        - model_name: "sam_vit_l (1.25GB)"
+    - N113:
+        - node_type: "SaveImage"
+        - filename_prefix: "ComfyUI"
+    - N114:
+        - node_type: "GrowMask"
+        - expand: 5
+        - tapered_corners: True
+
+- Links:
+    - L8: N33.image -> N84.image
+    - L9: N114.mask -> N84.mask
+    - L10: N103.sam_model -> N101.sam_model
+    - L11: N102.grounding_dino_model -> N101.grounding_dino_model
+    - L12: N33.image -> N101.image
+    - L13: N84.image -> N113.images
+    - L14: N101.mask -> N114.mask

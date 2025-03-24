@@ -1,0 +1,22 @@
+- `CogVideoSampler`: The CogVideoSampler node description.
+    - Parameters:
+        - `num_frames`: Type should be `INT`.
+        - `steps`: Type should be `INT`.
+        - `cfg`: Type should be `FLOAT`.
+        - `seed`: Type should be `INT`.
+        - `control_after_generate`: Type should be `['fixed', 'randomize']`.
+        - `scheduler`: Type should be `['DPM++', 'Euler', 'Euler A', 'PNDM', 'DDIM', 'CogVideoXDDIM', 'CogVideoXDPMScheduler', 'SASolverScheduler', 'UniPCMultistepScheduler', 'HeunDiscreteScheduler', 'DEISMultistepScheduler', 'LCMScheduler']`.
+        - `denoise_strength`: Type should be `FLOAT`.
+    - Inputs:
+        - `model`: Type should be `COGVIDEOMODEL`.
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `samples`: Type should be `LATENT`.
+        - `image_cond_latents`: Type should be `LATENT`.
+        - `context_options`: Type should be `COGCONTEXT`.
+        - `controlnet`: Type should be `COGVIDECONTROLNET`.
+        - `tora_trajectory`: Type should be `TORAFEATURES`.
+        - `fastercache`: Type should be `FASTERCACHEARGS`.
+        - `feta_args`: Type should be `FETAARGS`.
+    - Outputs:
+        - `samples`: Type should be `LATENT`.

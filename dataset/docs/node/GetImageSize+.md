@@ -1,0 +1,8 @@
+- `GetImageSize+`: The GetImageSize+ node description.
+    - Parameters:
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `width`: Type should be `INT`.
+        - `height`: Type should be `INT`.
+        - `count`: Type should be `INT`.

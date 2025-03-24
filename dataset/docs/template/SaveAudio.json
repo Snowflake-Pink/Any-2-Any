@@ -1,0 +1,21 @@
+{
+    "id": null,
+    "type": "SaveAudio",
+    "title": null,
+    "parameters": {
+        "filename_prefix": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        }
+    },
+    "inputs": {
+        "audio": {
+            "index": 0,
+            "type": "AUDIO",
+            "link": null
+        }
+    },
+    "outputs": {}
+}

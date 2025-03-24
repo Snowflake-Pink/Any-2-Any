@@ -1,0 +1,28 @@
+- Nodes:
+    - N7:
+        - node_type: "VHS_LoadVideo"
+        - video: "male_idol.mp4"
+        - force_rate: 0
+        - force_size: "Disabled"
+        - frame_load_cap: 0
+        - skip_first_frames: 0
+        - select_every_nth: 1
+    - N10:
+        - node_type: "RIFE VFI"
+        - ckpt_name: "rife47.pth"
+        - clear_cache_after_n_frames: 10
+        - multiplier: 3
+        - fast_mode: True
+        - ensemble: True
+        - scale_factor: 1
+    - N11:
+        - node_type: "SaveAnimatedWEBP"
+        - filename_prefix: "ComfyUI"
+        - fps: 24
+        - lossless: True
+        - quality: 80
+        - method: "default"
+
+- Links:
+    - L4: N7.image -> N10.frames
+    - L5: N10.image -> N11.images

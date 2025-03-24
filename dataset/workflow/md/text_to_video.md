@@ -1,0 +1,63 @@
+- Nodes:
+    - N30:
+        - node_type: "CogVideoTextEncode"
+        - prompt: "A golden retriever, sporting sleek black sunglasses, with its lengthy fur flowing in the breeze, sprints playfully across a rooftop terrace, recently refreshed by a light rain. The scene unfolds from a distance, the dog's energetic bounds growing larger as it approaches the camera, its tail wagging with unrestrained joy, while droplets of water glisten on the concrete behind it. The overcast sky provides a dramatic backdrop, emphasizing the vibrant golden coat of the canine as it dashes towards the viewer.  "
+        - strength: 1
+        - force_offload: False
+    - N31:
+        - node_type: "CogVideoTextEncode"
+        - prompt: ""
+        - strength: 1
+        - force_offload: True
+    - N37:
+        - node_type: "EmptyLatentImage"
+        - width: 720
+        - height: 480
+        - batch_size: 1
+    - N35:
+        - node_type: "CogVideoSampler"
+        - num_frames: 7
+        - steps: 20
+        - cfg: 6
+        - seed: 0
+        - control_after_generate: "randomize"
+        - scheduler: "CogVideoXDDIM"
+        - denoise_strength: 1
+    - N20:
+        - node_type: "CLIPLoader"
+        - clip_name: "t5xxl_fp16.safetensors"
+        - type: "sd3"
+    - N11:
+        - node_type: "CogVideoDecode"
+        - enable_vae_tiling: False
+        - tile_sample_min_height: 240
+        - tile_sample_min_width: 360
+        - tile_overlap_factor_height: 0.2
+        - tile_overlap_factor_width: 0.2
+        - auto_tile_size: True
+    - N38:
+        - node_type: "SaveAnimatedWEBP"
+        - filename_prefix: "ComfyUI"
+        - fps: 6
+        - lossless: True
+        - quality: 80
+        - method: "default"
+    - N36:
+        - node_type: "DownloadAndLoadCogVideoModel"
+        - model: "THUDM/CogVideoX-5b"
+        - precision: "bf16"
+        - quantization: "fp8_e4m3fn"
+        - enable_sequential_cpu_offload: False
+        - attention_mode: "sdpa"
+        - load_device: "main_device"
+
+- Links:
+    - L54: N20.clip -> N30.clip
+    - L65: N30.clip -> N31.clip
+    - L67: N30.conditioning -> N35.positive
+    - L68: N31.conditioning -> N35.negative
+    - L69: N35.samples -> N11.samples
+    - L70: N36.model -> N35.model
+    - L71: N36.vae -> N11.vae
+    - L72: N37.latent -> N35.samples
+    - L73: N11.images -> N38.images

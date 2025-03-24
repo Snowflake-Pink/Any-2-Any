@@ -1,0 +1,308 @@
+{
+    "id": null,
+    "type": "FaceDetailer",
+    "title": null,
+    "parameters": {
+        "guide_size": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "guide_size_for": {
+            "index": 1,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "max_size": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "seed": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "steps": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "cfg": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "sampler_name": {
+            "index": 6,
+            "value": null,
+            "type": [
+                "euler",
+                "euler_cfg_pp",
+                "euler_ancestral",
+                "euler_ancestral_cfg_pp",
+                "heun",
+                "heunpp2",
+                "dpm_2",
+                "dpm_2_ancestral",
+                "lms",
+                "dpm_fast",
+                "dpm_adaptive",
+                "dpmpp_2s_ancestral",
+                "dpmpp_2s_ancestral_cfg_pp",
+                "dpmpp_sde",
+                "dpmpp_sde_gpu",
+                "dpmpp_2m",
+                "dpmpp_2m_cfg_pp",
+                "dpmpp_2m_sde",
+                "dpmpp_2m_sde_gpu",
+                "dpmpp_3m_sde",
+                "dpmpp_3m_sde_gpu",
+                "ddpm",
+                "lcm",
+                "ipndm",
+                "ipndm_v",
+                "deis",
+                "ddim",
+                "uni_pc",
+                "uni_pc_bh2"
+            ],
+            "link": null
+        },
+        "scheduler": {
+            "index": 7,
+            "value": null,
+            "type": [
+                "normal",
+                "karras",
+                "exponential",
+                "sgm_uniform",
+                "simple",
+                "ddim_uniform",
+                "beta",
+                "linear_quadratic",
+                "AYS SDXL",
+                "AYS SD1",
+                "AYS SVD",
+                "GITS[coeff=1.2]"
+            ],
+            "link": null
+        },
+        "denoise": {
+            "index": 8,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "feather": {
+            "index": 9,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "noise_mask": {
+            "index": 10,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "force_inpaint": {
+            "index": 11,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "bbox_threshold": {
+            "index": 12,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "bbox_dilation": {
+            "index": 13,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "bbox_crop_factor": {
+            "index": 14,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "sam_detection_hint": {
+            "index": 15,
+            "value": null,
+            "type": [
+                "center-1",
+                "horizontal-2",
+                "vertical-2",
+                "rect-4",
+                "diamond-4",
+                "mask-area",
+                "mask-points",
+                "mask-point-bbox",
+                "none"
+            ],
+            "link": null
+        },
+        "sam_dilation": {
+            "index": 16,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "sam_threshold": {
+            "index": 17,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "sam_bbox_expansion": {
+            "index": 18,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "sam_mask_hint_threshold": {
+            "index": 19,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "sam_mask_hint_use_negative": {
+            "index": 20,
+            "value": null,
+            "type": [
+                "False",
+                "Small",
+                "Outter"
+            ],
+            "link": null
+        },
+        "drop_size": {
+            "index": 21,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "wildcard": {
+            "index": 22,
+            "type": "STRING",
+            "link": null
+        },
+        "cycle": {
+            "index": 23,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "inpaint_model": {
+            "index": 24,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "noise_mask_feather": {
+            "index": 25,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "model": {
+            "index": 1,
+            "type": "MODEL",
+            "link": null
+        },
+        "clip": {
+            "index": 2,
+            "type": "CLIP",
+            "link": null
+        },
+        "vae": {
+            "index": 3,
+            "type": "VAE",
+            "link": null
+        },
+        "positive": {
+            "index": 4,
+            "type": "CONDITIONING",
+            "link": null
+        },
+        "negative": {
+            "index": 5,
+            "type": "CONDITIONING",
+            "link": null
+        },
+        "bbox_detector": {
+            "index": 6,
+            "type": "BBOX_DETECTOR",
+            "link": null
+        },
+        "sam_model_opt": {
+            "index": 7,
+            "type": "SAM_MODEL",
+            "link": null
+        },
+        "segm_detector_opt": {
+            "index": 8,
+            "type": "SEGM_DETECTOR",
+            "link": null
+        },
+        "detailer_hook": {
+            "index": 9,
+            "type": "DETAILER_HOOK",
+            "link": null
+        },
+        "scheduler_func_opt": {
+            "index": 10,
+            "type": "SCHEDULER_FUNC",
+            "link": null
+        }
+    },
+    "outputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "cropped_refined": {
+            "index": 1,
+            "type": "IMAGE",
+            "links": []
+        },
+        "cropped_enhanced_alpha": {
+            "index": 2,
+            "type": "IMAGE",
+            "links": []
+        },
+        "mask": {
+            "index": 3,
+            "type": "MASK",
+            "links": []
+        },
+        "detailer_pipe": {
+            "index": 4,
+            "type": "DETAILER_PIPE",
+            "links": []
+        },
+        "cnet_images": {
+            "index": 5,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

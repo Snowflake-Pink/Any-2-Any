@@ -1,0 +1,15 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Preview 3DMesh",
+    "title": null,
+    "parameters": {
+        "mesh_file_path": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {}
+}

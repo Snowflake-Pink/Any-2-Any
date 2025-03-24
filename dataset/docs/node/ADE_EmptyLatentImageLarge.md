@@ -1,0 +1,8 @@
+- `ADE_EmptyLatentImageLarge`: The ADE_EmptyLatentImageLarge node description.
+    - Parameters:
+        - `width`: Type should be `INT`.
+        - `height`: Type should be `INT`.
+        - `batch_size`: Type should be `INT`.
+    - Inputs:
+    - Outputs:
+        - `LATENT`: Type should be `LATENT`.

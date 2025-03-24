@@ -1,0 +1,15 @@
+- `VHS_VideoCombine`: The VHS_VideoCombine node description.
+    - Parameters:
+        - `frame_rate`: Type should be `FLOAT`.
+        - `loop_count`: Type should be `INT`.
+        - `filename_prefix`: Type should be `STRING`.
+        - `format`: Type should be `['image/gif', 'image/webp', 'video/16bit-png', 'video/8bit-png', ['video/ProRes', [['profile', ['1', '2', '3', '4'], {'default': '3'}]]], ['video/av1-webm', [['pix_fmt', ['yuv420p10le', 'yuv420p']], ['crf', 'INT', {'default': 23, 'min': 0, 'max': 100, 'step': 1}], ['input_color_depth', ['8bit', '16bit']], ['save_metadata', 'BOOLEAN', {'default': True}]]], ['video/ffmpeg-gif', [['dither', ['bayer', 'heckbert', 'floyd_steinberg', 'sierra2', 'sierra2_4a', 'sierra3', 'burkes', 'atkinson', 'none'], {'default': 'sierra2_4a'}, '[0:v] split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse=dither=$val']]], ['video/h264-mp4', [['pix_fmt', ['yuv420p', 'yuv420p10le']], ['crf', 'INT', {'default': 19, 'min': 0, 'max': 100, 'step': 1}], ['save_metadata', 'BOOLEAN', {'default': True}]]], ['video/h265-mp4', [['pix_fmt', ['yuv420p10le', 'yuv420p']], ['crf', 'INT', {'default': 22, 'min': 0, 'max': 100, 'step': 1}], ['save_metadata', 'BOOLEAN', {'default': True}]]], ['video/nvenc_h264-mp4', [['pix_fmt', ['yuv420p', 'yuv420p10le', 'rgba']], ['bitrate', 'INT', {'default': 10, 'min': 1, 'max': 999, 'step': 1}], ['megabit', 'BOOLEAN', {'default': True}], ['save_metadata', 'BOOLEAN', {'default': True}]]], ['video/nvenc_hevc-mp4', [['pix_fmt', ['yuv420p', 'yuv420p10le', 'rgba']], ['bitrate', 'INT', {'default': 10, 'min': 1, 'max': 999, 'step': 1}], ['megabit', 'BOOLEAN', {'default': True}], ['save_metadata', 'BOOLEAN', {'default': True}]]], ['video/webm', [['pix_fmt', ['yuv420p', 'yuva420p']], ['crf', 'INT', {'default': 20, 'min': 0, 'max': 100, 'step': 1}], ['save_metadata', 'BOOLEAN', {'default': True}]]]]`.
+        - `pingpong`: Type should be `BOOLEAN`.
+        - `save_output`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `images`: Type should be `IMAGE`.
+        - `audio`: Type should be `AUDIO`.
+        - `meta_batch`: Type should be `VHS_BatchManager`.
+        - `vae`: Type should be `VAE`.
+    - Outputs:
+        - `Filenames`: Type should be `VHS_FILENAMES`.

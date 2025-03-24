@@ -1,0 +1,20 @@
+- `CR Overlay Text`: The CR Overlay Text node description.
+    - Parameters:
+        - `text`: Type should be `STRING`.
+        - `font_name`: Type should be `['Roboto-Regular.ttf', 'Quicksand-Bold.ttf', 'Oswald-Bold.ttf', 'comic.ttf', 'AlumniSansCollegiateOne-Regular.ttf', 'NotoSansArabic-Regular.ttf', 'impact.ttf', 'PixelifySans-Bold.ttf', 'Caveat-VariableFont_wght.ttf', 'YoungSerif-Regular.ttf']`.
+        - `font_size`: Type should be `INT`.
+        - `font_color`: Type should be `['custom', 'white', 'black', 'red', 'green', 'blue', 'yellow', 'cyan', 'magenta', 'orange', 'purple', 'pink', 'brown', 'gray', 'lightgray', 'darkgray', 'olive', 'lime', 'teal', 'navy', 'maroon', 'fuchsia', 'aqua', 'silver', 'gold', 'turquoise', 'lavender', 'violet', 'coral', 'indigo']`.
+        - `align`: Type should be `['center', 'top', 'bottom']`.
+        - `justify`: Type should be `['center', 'left', 'right']`.
+        - `margins`: Type should be `INT`.
+        - `line_spacing`: Type should be `INT`.
+        - `position_x`: Type should be `INT`.
+        - `position_y`: Type should be `INT`.
+        - `rotation_angle`: Type should be `FLOAT`.
+        - `rotation_options`: Type should be `['text center', 'image center']`.
+        - `font_color_hex`: Type should be `STRING`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.
+        - `show_help`: Type should be `STRING`.

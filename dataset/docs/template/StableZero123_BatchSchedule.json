@@ -1,0 +1,82 @@
+{
+    "id": null,
+    "type": "StableZero123_BatchSchedule",
+    "title": null,
+    "parameters": {
+        "width": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "height": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "batch_size": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "interpolation": {
+            "index": 3,
+            "value": null,
+            "type": [
+                "linear",
+                "ease_in",
+                "ease_out",
+                "ease_in_out"
+            ],
+            "link": null
+        },
+        "azimuth_points_string": {
+            "index": 4,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "elevation_points_string": {
+            "index": 5,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        }
+    },
+    "inputs": {
+        "clip_vision": {
+            "index": 0,
+            "type": "CLIP_VISION",
+            "link": null
+        },
+        "init_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "vae": {
+            "index": 2,
+            "type": "VAE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "positive": {
+            "index": 0,
+            "type": "CONDITIONING",
+            "links": []
+        },
+        "negative": {
+            "index": 1,
+            "type": "CONDITIONING",
+            "links": []
+        },
+        "latent": {
+            "index": 2,
+            "type": "LATENT",
+            "links": []
+        }
+    }
+}

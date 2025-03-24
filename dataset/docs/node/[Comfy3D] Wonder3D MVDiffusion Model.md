@@ -1,0 +1,13 @@
+- `[Comfy3D] Wonder3D MVDiffusion Model`: The [Comfy3D] Wonder3D MVDiffusion Model node description.
+    - Parameters:
+        - `seed`: Type should be `INT`.
+        - `mv_guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+    - Inputs:
+        - `mvdiffusion_pipe`: Type should be `DIFFUSERS_PIPE`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+    - Outputs:
+        - `multiview_images`: Type should be `IMAGE`.
+        - `multiview_normals`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

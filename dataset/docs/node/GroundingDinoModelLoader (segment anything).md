@@ -1,0 +1,6 @@
+- `GroundingDinoModelLoader (segment anything)`: The GroundingDinoModelLoader (segment anything) node description.
+    - Parameters:
+        - `model_name`: Type should be `['GroundingDINO_SwinT_OGC (694MB)', 'GroundingDINO_SwinB (938MB)']`.
+    - Inputs:
+    - Outputs:
+        - `GROUNDING_DINO_MODEL`: Type should be `GROUNDING_DINO_MODEL`.

@@ -1,0 +1,11 @@
+- `DetailTransfer`: The DetailTransfer node description.
+    - Parameters:
+        - `mode`: Type should be `['add', 'multiply', 'screen', 'overlay', 'soft_light', 'hard_light', 'color_dodge', 'color_burn', 'difference', 'exclusion', 'divide']`.
+        - `blur_sigma`: Type should be `FLOAT`.
+        - `blend_factor`: Type should be `FLOAT`.
+    - Inputs:
+        - `target`: Type should be `IMAGE`.
+        - `source`: Type should be `IMAGE`.
+        - `mask`: Type should be `MASK`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

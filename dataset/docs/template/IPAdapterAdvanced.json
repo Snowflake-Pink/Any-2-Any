@@ -1,0 +1,109 @@
+{
+    "id": null,
+    "type": "IPAdapterAdvanced",
+    "title": null,
+    "parameters": {
+        "weight": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "weight_type": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "linear",
+                "ease in",
+                "ease out",
+                "ease in-out",
+                "reverse in-out",
+                "weak input",
+                "weak output",
+                "weak middle",
+                "strong middle",
+                "style transfer",
+                "composition",
+                "strong style transfer",
+                "style and composition",
+                "style transfer precise",
+                "composition precise"
+            ],
+            "link": null
+        },
+        "combine_embeds": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "concat",
+                "add",
+                "subtract",
+                "average",
+                "norm average"
+            ],
+            "link": null
+        },
+        "start_at": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "end_at": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "embeds_scaling": {
+            "index": 5,
+            "value": null,
+            "type": [
+                "V only",
+                "K+V",
+                "K+V w/ C penalty",
+                "K+mean(V) w/ C penalty"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "model": {
+            "index": 0,
+            "type": "MODEL",
+            "link": null
+        },
+        "ipadapter": {
+            "index": 1,
+            "type": "IPADAPTER",
+            "link": null
+        },
+        "image": {
+            "index": 2,
+            "type": "IMAGE",
+            "link": null
+        },
+        "image_negative": {
+            "index": 3,
+            "type": "IMAGE",
+            "link": null
+        },
+        "attn_mask": {
+            "index": 4,
+            "type": "MASK",
+            "link": null
+        },
+        "clip_vision": {
+            "index": 5,
+            "type": "CLIP_VISION",
+            "link": null
+        }
+    },
+    "outputs": {
+        "MODEL": {
+            "index": 0,
+            "type": "MODEL",
+            "links": []
+        }
+    }
+}

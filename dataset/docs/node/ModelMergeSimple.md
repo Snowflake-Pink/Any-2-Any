@@ -1,0 +1,8 @@
+- `ModelMergeSimple`: The ModelMergeSimple node description.
+    - Parameters:
+        - `ratio`: Type should be `FLOAT`.
+    - Inputs:
+        - `model1`: Type should be `MODEL`.
+        - `model2`: Type should be `MODEL`.
+    - Outputs:
+        - `MODEL`: Type should be `MODEL`.

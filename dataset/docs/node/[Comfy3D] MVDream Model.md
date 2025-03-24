@@ -1,0 +1,15 @@
+- `[Comfy3D] MVDream Model`: The [Comfy3D] MVDream Model node description.
+    - Parameters:
+        - `prompt`: Type should be `STRING`.
+        - `prompt_neg`: Type should be `STRING`.
+        - `seed`: Type should be `INT`.
+        - `mv_guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+        - `elevation`: Type should be `FLOAT`.
+    - Inputs:
+        - `mvdream_pipe`: Type should be `DIFFUSERS_PIPE`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+    - Outputs:
+        - `multiview_images`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

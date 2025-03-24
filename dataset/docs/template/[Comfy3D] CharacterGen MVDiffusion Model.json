@@ -1,0 +1,84 @@
+{
+    "id": null,
+    "type": "[Comfy3D] CharacterGen MVDiffusion Model",
+    "title": null,
+    "parameters": {
+        "target_image_width": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "target_image_height": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "seed": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "guidance_scale": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "num_inference_steps": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "prompt": {
+            "index": 5,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "prompt_neg": {
+            "index": 6,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "radius": {
+            "index": 7,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "character_mv_gen_pipe": {
+            "index": 0,
+            "type": "CHARACTER_MV_GEN_PIPE",
+            "link": null
+        },
+        "reference_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "multiviews": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "orbit_camposes": {
+            "index": 1,
+            "type": "ORBIT_CAMPOSES",
+            "links": []
+        }
+    }
+}

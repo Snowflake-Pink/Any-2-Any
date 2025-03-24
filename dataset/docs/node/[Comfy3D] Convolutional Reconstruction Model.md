@@ -1,0 +1,8 @@
+- `[Comfy3D] Convolutional Reconstruction Model`: The [Comfy3D] Convolutional Reconstruction Model node description.
+    - Parameters:
+    - Inputs:
+        - `crm_model`: Type should be `CRM_MODEL`.
+        - `multiview_images`: Type should be `IMAGE`.
+        - `multiview_CCMs`: Type should be `IMAGE`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

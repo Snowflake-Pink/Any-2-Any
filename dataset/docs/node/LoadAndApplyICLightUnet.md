@@ -1,0 +1,7 @@
+- `LoadAndApplyICLightUnet`: The LoadAndApplyICLightUnet node description.
+    - Parameters:
+        - `model_path`: Type should be `['IC-Light-ldm/iclight_sd15_fbc_unet_ldm.safetensors', 'IC-Light-ldm/iclight_sd15_fc_unet_ldm.safetensors', 'flux1-dev-fp8.safetensors', 'flux1-dev.safetensors', 'flux1-schnell-fp8.safetensors', 'flux1-schnell.safetensors', 'iclight_sd15_fbc.safetensors', 'iclight_sd15_fc.safetensors', 'iclight_sd15_fcon.safetensors', 'sdxlInpainting01Official_v01-inpainting.safetensors', 'stage_b.safetensors', 'stage_c.safetensors']`.
+    - Inputs:
+        - `model`: Type should be `MODEL`.
+    - Outputs:
+        - `MODEL`: Type should be `MODEL`.

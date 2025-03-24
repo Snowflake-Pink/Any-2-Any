@@ -1,0 +1,7 @@
+- `SAMLoader`: The SAMLoader node description.
+    - Parameters:
+        - `model_name`: Type should be `['sam_vit_b_01ec64.pth', 'sam_vit_h_4b8939.pth', 'sam_vit_l_0b3195.pth', 'ESAM']`.
+        - `device_mode`: Type should be `['AUTO', 'Prefer GPU', 'CPU']`.
+    - Inputs:
+    - Outputs:
+        - `SAM_MODEL`: Type should be `SAM_MODEL`.

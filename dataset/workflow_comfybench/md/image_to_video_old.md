@@ -1,0 +1,52 @@
+- Nodes:
+    - N50:
+        - node_type: "LoadImage"
+        - image: "play_guitar.jpg"
+    - N63:
+        - node_type: "SVD_img2vid_Conditioning"
+        - width: 1024
+        - height: 576
+        - video_frames: 24
+        - motion_bucket_id: 100
+        - fps: 6
+        - augmentation_level: 0
+    - N89:
+        - node_type: "VideoLinearCFGGuidance"
+        - min_cfg: 1
+    - N92:
+        - node_type: "KSamplerAdvanced"
+        - add_noise: "enable"
+        - noise_seed: 942806259821634
+        - control_after_generate: "randomize"
+        - steps: 20
+        - cfg: 2.52
+        - sampler_name: "euler"
+        - scheduler: "ddim_uniform"
+        - start_at_step: 0
+        - end_at_step: 10000
+        - return_with_leftover_noise: "disable"
+    - N64:
+        - node_type: "ImageOnlyCheckpointLoader"
+        - ckpt_name: "svd_xt_1_1.safetensors"
+    - N70:
+        - node_type: "VAEDecode"
+    - N96:
+        - node_type: "SaveAnimatedWEBP"
+        - filename_prefix: "ComfyUI"
+        - fps: 8
+        - lossless: True
+        - quality: 80
+        - method: "default"
+
+- Links:
+    - L12: N64.clip_vision -> N63.clip_vision
+    - L13: N50.image -> N63.init_image
+    - L14: N64.vae -> N63.vae
+    - L15: N92.latent -> N70.samples
+    - L16: N64.vae -> N70.vae
+    - L17: N64.model -> N89.model
+    - L18: N89.model -> N92.model
+    - L19: N63.positive -> N92.positive
+    - L20: N63.negative -> N92.negative
+    - L21: N63.latent -> N92.latent_image
+    - L23: N70.image -> N96.images

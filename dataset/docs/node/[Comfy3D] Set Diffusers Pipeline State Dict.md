@@ -1,0 +1,8 @@
+- `[Comfy3D] Set Diffusers Pipeline State Dict`: The [Comfy3D] Set Diffusers Pipeline State Dict node description.
+    - Parameters:
+        - `repo_id`: Type should be `STRING`.
+        - `model_name`: Type should be `STRING`.
+    - Inputs:
+        - `pipe`: Type should be `DIFFUSERS_PIPE`.
+    - Outputs:
+        - `pipe`: Type should be `DIFFUSERS_PIPE`.

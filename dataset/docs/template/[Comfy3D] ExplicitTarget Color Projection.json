@@ -1,0 +1,81 @@
+{
+    "id": null,
+    "type": "[Comfy3D] ExplicitTarget Color Projection",
+    "title": null,
+    "parameters": {
+        "projection_resolution": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "complete_unseen_rgb": {
+            "index": 1,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "render_orbit_camera_fovy": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "projection_weights": {
+            "index": 3,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "confidence_threshold": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "texture_projecton": {
+            "index": 5,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "texture_type": {
+            "index": 6,
+            "value": null,
+            "type": [
+                "Albedo",
+                "Metallic_and_Roughness"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        },
+        "reference_images": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_masks": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        },
+        "reference_orbit_camera_poses": {
+            "index": 3,
+            "type": "ORBIT_CAMPOSES",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

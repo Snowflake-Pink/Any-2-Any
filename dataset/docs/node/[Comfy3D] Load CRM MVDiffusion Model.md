@@ -1,0 +1,7 @@
+- `[Comfy3D] Load CRM MVDiffusion Model`: The [Comfy3D] Load CRM MVDiffusion Model node description.
+    - Parameters:
+        - `model_name`: Type should be `['pixel-diffusion.pth', 'ccm-diffusion.pth']`.
+        - `crm_config_path`: Type should be `['sd_v2_base_ipmv_zero_SNR.yaml', 'sd_v2_base_ipmv_chin8_zero_snr.yaml']`.
+    - Inputs:
+    - Outputs:
+        - `crm_mvdiffusion_sampler`: Type should be `CRM_MVDIFFUSION_SAMPLER`.

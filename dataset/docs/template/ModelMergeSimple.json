@@ -1,0 +1,32 @@
+{
+    "id": null,
+    "type": "ModelMergeSimple",
+    "title": null,
+    "parameters": {
+        "ratio": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "model1": {
+            "index": 0,
+            "type": "MODEL",
+            "link": null
+        },
+        "model2": {
+            "index": 1,
+            "type": "MODEL",
+            "link": null
+        }
+    },
+    "outputs": {
+        "MODEL": {
+            "index": 0,
+            "type": "MODEL",
+            "links": []
+        }
+    }
+}

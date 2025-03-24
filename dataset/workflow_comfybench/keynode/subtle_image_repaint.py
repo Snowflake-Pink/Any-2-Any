@@ -1,0 +1,10 @@
+# create nodes by instantiation
+checkpointloadersimple_4 = CheckpointLoaderSimple(ckpt_name="""v1-5-pruned-emaonly.ckpt""")
+cliptextencode_6 = CLIPTextEncode(text="""a photo of a girl smiling""")
+cliptextencode_7 = CLIPTextEncode(text="""text, watermark""")
+vaedecode_8 = VAEDecode()
+bnk_unsampler_13 = BNK_Unsampler(steps=25, end_at_step=0, cfg=1, sampler_name="""dpmpp_2m""", scheduler="""karras""", normalize="""disable""")
+loadimage_14 = LoadImage(image="""woman_portrait.jpg""")
+vaeencode_15 = VAEEncode()
+ksampleradvanced_16 = KSamplerAdvanced(add_noise="""disable""", noise_seed=0, control_after_generate="""randomize""", steps=25, cfg=2.5, sampler_name="""dpmpp_2m""", scheduler="""karras""", start_at_step=0, end_at_step=25, return_with_leftover_noise="""disable""")
+previewimage_18 = PreviewImage()

@@ -1,0 +1,66 @@
+{
+    "id": null,
+    "type": "[Comfy3D] OrbitPoses JK",
+    "title": null,
+    "parameters": {
+        "orbitpose_preset": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "Custom",
+                "CRM(6)",
+                "Wonder3D(6)",
+                "Zero123Plus(6)",
+                "Era3D(6)",
+                "MVDream(4)",
+                "Unique3D(4)",
+                "CharacterGen(4)"
+            ],
+            "link": null
+        },
+        "radius": {
+            "index": 1,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "elevations": {
+            "index": 2,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "azimuths": {
+            "index": 3,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "centerX": {
+            "index": 4,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "centerY": {
+            "index": 5,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "centerZ": {
+            "index": 6,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "orbit_camposes": {
+            "index": 0,
+            "type": "ORBIT_CAMPOSES",
+            "links": []
+        }
+    }
+}

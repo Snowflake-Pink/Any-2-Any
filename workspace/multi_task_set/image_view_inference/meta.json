@@ -1,0 +1,102 @@
+{
+    "01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'marble_statue.jpg', please generate a image of the same object but from a different point of view, save the output image as 'statue_different_view'"
+    },
+    "01002": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'vintage_car.jpg', please generate an image of the same object but from a different point of view, and save the output image as 'car_different_view'."
+    },
+    "01003": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'yellow_rubber_duck.jpg', please generate an image of the same object but from a different point of view, and save the output image as 'duck_different_view'."
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'white_coffee_mug.jpg', please generate an image of the same object but from a different point of view, and save the output image as 'white_coffee_mug_different_view'."
+    },
+    "01005": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'red_apple.jpg', please generate an image of the same object but from a different point of view, and save the output image as 'apple_different_view'."
+    },
+    "01006": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'wooden_spoon.jpg', please generate an image of the same object but from a different point of view, and save the output image as 'spoon_different_view'."
+    },
+    "01007": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'banana.jpg', please generate an image of the same object but from a different point of view, and save the output image as 'banana_different_view'."
+    },
+    "01008": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'succulent_plant.jpg', please generate an image of the same object but from a different point of view, and save the output image as 'plant_different_view'."
+    },
+    "01009": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'crystal_skull.jpg', please generate an image of the same object but from a different point of view, capturing the intricate reflections and transparency, and save the output image as 'skull_different_view'."
+    },
+    "01010": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'top_hat_with_feathers.jpg', please generate an image of the same object but from a different point of view, emphasizing the elegance of the hat and details of the feathers, and save the output image as 'hat_different_view'."
+    }
+}

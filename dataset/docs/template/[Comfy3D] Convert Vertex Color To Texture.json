@@ -1,0 +1,33 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Convert Vertex Color To Texture",
+    "title": null,
+    "parameters": {
+        "texture_resolution": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "batch_size": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

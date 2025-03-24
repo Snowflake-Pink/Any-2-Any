@@ -1,0 +1,75 @@
+{
+    "id": null,
+    "type": "zero123Loader",
+    "title": null,
+    "parameters": {
+        "empty_latent_width": {
+            "index": 0,
+            "value": null
+        },
+        "empty_latent_height": {
+            "index": 1,
+            "value": null
+        },
+        "batch_size": {
+            "index": 2,
+            "value": null
+        },
+        "elevation": {
+            "index": 3,
+            "value": null
+        },
+        "azimuth": {
+            "index": 4,
+            "value": null
+        }
+    },
+    "inputs": {
+        "ckpt_name": {
+            "index": 0,
+            "type": [
+                "stable_zero123.ckpt"
+            ],
+            "link": null
+        },
+        "vae_name": {
+            "index": 1,
+            "type": [
+                "Baked VAE",
+                "ae.safetensors",
+                "animevae.pt",
+                "basil mix.safetensors",
+                "blessed2.vae.pt",
+                "kl-f8-anime.ckpt",
+                "orangemix.vae.pt",
+                "sdxl_vae.safetensors",
+                "stage_a.safetensors",
+                "vae-ft-mse-840000-ema-pruned.ckpt",
+                "vae-ft-mse-840000-ema-pruned.safetensors"
+            ],
+            "link": null
+        },
+        "init_image": {
+            "index": 2,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "pipe": {
+            "index": 0,
+            "type": "PIPE_LINE",
+            "links": []
+        },
+        "model": {
+            "index": 1,
+            "type": "MODEL",
+            "links": []
+        },
+        "vae": {
+            "index": 2,
+            "type": "VAE",
+            "links": []
+        }
+    }
+}

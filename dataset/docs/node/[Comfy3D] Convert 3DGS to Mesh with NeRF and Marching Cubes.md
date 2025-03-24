@@ -1,0 +1,21 @@
+- `[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes`: The [Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes node description.
+    - Parameters:
+        - `gs_config`: Type should be `['big', 'default', 'small', 'tiny']`.
+        - `training_nerf_iterations`: Type should be `INT`.
+        - `training_nerf_resolution`: Type should be `INT`.
+        - `marching_cude_grids_resolution`: Type should be `INT`.
+        - `marching_cude_grids_batch_size`: Type should be `INT`.
+        - `marching_cude_threshold`: Type should be `FLOAT`.
+        - `training_mesh_iterations`: Type should be `INT`.
+        - `training_mesh_resolution`: Type should be `INT`.
+        - `remesh_after_n_iteration`: Type should be `INT`.
+        - `training_albedo_iterations`: Type should be `INT`.
+        - `training_albedo_resolution`: Type should be `INT`.
+        - `texture_resolution`: Type should be `INT`.
+        - `force_cuda_rast`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `gs_ply`: Type should be `GS_PLY`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.
+        - `imgs`: Type should be `IMAGE`.
+        - `alphas`: Type should be `MASK`.

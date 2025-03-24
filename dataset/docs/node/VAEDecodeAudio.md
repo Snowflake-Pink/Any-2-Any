@@ -1,0 +1,7 @@
+- `VAEDecodeAudio`: The VAEDecodeAudio node description.
+    - Parameters:
+    - Inputs:
+        - `samples`: Type should be `LATENT`.
+        - `vae`: Type should be `VAE`.
+    - Outputs:
+        - `AUDIO`: Type should be `AUDIO`.

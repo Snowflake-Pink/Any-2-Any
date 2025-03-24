@@ -1,0 +1,43 @@
+{
+    "id": null,
+    "type": "[Comfy3D] InstantMesh Reconstruction Model",
+    "title": null,
+    "parameters": {
+        "orbit_camera_fovy": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "texture_resolution": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "lrm_model": {
+            "index": 0,
+            "type": "LRM_MODEL",
+            "link": null
+        },
+        "multiview_images": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "orbit_camera_poses": {
+            "index": 2,
+            "type": "ORBIT_CAMPOSES",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

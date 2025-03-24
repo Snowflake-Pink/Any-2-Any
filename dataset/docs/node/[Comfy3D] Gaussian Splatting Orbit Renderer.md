@@ -1,0 +1,15 @@
+- `[Comfy3D] Gaussian Splatting Orbit Renderer`: The [Comfy3D] Gaussian Splatting Orbit Renderer node description.
+    - Parameters:
+        - `render_image_width`: Type should be `INT`.
+        - `render_image_height`: Type should be `INT`.
+        - `render_orbit_camera_fovy`: Type should be `FLOAT`.
+        - `render_background_color_r`: Type should be `FLOAT`.
+        - `render_background_color_g`: Type should be `FLOAT`.
+        - `render_background_color_b`: Type should be `FLOAT`.
+    - Inputs:
+        - `gs_ply`: Type should be `GS_PLY`.
+        - `render_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+    - Outputs:
+        - `rendered_gs_images`: Type should be `IMAGE`.
+        - `rendered_gs_masks`: Type should be `MASK`.
+        - `rendered_gs_depths`: Type should be `IMAGE`.

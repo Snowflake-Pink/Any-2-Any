@@ -1,0 +1,30 @@
+{
+    "id": null,
+    "type": "[Comfy3D] CharacterGen Reconstruction Model",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "character_lrm_pipe": {
+            "index": 0,
+            "type": "CHARACTER_LRM_PIPE",
+            "link": null
+        },
+        "multiview_images": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "multiview_masks": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

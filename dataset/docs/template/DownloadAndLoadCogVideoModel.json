@@ -1,0 +1,104 @@
+{
+    "id": null,
+    "type": "DownloadAndLoadCogVideoModel",
+    "title": null,
+    "parameters": {
+        "model": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "THUDM/CogVideoX-5b",
+                "kijai/CogVideoX-5b-1.5-T2V",
+                "kijai/CogVideoX-5b-1.5-I2V"
+            ],
+            "link": null
+        },
+        "precision": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "fp16",
+                "fp32",
+                "bf16"
+            ],
+            "link": null
+        },
+        "quantization": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "fp8_e4m3fn",
+                "fp8_e4m3fn_fastmode",
+                "torchao_fp8dq",
+                "torchao_fp8dqrow",
+                "torchao_int8dq",
+                "torchao_fp6"
+            ],
+            "link": null
+        },
+        "enable_sequential_cpu_offload": {
+            "index": 3,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "attention_mode": {
+            "index": 4,
+            "value": null,
+            "type": [
+                "sdpa",
+                "fused_sdpa",
+                "sageattn",
+                "fused_sageattn",
+                "sageattn_qk_int8_pv_fp8_cuda",
+                "sageattn_qk_int8_pv_fp16_cuda",
+                "sageattn_qk_int8_pv_fp16_triton",
+                "fused_sageattn_qk_int8_pv_fp8_cuda",
+                "fused_sageattn_qk_int8_pv_fp16_cuda",
+                "fused_sageattn_qk_int8_pv_fp16_triton",
+                "comfy"
+            ],
+            "link": null
+        },
+        "load_device": {
+            "index": 5,
+            "value": null,
+            "type": [
+                "main_device",
+                "offload_device"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "block_edit": {
+            "index": 0,
+            "value": null,
+            "type": "TRANSFORMERBLOCKS",
+            "link": null
+        },
+        "lora": {
+            "index": 1,
+            "value": null,
+            "type": "COGLORA",
+            "link": null
+        },
+        "compile_args": {
+            "index": 2,
+            "type": "COMPILEARGS",
+            "link": null
+        }
+    },
+    "outputs": {
+        "model": {
+            "index": 0,
+            "type": "COGVIDEOMODEL",
+            "links": []
+        },
+        "vae": {
+            "index": 1,
+            "type": "VAE",
+            "links": []
+        }
+    }
+}

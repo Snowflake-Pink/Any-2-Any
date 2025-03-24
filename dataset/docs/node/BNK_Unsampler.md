@@ -1,0 +1,15 @@
+- `BNK_Unsampler`: The BNK_Unsampler node description.
+    - Parameters:
+        - `steps`: Type should be `INT`.
+        - `end_at_step`: Type should be `INT`.
+        - `cfg`: Type should be `FLOAT`.
+        - `sampler_name`: Type should be `['euler', 'euler_cfg_pp', 'euler_ancestral', 'euler_ancestral_cfg_pp', 'heun', 'heunpp2', 'dpm_2', 'dpm_2_ancestral', 'lms', 'dpm_fast', 'dpm_adaptive', 'dpmpp_2s_ancestral', 'dpmpp_2s_ancestral_cfg_pp', 'dpmpp_sde', 'dpmpp_sde_gpu', 'dpmpp_2m', 'dpmpp_2m_cfg_pp', 'dpmpp_2m_sde', 'dpmpp_2m_sde_gpu', 'dpmpp_3m_sde', 'dpmpp_3m_sde_gpu', 'ddpm', 'lcm', 'ipndm', 'ipndm_v', 'deis', 'ddim', 'uni_pc', 'uni_pc_bh2']`.
+        - `scheduler`: Type should be `['normal', 'karras', 'exponential', 'sgm_uniform', 'simple', 'ddim_uniform', 'beta', 'linear_quadratic']`.
+        - `normalize`: Type should be `['disable', 'enable']`.
+    - Inputs:
+        - `model`: Type should be `MODEL`.
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `latent_image`: Type should be `LATENT`.
+    - Outputs:
+        - `LATENT`: Type should be `LATENT`.

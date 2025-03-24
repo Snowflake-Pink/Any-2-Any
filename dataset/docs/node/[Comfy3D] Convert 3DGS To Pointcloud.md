@@ -1,0 +1,6 @@
+- `[Comfy3D] Convert 3DGS To Pointcloud`: The [Comfy3D] Convert 3DGS To Pointcloud node description.
+    - Parameters:
+    - Inputs:
+        - `gs_ply`: Type should be `GS_PLY`.
+    - Outputs:
+        - `points_cloud`: Type should be `POINTCLOUD`.

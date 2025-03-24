@@ -1,0 +1,36 @@
+{
+    "id": null,
+    "type": "LaMaInpaint",
+    "title": null,
+    "parameters": {
+        "device_mode": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "AUTO",
+                "Prefer GPU",
+                "CPU"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "mask": {
+            "index": 1,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

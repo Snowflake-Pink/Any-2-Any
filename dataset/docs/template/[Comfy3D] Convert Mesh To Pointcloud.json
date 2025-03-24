@@ -1,0 +1,20 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Convert Mesh To Pointcloud",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        }
+    },
+    "outputs": {
+        "points_cloud": {
+            "index": 0,
+            "type": "POINTCLOUD",
+            "links": []
+        }
+    }
+}

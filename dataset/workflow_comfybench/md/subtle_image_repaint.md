@@ -1,0 +1,108 @@
+- Nodes:
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "v1-5-pruned-emaonly.ckpt"
+    - N6:
+        - node_type: "CLIPTextEncode"
+        - text: "a photo of a girl smiling"
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "text, watermark"
+    - N8:
+        - node_type: "VAEDecode"
+    - N13:
+        - node_type: "BNK_Unsampler"
+        - steps: 25
+        - end_at_step: 0
+        - cfg: 1
+        - sampler_name: "dpmpp_2m"
+        - scheduler: "karras"
+        - normalize: "disable"
+    - N14:
+        - node_type: "LoadImage"
+        - image: "woman_portrait.jpg"
+    - N15:
+        - node_type: "VAEEncode"
+    - N16:
+        - node_type: "KSamplerAdvanced"
+        - add_noise: "disable"
+        - noise_seed: 0
+        - control_after_generate: "randomize"
+        - steps: 25
+        - cfg: 2.5
+        - sampler_name: "dpmpp_2m"
+        - scheduler: "karras"
+        - start_at_step: 0
+        - end_at_step: 25
+        - return_with_leftover_noise: "disable"
+    - N18:
+        - node_type: "PreviewImage"
+    - N19:
+        - node_type: "ControlNetLoader"
+        - control_net_name: "control_v11f1p_sd15_depth_fp16.safetensors"
+    - N21:
+        - node_type: "CLIPTextEncode"
+        - text: "a (cartoon) of a happy girl wearing sunglasses"
+    - N24:
+        - node_type: "CLIPTextEncode"
+        - text: "text, watermark"
+    - N25:
+        - node_type: "ControlNetApplyAdvanced"
+        - strength: 0.3
+        - start_percent: 0
+        - end_percent: 0.5
+    - N26:
+        - node_type: "VAELoader"
+        - vae_name: "vae-ft-mse-840000-ema-pruned.safetensors"
+    - N28:
+        - node_type: "PreviewImage"
+    - N29:
+        - node_type: "ControlNetLoader"
+        - control_net_name: "control_v11p_sd15_lineart_fp16.safetensors"
+    - N30:
+        - node_type: "ControlNetApplyAdvanced"
+        - strength: 0.1
+        - start_percent: 0
+        - end_percent: 0.5
+    - N43:
+        - node_type: "AIO_Preprocessor"
+        - preprocessor: "LineArtPreprocessor"
+        - resolution: 512
+    - N44:
+        - node_type: "AIO_Preprocessor"
+        - preprocessor: "Zoe-DepthMapPreprocessor"
+        - resolution: 512
+    - N49:
+        - node_type: "SaveImage"
+        - filename_prefix: "ComfyUI"
+
+- Links:
+    - L30: N4.clip -> N6.clip
+    - L31: N4.clip -> N7.clip
+    - L32: N16.latent -> N8.samples
+    - L33: N26.vae -> N8.vae
+    - L34: N15.latent -> N13.latent_image
+    - L35: N4.model -> N13.model
+    - L36: N7.conditioning -> N13.negative
+    - L37: N6.conditioning -> N13.positive
+    - L38: N14.image -> N15.pixels
+    - L39: N26.vae -> N15.vae
+    - L40: N13.latent -> N16.latent_image
+    - L41: N4.model -> N16.model
+    - L42: N30.negative -> N16.negative
+    - L43: N30.positive -> N16.positive
+    - L44: N44.image -> N18.images
+    - L45: N4.clip -> N21.clip
+    - L46: N4.clip -> N24.clip
+    - L47: N19.control_net -> N25.control_net
+    - L48: N44.image -> N25.image
+    - L49: N24.conditioning -> N25.negative
+    - L50: N21.conditioning -> N25.positive
+    - L51: N43.image -> N28.images
+    - L52: N29.control_net -> N30.control_net
+    - L53: N43.image -> N30.image
+    - L54: N25.negative -> N30.negative
+    - L55: N25.positive -> N30.positive
+    - L56: N14.image -> N43.image
+    - L57: N14.image -> N44.image
+    - L58: N8.image -> N49.images

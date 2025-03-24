@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "type": "MiDaS-DepthMapPreprocessor",
+    "title": null,
+    "parameters": {
+        "a": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "bg_threshold": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "resolution": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

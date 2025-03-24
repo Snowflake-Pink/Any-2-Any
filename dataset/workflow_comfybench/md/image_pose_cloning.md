@@ -1,0 +1,74 @@
+- Nodes:
+    - N3:
+        - node_type: "KSampler"
+        - seed: 249584040731174
+        - control_after_generate: "randomize"
+        - steps: 20
+        - cfg: 7
+        - sampler_name: "dpmpp_2m"
+        - scheduler: "karras"
+        - denoise: 1
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "dreamshaper_8.safetensors"
+    - N5:
+        - node_type: "EmptyLatentImage"
+        - width: 512
+        - height: 512
+        - batch_size: 1
+    - N6:
+        - node_type: "CLIPTextEncode"
+        - text: "a male, dancing in the street"
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "blurry, painting, drawing, photography, distorted, horror"
+    - N8:
+        - node_type: "VAEDecode"
+    - N9:
+        - node_type: "SaveImage"
+        - filename_prefix: "Result"
+    - N11:
+        - node_type: "VAELoader"
+        - vae_name: "vae-ft-mse-840000-ema-pruned.safetensors"
+    - N12:
+        - node_type: "LoadImage"
+        - image: "woman_dance.jpg"
+    - N14:
+        - node_type: "ControlNetLoader"
+        - control_net_name: "control_v11p_sd15_openpose_fp16.safetensors"
+    - N16:
+        - node_type: "ControlNetApply"
+        - strength: 0.9
+    - N17:
+        - node_type: "PreviewImage"
+    - N24:
+        - node_type: "ImageScale"
+        - upscale_method: "nearest-exact"
+        - width: 512
+        - height: 512
+        - crop: "disabled"
+    - N28:
+        - node_type: "DWPreprocessor"
+        - detect_hand: "disable"
+        - detect_body: "enable"
+        - detect_face: "disable"
+        - resolution: 512
+        - bbox_detector: "yolox_l.onnx"
+        - pose_estimator: "dw-ll_ucoco_384_bs5.torchscript.pt"
+
+- Links:
+    - L16: N5.latent -> N3.latent_image
+    - L17: N4.model -> N3.model
+    - L18: N7.conditioning -> N3.negative
+    - L19: N16.conditioning -> N3.positive
+    - L20: N4.clip -> N6.clip
+    - L21: N4.clip -> N7.clip
+    - L22: N3.latent -> N8.samples
+    - L23: N11.vae -> N8.vae
+    - L24: N8.image -> N9.images
+    - L25: N6.conditioning -> N16.conditioning
+    - L26: N14.control_net -> N16.control_net
+    - L27: N24.image -> N16.image
+    - L28: N28.image -> N17.images
+    - L29: N28.image -> N24.image
+    - L30: N12.image -> N28.image

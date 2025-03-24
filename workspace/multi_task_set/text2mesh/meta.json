@@ -1,0 +1,103 @@
+{
+    "01001": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content": "Generate a 3D mesh of a anime girl with short skirt and daisy blue eyes and save the mesh as 'cute_girl.obj'."
+    },
+    "01002": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content": "Generate a 3D mesh of a plain ceramic coffee mug with a matte white finish. It features a gently curved, sturdy handle for gripping, a slightly rounded base, and a smooth, untextured surface that reflects faint ambient light. Save the mesh as coffee_mug.obj."
+    },
+    "01003": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+           "mesh"
+        ],
+        "content": "Generate a 3D mesh of a classic hardcover book with a solid blue cover. The book has a subtle fabric texture and rounded corners. The pages are aligned neatly with a slight golden tint at the edges, giving a vintage look. Save the mesh as blue_book.obj."
+
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+             "mesh"
+        ],
+        "content": "Generate a 3D mesh of a round, bright orange with a textured peel covered in small dimples. It has a tiny, dried green stem on top, and the surface shows a faint, shiny sheen, indicating juiciness. Save the mesh as orange_fruit.obj."
+    },
+    "01005": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content": "Generate a 3D mesh of a simple black office chair with a flat seat and a low backrest. It has a minimalistic design, thin matte finish, and stands on a five-wheel base, with each wheel small and unobtrusive. Save the mesh as office_chair.obj."
+    },
+    "01006": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content": "Generate a 3D mesh of a standard incandescent light bulb with a clear glass surface. The metallic base has grooved ridges for screwing in, and inside, a thin tungsten filament is suspended by two small metal wires. Save the mesh as light_bulb.obj."
+    },
+    "01007": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+             "mesh"
+        ],
+        "content": "Generate a 3D mesh of a simple wooden spoon with a smooth, polished light brown surface. The handle is straight with a slight curve at the end, and the bowl of the spoon is shallow with a rounded edge. Save the mesh as wooden_spoon.obj."
+    },
+    "01008": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+             "mesh"
+        ],
+        "content": "Generate a 3D mesh of a cylindrical transparent water bottle with a faint blue tint. It features a screw-on cap with ridges for grip, smooth body with slight indentations for holding, and tiny air bubbles trapped inside the water. Save the mesh as water_bottle.obj."
+    },
+    "01009": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content":"Generate a 3D mesh of a small green apple with a shiny, waxy surface. It has a slightly irregular shape, a tiny brown stem, and a smooth skin with light speckles and green highlights. Save the mesh as green_apple.obj."
+    },
+    "01010": {
+        "complexity": 4,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "mesh"
+        ],
+        "content": "Generate a 3D mesh of a traditional wooden pencil with a yellow hexagonal body. The pencil has a sharp graphite tip and a pink eraser on the other end, held by a shiny metal band. There are faint lines showing the wood grain pattern. Save the mesh as yellow_pencil.obj."
+    }
+}

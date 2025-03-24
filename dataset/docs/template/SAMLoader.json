@@ -1,0 +1,36 @@
+{
+    "id": null,
+    "type": "SAMLoader",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "sam_vit_b_01ec64.pth",
+                "sam_vit_h_4b8939.pth",
+                "sam_vit_l_0b3195.pth",
+                "ESAM"
+            ],
+            "link": null
+        },
+        "device_mode": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "AUTO",
+                "Prefer GPU",
+                "CPU"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "SAM_MODEL": {
+            "index": 0,
+            "type": "SAM_MODEL",
+            "links": []
+        }
+    }
+}

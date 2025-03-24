@@ -1,0 +1,54 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load Diffusers Pipeline",
+    "title": null,
+    "parameters": {
+        "diffusers_pipeline_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "MVDreamPipeline",
+                "Wonder3DMVDiffusionPipeline",
+                "Zero123PlusPipeline",
+                "DiffusionPipeline",
+                "StableDiffusionPipeline",
+                "Era3DPipeline",
+                "Unique3DImage2MVCustomPipeline",
+                "Unique3DImageCustomPipeline"
+            ],
+            "link": null
+        },
+        "repo_id": {
+            "index": 1,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "custom_pipeline": {
+            "index": 2,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "force_download": {
+            "index": 3,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "checkpoint_sub_dir": {
+            "index": 4,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "pipe": {
+            "index": 0,
+            "type": "DIFFUSERS_PIPE",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "id": null,
+    "type": "VAEDecodeAudio",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "samples": {
+            "index": 0,
+            "type": "LATENT",
+            "link": null
+        },
+        "vae": {
+            "index": 1,
+            "type": "VAE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "AUDIO": {
+            "index": 0,
+            "type": "AUDIO",
+            "links": []
+        }
+    }
+}

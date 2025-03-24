@@ -1,0 +1,33 @@
+{
+    "id": null,
+    "type": "ADE_EmptyLatentImageLarge",
+    "title": null,
+    "parameters": {
+        "width": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "height": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "batch_size": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "LATENT": {
+            "index": 0,
+            "type": "LATENT",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "id": null,
+    "type": "CogVideoTextEncode",
+    "title": null,
+    "parameters": {
+        "prompt": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "strength": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "force_offload": {
+            "index": 2,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "clip": {
+            "index": 0,
+            "type": "CLIP",
+            "link": null
+        }
+    },
+    "outputs": {
+        "conditioning": {
+            "index": 0,
+            "type": "CONDITIONING",
+            "links": []
+        },
+        "clip": {
+            "index": 1,
+            "type": "CLIP",
+            "links": []
+        }
+    }
+}

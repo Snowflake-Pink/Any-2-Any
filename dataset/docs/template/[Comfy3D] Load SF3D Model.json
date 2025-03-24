@@ -1,0 +1,23 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load SF3D Model",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "model.safetensors"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "sf3d_model": {
+            "index": 0,
+            "type": "SF3D_MODEL",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "id": null,
+    "type": "[Comfy3D] CRM T2I V2 Models",
+    "title": null,
+    "parameters": {
+        "prompt": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "prompt_neg": {
+            "index": 1,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "seed": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "mv_guidance_scale": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "num_inference_steps": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "t2iadapter_v2": {
+            "index": 0,
+            "type": "T2IADAPTER_V2",
+            "link": null
+        },
+        "crm_mvdiffusion_sampler_v2": {
+            "index": 1,
+            "type": "CRM_MVDIFFUSION_SAMPLER_V2",
+            "link": null
+        },
+        "reference_image": {
+            "index": 2,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 3,
+            "type": "MASK",
+            "link": null
+        },
+        "normal_maps": {
+            "index": 4,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "multiview_images": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "orbit_camposes": {
+            "index": 1,
+            "type": "ORBIT_CAMPOSES",
+            "links": []
+        }
+    }
+}

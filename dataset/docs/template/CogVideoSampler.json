@@ -1,0 +1,121 @@
+{
+    "id": null,
+    "type": "CogVideoSampler",
+    "title": null,
+    "parameters": {
+        "num_frames": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "steps": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "cfg": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "seed": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "control_after_generate": {
+            "index": 4,
+            "value": null,
+            "type": ["fixed", "randomize"],
+            "link": null
+        },
+        "scheduler": {
+            "index": 5,
+            "value": null,
+            "type": [
+                "DPM++",
+                "Euler",
+                "Euler A",
+                "PNDM",
+                "DDIM",
+                "CogVideoXDDIM",
+                "CogVideoXDPMScheduler",
+                "SASolverScheduler",
+                "UniPCMultistepScheduler",
+                "HeunDiscreteScheduler",
+                "DEISMultistepScheduler",
+                "LCMScheduler"
+            ],
+            "link": null
+        },
+        "denoise_strength": {
+            "index": 6,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "model": {
+            "index": 0,
+            "type": "COGVIDEOMODEL",
+            "link": null
+        },
+        "positive": {
+            "index": 1,
+            "type": "CONDITIONING",
+            "link": null
+        },
+        "negative": {
+            "index": 2,
+            "type": "CONDITIONING",
+            "link": null
+        },
+        "samples": {
+            "index": 3,
+            "type": "LATENT",
+            "link": null
+        },
+        "image_cond_latents": {
+            "index": 4,
+            "type": "LATENT",
+            "link": null
+        },
+        "context_options": {
+            "index": 5,
+            "type": "COGCONTEXT",
+            "link": null
+        },
+        "controlnet": {
+            "index": 6,
+            "type": "COGVIDECONTROLNET",
+            "link": null
+        },
+        "tora_trajectory": {
+            "index": 7,
+            "type": "TORAFEATURES",
+            "link": null
+        },
+        "fastercache": {
+            "index": 8,
+            "type": "FASTERCACHEARGS",
+            "link": null
+        },
+        "feta_args": {
+            "index": 9,
+            "type": "FETAARGS",
+            "link": null
+        }
+    },
+    "outputs": {
+        "samples": {
+            "index": 0,
+            "type": "LATENT",
+            "links": []
+        }
+    }
+}

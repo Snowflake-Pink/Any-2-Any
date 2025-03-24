@@ -1,0 +1,11 @@
+- `easy imageRemBg`: The easy imageRemBg node description.
+    - Parameters:
+        - `image_output`: Type should be `['Hide', 'Preview', 'Save', 'Hide/Save']`.
+        - `save_prefix`: Type should be `STRING`.
+        - `torchscript_jit`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `images`: Type should be `IMAGE`.
+        - `rem_mode`: Type should be `('RMBG-1.4', 'Inspyrenet')`.
+    - Outputs:
+        - `image`: Type should be `IMAGE`.
+        - `mask`: Type should be `MASK`.

@@ -1,0 +1,30 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load Unique3D Custom UNet",
+    "title": null,
+    "parameters": {
+        "config_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "image2mvimage",
+                "image2normal"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "pipe": {
+            "index": 0,
+            "type": "DIFFUSERS_PIPE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "pipe": {
+            "index": 0,
+            "type": "DIFFUSERS_PIPE",
+            "links": []
+        }
+    }
+}

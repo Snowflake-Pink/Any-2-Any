@@ -1,0 +1,8 @@
+- `[Comfy3D] Convert Vertex Color To Texture`: The [Comfy3D] Convert Vertex Color To Texture node description.
+    - Parameters:
+        - `texture_resolution`: Type should be `INT`.
+        - `batch_size`: Type should be `INT`.
+    - Inputs:
+        - `mesh`: Type should be `MESH`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

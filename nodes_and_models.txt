@@ -1,0 +1,61 @@
+# nodes
+ComfyUI-VideoHelperSuite
+ComfyUI-AnimateDiff-Evolved
+ComfyUI_FizzNodes
+ComfyUI-ReActor
+comfyui_controlnet_aux
+ComfyUI-Frame-Interpolation
+ComfyUI-3D-Pack
+Rembg Background Removal Node for ComfyUI
+ComfyUI-tbox
+WAS Node Suite
+ComfyUI-CogVideoXWrapper
+ComfyUI Noise
+ComfyUI_essentials
+segment anything
+ComfyUI ArtVenture
+ComfyUI-IC-Light
+ComfyUI-Easy-Use
+Comfyroll Studio
+ComfyUI_IPAdapter_plus
+Advanced CLIP Text Encode
+ComfyUI Impact Pack
+ComfyUI Impact Subpack
+
+# models (should be placed at ComfyUI/models/ folder if not specific with "ComfyUI/custom_nodes/")
+checkpoints/stable-audio-open-1_0.safetensors
+checkpoints/dreamshaper_8.safetensors
+checkpoints/majicmixRealistic_v7.safetensors
+checkpoints/512-inpainting-ema.safetensors
+checkpoints/sd21-unclip-h.ckpt
+checkpoints/stable_zero123.ckpt
+checkpoints/v1-5-pruned-emaonly.ckpt
+checkpoints/cardosAnime_v10.safetensors
+checkpoints/sd21-unclip-l.ckpt
+checkpoints/dreamshaper_8Inpainting.safetensors
+checkpoints/svd.safetensors
+clip/t5_base.safetensors
+clip/t5xxl_fp16.safetensors
+clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+controlnet/control_v11p_sd15_openpose_fp16.safetensors
+controlnet/control_v11p_sd15_lineart_fp16.safetensors
+controlnet/control_v11f1p_sd15_depth_fp16.safetensors
+controlnet/control_v11p_sd15_scribble_fp16.safetensors
+vae/kl-f8-anime2.ckpt
+vae/vae-ft-mse-840000-ema-pruned.safetensors
+loras/sd15_lcm_lora_rank1.safetensors
+loras/more_details.safetensors
+insightface/inswapper_128.onnx
+facerestore_models/codeformer-v0.1.0.pth
+svd/svd.safetensors
+upscale_models/4x-UltraSharp.pth
+unet/IC-Light/iclight_sd15_fcon.safetensors
+ultralytics/bbox/face_yolov8m.pt
+ipadapter/ip-adapter_sd15.safetensors
+yolo/face_yolov8m.pt
+sams/sam_vit_b_01ec64.pth
+ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts/hr16/DWPose-TorchScript-BatchSize5/dw-ll_ucoco_384_bs5.torchscript.pt
+ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts/yzd-v/DWPose/yolox_l.onnx
+ComfyUI/custom_nodes/comfyui-animatediff-evolved/models/motionModel_v01.ckpt
+ComfyUI/custom_nodes/comfyui-frame-interpolation/ckpts/rife/rife47.pth
+ComfyUI/custom_nodes/comfyui-3d-pack/Checkpoints/TriplaneGaussian/model_lvis_rel.ckpt

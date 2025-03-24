@@ -1,0 +1,10 @@
+# create nodes by instantiation
+checkpointloadersimple_4 = CheckpointLoaderSimple(ckpt_name="""majicmixRealistic_v7.safetensors""")
+controlnetapplyadvanced_24 = ControlNetApplyAdvanced(strength=0.9, start_percent=0, end_percent=1)
+diffcontrolnetloader_25 = DiffControlNetLoader(control_net_name="""control_v11p_sd15_openpose_fp16.safetensors""")
+midasHyphendepthmappreprocessor_27 = MiDaSHyphenDepthMapPreprocessor(a=6.28, bg_threshold=0.1, resolution=512)
+controlnetapplyadvanced_28 = ControlNetApplyAdvanced(strength=1, start_percent=0, end_percent=1)
+diffcontrolnetloader_29 = DiffControlNetLoader(control_net_name="""control_v11f1p_sd15_depth_fp16.safetensors""")
+reactorfaceswap_53 = ReActorFaceSwap(enabled=True, swap_model="""inswapper_128.onnx""", facedetection="""YOLOv5l""", face_restore_model="""codeformer-v0.1.0.pth""", face_restore_visibility=1, codeformer_weight=0.5, detect_gender_input="""no""", detect_gender_source="""no""", input_faces_index="""0""", source_faces_index="""0""", console_log_level=1)
+ksampler_62 = KSampler(seed=1093069514427779, control_after_generate="""randomize""", steps=30, cfg=7, sampler_name="""dpmpp_2m""", scheduler="""karras""", denoise=1)
+saveimage_63 = SaveImage(filename_prefix="""ComfyUI""")

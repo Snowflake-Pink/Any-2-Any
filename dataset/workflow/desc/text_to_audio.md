@@ -1,0 +1,1 @@
+This workflow generates a calming audio clip by encoding text descriptions of peaceful natural sounds and avoiding loud or abrupt noises. It creates a latent audio representation, conditions it based on the prompts, decodes it into an audio file, and saves the final output.

@@ -1,0 +1,94 @@
+{
+    "id": null,
+    "type": "ADE_AnimateDiffLoaderWithContext",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "AnimateLCM_sd15_t2v.ckpt",
+                "animatediff_lightning_8step_comfyui.safetensors",
+                "mm_sd_v14.ckpt",
+                "mm_sd_v15_v2.ckpt",
+                "mm_sdxl_v10_beta.ckpt",
+                "motionModel_v01.ckpt",
+                "sd15_t2v_beta_motion.ckpt",
+                "temporaldiff-v1-animatediff.safetensors",
+                "v3_sd15_mm.ckpt"
+            ],
+            "link": null
+        },
+        "beta_schedule": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "autoselect",
+                "use existing",
+                "sqrt_linear (AnimateDiff)",
+                "linear (AnimateDiff-SDXL)",
+                "linear (HotshotXL/default)",
+                "avg(sqrt_linear,linear)",
+                "lcm avg(sqrt_linear,linear)",
+                "lcm",
+                "lcm[100_ots]",
+                "lcm >> sqrt_linear",
+                "sqrt",
+                "cosine",
+                "squaredcos_cap_v2"
+            ],
+            "link": null
+        },
+        "motion_scale": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "apply_v2_models_properly": {
+            "index": 3,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "model": {
+            "index": 0,
+            "type": "MODEL",
+            "link": null
+        },
+        "context_options": {
+            "index": 1,
+            "type": "CONTEXT_OPTIONS",
+            "link": null
+        },
+        "motion_lora": {
+            "index": 2,
+            "type": "MOTION_LORA",
+            "link": null
+        },
+        "ad_settings": {
+            "index": 3,
+            "type": "AD_SETTINGS",
+            "link": null
+        },
+        "sample_settings": {
+            "index": 4,
+            "type": "SAMPLE_SETTINGS",
+            "link": null
+        },
+        "ad_keyframes": {
+            "index": 5,
+            "type": "AD_KEYFRAMES",
+            "link": null
+        }
+    },
+    "outputs": {
+        "MODEL": {
+            "index": 0,
+            "type": "MODEL",
+            "links": []
+        }
+    }
+}

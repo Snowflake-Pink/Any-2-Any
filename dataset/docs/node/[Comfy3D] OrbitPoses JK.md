@@ -1,0 +1,12 @@
+- `[Comfy3D] OrbitPoses JK`: The [Comfy3D] OrbitPoses JK node description.
+    - Parameters:
+        - `orbitpose_preset`: Type should be `['Custom', 'CRM(6)', 'Wonder3D(6)', 'Zero123Plus(6)', 'Era3D(6)', 'MVDream(4)', 'Unique3D(4)', 'CharacterGen(4)']`.
+        - `radius`: Type should be `STRING`.
+        - `elevations`: Type should be `STRING`.
+        - `azimuths`: Type should be `STRING`.
+        - `centerX`: Type should be `STRING`.
+        - `centerY`: Type should be `STRING`.
+        - `centerZ`: Type should be `STRING`.
+    - Inputs:
+    - Outputs:
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

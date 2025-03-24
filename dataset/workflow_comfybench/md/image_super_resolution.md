@@ -1,0 +1,22 @@
+- Nodes:
+    - N11:
+        - node_type: "UpscaleModelLoader"
+        - model_name: "4x-UltraSharp.pth"
+    - N12:
+        - node_type: "ImageUpscaleWithModel"
+    - N29:
+        - node_type: "SaveImage"
+        - filename_prefix: "ComfyUI"
+    - N30:
+        - node_type: "ImageScaleBy"
+        - upscale_method: "bilinear"
+        - scale_by: 0.5
+    - N31:
+        - node_type: "LoadImage"
+        - image: "titled_book.png"
+
+- Links:
+    - L5: N31.image -> N12.image
+    - L6: N11.upscale_model -> N12.upscale_model
+    - L7: N30.image -> N29.images
+    - L8: N12.image -> N30.image

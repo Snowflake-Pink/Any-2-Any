@@ -1,0 +1,17 @@
+- `StableZero123_Conditioning_Batched`: The StableZero123_Conditioning_Batched node description.
+    - Parameters:
+        - `width`: Type should be `INT`.
+        - `height`: Type should be `INT`.
+        - `batch_size`: Type should be `INT`.
+        - `elevation`: Type should be `FLOAT`.
+        - `azimuth`: Type should be `FLOAT`.
+        - `elevation_batch_increment`: Type should be `FLOAT`.
+        - `azimuth_batch_increment`: Type should be `FLOAT`.
+    - Inputs:
+        - `clip_vision`: Type should be `CLIP_VISION`.
+        - `init_image`: Type should be `IMAGE`.
+        - `vae`: Type should be `VAE`.
+    - Outputs:
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `latent`: Type should be `LATENT`.

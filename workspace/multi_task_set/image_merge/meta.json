@@ -1,0 +1,103 @@
+{
+    "01001": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'mountains.png' and 'sunset.png', extracting their visual features. Then, combine the extracted visual features to generate an image that depicts a beautify scenary with features from both input images. Finally, save the generated image as a file named 'BeautifulScene'."
+    },
+    "01002": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'forest_path.png' and 'mystical_lights.png', extract their visual features. Then, combine the extracted visual features to generate an image of an enchanted forest with glowing orbs and mist. Finally, save the generated image as a file named 'EnchantedForest.png'."
+    },
+    "01003": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'ocean_waves.png' and 'sunrise_sky.png', extract their visual features. Then, combine the extracted visual features to generate an image that shows a beautiful sunrise over the ocean waves. Finally, save the generated image as a file named 'OceanSunrise.png'."
+    },
+    "01004": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'city_night.png' and 'fantasy_creatures.png', extract their visual features. Then, combine the extracted visual features to generate an image of a bustling city with mystical creatures roaming the streets. Finally, save the generated image as a file named 'UrbanFantasy.png'."
+    },
+    "01005": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'desert_dunes.png' and 'tropical_oasis.png', extract their visual features. Then, combine the extracted visual features to generate an image of a mystical castle perched on the mountain. Finally, save the generated image as a file named 'MysticalCastle.png'."    
+    },
+    "01006": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'mountain_landscape.png' and 'ancient_castle.png', extract their visual features. Then, combine the extracted visual features to generate an image of a mystical castle perched on the mountain. Finally, save the generated image as a file named 'MysticalCastle.png'."    
+    },
+    "01007": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'retro_city.png' and 'alien_spaceship.png', extract their visual features. Then, combine the extracted visual features to generate an image of a retro-futuristic city with alien spacecraft in the sky. Finally, save the generated image as a file named 'RetroSciFi.png'."
+    },
+    "01008": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'clouds.png' and 'abstract_shapes.png', extract their visual features. Then, combine the extracted visual features to generate an image of surreal dreamscape with floating shapes and soft cloud textures. Finally, save the generated image as a file named 'Dreamscape.png'."
+    },
+    "01009": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'jungle_foliage.png' and 'ancient_ruins.png', extract their visual features. Then, combine the extracted visual features to generate an image of ancient stone ruins overgrown with dense jungle foliage. Finally, save the generated image as a file named 'StoneRuins.png'."
+    },
+    "01010": {
+        "complexity": 4,
+        "source": [
+            "image", "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "Given two images, 'beach.png' and 'space_nebula.png', extract their visual features. Then, combine the extracted visual features to generate an image of a beach with a surreal nebula sky. Finally, save the generated image as a file named 'SpaceBeach.png'."
+    }
+    
+}

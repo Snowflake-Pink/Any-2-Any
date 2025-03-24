@@ -1,0 +1,102 @@
+{
+    "01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'mountains.png', please create a 14 frame video of beautiful scenery from it."
+    },
+    "01002": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'aurora_snowy_landscape.png', please create a 14 frame video of beautiful scenery from it."
+    },
+    "01003": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'futuristic_cityscape.png', please create a 14-frame video of a bustling, neon-lit futuristic city at night."
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'abstract_geometric_art.png', please create a 14-frame video showcasing dynamic movements and transformations of geometric shapes."
+    },
+    "01005": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'waterfall_jungle.png', please create a 14 frame video of beautiful scenery from it."
+    },
+    "01006": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'desert_dunes.png', please create a 14 frame video of beautiful scenery from it."
+    },
+    "01007": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'starry_mountain_night.png', please create a 14 frame video of beautiful scenery from it."
+    },
+    "01008": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'underwater_city.png', please create a 14-frame video of a submerged cityscape with marine life swimming through the streets."
+    },
+    "01009": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'cyberpunk_street_scene.png', please create a 14-frame video of a rainy, neon-lit street in a cyberpunk city, with people and vehicles moving."
+    },
+    "01010": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "You are given an image named 'robot_assembly_line.png', please create a 14-frame video of robots being assembled on a high-tech production line."
+    }
+}

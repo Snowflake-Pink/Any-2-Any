@@ -1,0 +1,23 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load Triplane Gaussian Transformers",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "model_lvis_rel.ckpt"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "tgs_model": {
+            "index": 0,
+            "type": "TGS_MODEL",
+            "links": []
+        }
+    }
+}

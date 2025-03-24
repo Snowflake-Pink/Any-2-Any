@@ -1,0 +1,16 @@
+- `StableZero123_BatchSchedule`: The StableZero123_BatchSchedule node description.
+    - Parameters:
+        - `width`: Type should be `INT`.
+        - `height`: Type should be `INT`.
+        - `batch_size`: Type should be `INT`.
+        - `interpolation`: Type should be `['linear', 'ease_in', 'ease_out', 'ease_in_out']`.
+        - `azimuth_points_string`: Type should be `STRING`.
+        - `elevation_points_string`: Type should be `STRING`.
+    - Inputs:
+        - `clip_vision`: Type should be `CLIP_VISION`.
+        - `init_image`: Type should be `IMAGE`.
+        - `vae`: Type should be `VAE`.
+    - Outputs:
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `latent`: Type should be `LATENT`.

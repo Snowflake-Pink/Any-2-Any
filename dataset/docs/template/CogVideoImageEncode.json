@@ -1,0 +1,61 @@
+{
+    "id": null,
+    "type": "CogVideoImageEncode",
+    "title": null,
+    "parameters": {
+        "enable_tiling": {
+            "index": 0,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "noise_aug_strength": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "strength": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "start_percent": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "end_percent": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "vae": {
+            "index": 0,
+            "type": "VAE",
+            "link": null
+        },
+        "start_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "end_image": {
+            "index": 2,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "samples": {
+            "index": 0,
+            "type": "LATENT",
+            "links": []
+        }
+    }
+}

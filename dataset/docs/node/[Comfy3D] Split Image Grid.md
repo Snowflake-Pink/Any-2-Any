@@ -1,0 +1,8 @@
+- `[Comfy3D] Split Image Grid`: The [Comfy3D] Split Image Grid node description.
+    - Parameters:
+        - `grid_side_num`: Type should be `INT`.
+        - `use_rows`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `images`: Type should be `IMAGE`.

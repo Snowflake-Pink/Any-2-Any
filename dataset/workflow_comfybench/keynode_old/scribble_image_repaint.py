@@ -1,0 +1,13 @@
+# create nodes by instantiation
+checkpointloadersimple_4 = CheckpointLoaderSimple(ckpt_name="""dreamshaper_8.safetensors""")
+emptylatentimage_5 = EmptyLatentImage(width=512, height=512, batch_size=1)
+cliptextencode_6 = CLIPTextEncode(text="""a bird, open wings,""")
+cliptextencode_7 = CLIPTextEncode(text="""horror,lowres, zombie,""")
+vaedecode_8 = VAEDecode()
+saveimage_9 = SaveImage(filename_prefix="""Comfy""")
+ksampler_17 = KSampler(seed=797967395221167, control_after_generate="""randomize""", steps=27, cfg=4, sampler_name="""dpmpp_2m_sde""", scheduler="""karras""", denoise=1)
+controlnetapply_26 = ControlNetApply(strength=0.8)
+controlnetloader_27 = ControlNetLoader(control_net_name="""control_v11p_sd15_scribble_fp16.safetensors""")
+loadimage_28 = LoadImage(image="""simple_graffiti.png""")
+getimagesizePLUS_31 = GetImageSizePLUS()
+imageinvert_32 = ImageInvert()

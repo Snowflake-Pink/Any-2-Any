@@ -1,0 +1,7 @@
+- `[Comfy3D] Load Unique3D Custom UNet`: The [Comfy3D] Load Unique3D Custom UNet node description.
+    - Parameters:
+        - `config_name`: Type should be `['image2mvimage', 'image2normal']`.
+    - Inputs:
+        - `pipe`: Type should be `DIFFUSERS_PIPE`.
+    - Outputs:
+        - `pipe`: Type should be `DIFFUSERS_PIPE`.

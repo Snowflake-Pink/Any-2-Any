@@ -1,0 +1,16 @@
+- `[Comfy3D] ExplicitTarget Color Projection`: The [Comfy3D] ExplicitTarget Color Projection node description.
+    - Parameters:
+        - `projection_resolution`: Type should be `INT`.
+        - `complete_unseen_rgb`: Type should be `BOOLEAN`.
+        - `render_orbit_camera_fovy`: Type should be `FLOAT`.
+        - `projection_weights`: Type should be `STRING`.
+        - `confidence_threshold`: Type should be `FLOAT`.
+        - `texture_projecton`: Type should be `BOOLEAN`.
+        - `texture_type`: Type should be `['Albedo', 'Metallic_and_Roughness']`.
+    - Inputs:
+        - `mesh`: Type should be `MESH`.
+        - `reference_images`: Type should be `IMAGE`.
+        - `reference_masks`: Type should be `MASK`.
+        - `reference_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

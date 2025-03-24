@@ -1,0 +1,49 @@
+{
+    "id": null,
+    "type": "SaveAnimatedWEBP",
+    "title": null,
+    "parameters": {
+        "filename_prefix": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "fps": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "lossless": {
+            "index": 2,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "quality": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "method": {
+            "index": 4,
+            "value": null,
+            "type": [
+                "default",
+                "fastest",
+                "slowest"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "images": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {}
+}

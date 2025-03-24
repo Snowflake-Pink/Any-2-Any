@@ -1,0 +1,100 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Mesh Orbit Renderer",
+    "title": null,
+    "parameters": {
+        "render_image_width": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "render_image_height": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "render_orbit_camera_fovy": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "render_background_color_r": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "render_background_color_g": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "render_background_color_b": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "force_cuda_rasterize": {
+            "index": 6,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "render_depth": {
+            "index": 7,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "render_normal": {
+            "index": 8,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        },
+        "render_orbit_camera_poses": {
+            "index": 1,
+            "type": "ORBIT_CAMPOSES",
+            "link": null
+        }
+    },
+    "outputs": {
+        "rendered_mesh_images": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "rendered_mesh_masks": {
+            "index": 1,
+            "type": "MASK",
+            "links": []
+        },
+        "all_rendered_depths": {
+            "index": 2,
+            "type": "IMAGE",
+            "links": []
+        },
+        "all_rendered_normals": {
+            "index": 3,
+            "type": "IMAGE",
+            "links": []
+        },
+        "all_rendered_viewcos": {
+            "index": 4,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

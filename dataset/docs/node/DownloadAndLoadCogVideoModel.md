@@ -1,0 +1,15 @@
+- `DownloadAndLoadCogVideoModel`: The DownloadAndLoadCogVideoModel node description.
+    - Parameters:
+        - `model`: Type should be `['THUDM/CogVideoX-5b', 'kijai/CogVideoX-5b-1.5-T2V', 'kijai/CogVideoX-5b-1.5-I2V']`.
+        - `precision`: Type should be `['fp16', 'fp32', 'bf16']`.
+        - `quantization`: Type should be `['fp8_e4m3fn', 'fp8_e4m3fn_fastmode', 'torchao_fp8dq', 'torchao_fp8dqrow', 'torchao_int8dq', 'torchao_fp6']`.
+        - `enable_sequential_cpu_offload`: Type should be `BOOLEAN`.
+        - `attention_mode`: Type should be `['sdpa', 'fused_sdpa', 'sageattn', 'fused_sageattn', 'sageattn_qk_int8_pv_fp8_cuda', 'sageattn_qk_int8_pv_fp16_cuda', 'sageattn_qk_int8_pv_fp16_triton', 'fused_sageattn_qk_int8_pv_fp8_cuda', 'fused_sageattn_qk_int8_pv_fp16_cuda', 'fused_sageattn_qk_int8_pv_fp16_triton', 'comfy']`.
+        - `load_device`: Type should be `['main_device', 'offload_device']`.
+    - Inputs:
+        - `block_edit`: Type should be `TRANSFORMERBLOCKS`.
+        - `lora`: Type should be `COGLORA`.
+        - `compile_args`: Type should be `COMPILEARGS`.
+    - Outputs:
+        - `model`: Type should be `COGVIDEOMODEL`.
+        - `vae`: Type should be `VAE`.

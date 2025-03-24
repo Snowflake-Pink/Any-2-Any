@@ -1,0 +1,23 @@
+# create nodes by instantiation
+loadimage_4 = LoadImage(image="""Cat_Coffee_rgba.png""")
+invertmask_5 = InvertMask()
+LeftBracketcomfy3dRightBracketSpaceloadSpacelargeSpacemultiviewSpacegaussianSpacemodel_1 = LeftBracketComfy3DRightBracketSpaceLoadSpaceLargeSpaceMultiviewSpaceGaussianSpaceModel(model_name="""model_fp16.safetensors""", lgb_config="""big""")
+LeftBracketcomfy3dRightBracketSpacemvdreamSpacemodel_18 = LeftBracketComfy3DRightBracketSpaceMVDreamSpaceModel(prompt="""""", prompt_neg="""ugly, blurry, pixelated obscure, unnatural colors, poor lighting, dull, unclear, cropped, lowres, low quality, artifacts, duplicate""", seed=0, mv_guidance_scale="""fixed""", num_inference_steps=5, elevation=30)
+LeftBracketcomfy3dRightBracketSpaceswitchSpace3dgsSpaceaxis_12 = LeftBracketComfy3DRightBracketSpaceSwitchSpace3DGSSpaceAxis(axis_x_to="""+x""", axis_y_to="""-y""", axis_z_to="""-z""")
+LeftBracketcomfy3dRightBracketSpacesaveSpace3dSpacemesh_14 = LeftBracketComfy3DRightBracketSpaceSaveSpace3DSpaceMesh(save_path="""LGMTest/FatCat.obj""")
+LeftBracketcomfy3dRightBracketSpacesaveSpace3dgs_9 = LeftBracketComfy3DRightBracketSpaceSaveSpace3DGS(save_path="""LGMTest/FatCat.ply""")
+LeftBracketcomfy3dRightBracketSpaceloadSpacediffusersSpacepipeline_2 = LeftBracketComfy3DRightBracketSpaceLoadSpaceDiffusersSpacePipeline(diffusers_pipeline_name="""MVDreamPipeline""", repo_id="""ashawkey/imagedream-ipmv-diffusers""", custom_pipeline="""""", force_download=True, checkpoint_sub_dir="""""")
+LeftBracketcomfy3dRightBracketSpacelargeSpacemultiviewSpacegaussianSpacemodel_17 = LeftBracketComfy3DRightBracketSpaceLargeSpaceMultiviewSpaceGaussianSpaceModel()
+LeftBracketcomfy3dRightBracketSpaceconvertSpace3dgsSpacetoSpacemeshSpacewithSpacenerfSpaceandSpacemarchingSpacecubes_20 = LeftBracketComfy3DRightBracketSpaceConvertSpace3DGSSpacetoSpaceMeshSpacewithSpaceNeRFSpaceandSpaceMarchingSpaceCubes(gs_config="""big""", training_nerf_iterations=512, training_nerf_resolution=128, marching_cude_grids_resolution=256, marching_cude_grids_batch_size=128, marching_cude_threshold=10, training_mesh_iterations=2048, training_mesh_resolution=512, remesh_after_n_iteration=512, training_albedo_iterations=512, training_albedo_resolution=512, texture_resolution=1024, force_cuda_rast=False)
+
+# link nodes by invocation
+image_4, mask_4 = loadimage_4()
+lgm_model_1 = LeftBracketcomfy3dRightBracketSpaceloadSpacelargeSpacemultiviewSpacegaussianSpacemodel_1()
+pipe_2 = LeftBracketcomfy3dRightBracketSpaceloadSpacediffusersSpacepipeline_2()
+mask_5 = invertmask_5(mask=mask_4)
+multiview_images_18, orbit_camposes_18 = LeftBracketcomfy3dRightBracketSpacemvdreamSpacemodel_18(mvdream_pipe=pipe_2, reference_image=image_4, reference_mask=mask_5)
+gs_ply_17 = LeftBracketcomfy3dRightBracketSpacelargeSpacemultiviewSpacegaussianSpacemodel_17(multiview_images=multiview_images_18, lgm_model=lgm_model_1)
+switched_gs_ply_12 = LeftBracketcomfy3dRightBracketSpaceswitchSpace3dgsSpaceaxis_12(gs_ply=gs_ply_17)
+save_path_9 = LeftBracketcomfy3dRightBracketSpacesaveSpace3dgs_9(gs_ply=switched_gs_ply_12)
+mesh_20, imgs_20, alphas_20 = LeftBracketcomfy3dRightBracketSpaceconvertSpace3dgsSpacetoSpacemeshSpacewithSpacenerfSpaceandSpacemarchingSpacecubes_20(gs_ply=gs_ply_17)
+save_path_14 = LeftBracketcomfy3dRightBracketSpacesaveSpace3dSpacemesh_14(mesh=mesh_20)

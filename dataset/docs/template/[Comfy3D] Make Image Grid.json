@@ -1,0 +1,33 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Make Image Grid",
+    "title": null,
+    "parameters": {
+        "grid_side_num": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "use_rows": {
+            "index": 1,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "images": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "image_grid": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Instant NGP",
+    "title": null,
+    "parameters": {
+        "reference_orbit_camera_fovy": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "training_iterations": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "training_resolution": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_grids_resolution": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_grids_batch_size": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_threshold": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "texture_resolution": {
+            "index": 6,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "background_color": {
+            "index": 7,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "force_cuda_rast": {
+            "index": 8,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "reference_image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 1,
+            "type": "MASK",
+            "link": null
+        },
+        "reference_orbit_camera_poses": {
+            "index": 2,
+            "type": "ORBIT_CAMPOSES",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

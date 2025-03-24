@@ -1,0 +1,43 @@
+{
+    "id": null,
+    "type": "[Comfy3D] TripoSR",
+    "title": null,
+    "parameters": {
+        "geometry_extract_resolution": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "marching_cude_threshold": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "tsr_model": {
+            "index": 0,
+            "type": "TSR_MODEL",
+            "link": null
+        },
+        "reference_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        }
+    }
+}

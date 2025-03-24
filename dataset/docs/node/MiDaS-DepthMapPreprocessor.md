@@ -1,0 +1,9 @@
+- `MiDaS-DepthMapPreprocessor`: The MiDaS-DepthMapPreprocessor node description.
+    - Parameters:
+        - `a`: Type should be `FLOAT`.
+        - `bg_threshold`: Type should be `FLOAT`.
+        - `resolution`: Type should be `INT`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

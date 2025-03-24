@@ -1,0 +1,29 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load TripoSR Model",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "model.ckpt"
+            ],
+            "link": null
+        },
+        "chunk_size": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "tsr_model": {
+            "index": 0,
+            "type": "TSR_MODEL",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,6 @@
+- `[Comfy3D] Load Triplane Gaussian Transformers`: The [Comfy3D] Load Triplane Gaussian Transformers node description.
+    - Parameters:
+        - `model_name`: Type should be `['model_lvis_rel.ckpt']`.
+    - Inputs:
+    - Outputs:
+        - `tgs_model`: Type should be `TGS_MODEL`.

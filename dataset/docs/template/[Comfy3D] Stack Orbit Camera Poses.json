@@ -1,0 +1,153 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Stack Orbit Camera Poses",
+    "title": null,
+    "parameters": {
+        "orbit_radius_start": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_radius_stop": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_radius_step": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "elevation_start": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "elevation_stop": {
+            "index": 4,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "elevation_step": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "azimuth_start": {
+            "index": 6,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "azimuth_stop": {
+            "index": 7,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "azimuth_step": {
+            "index": 8,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_X_start": {
+            "index": 9,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_X_stop": {
+            "index": 10,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_X_step": {
+            "index": 11,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_Y_start": {
+            "index": 12,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_Y_stop": {
+            "index": 13,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_Y_step": {
+            "index": 14,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_Z_start": {
+            "index": 15,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_Z_stop": {
+            "index": 16,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "orbit_center_Z_step": {
+            "index": 17,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "orbit_camposes": {
+            "index": 0,
+            "type": "ORBIT_CAMPOSES",
+            "links": []
+        },
+        "orbit_radius_list": {
+            "index": 1,
+            "type": "FLOAT",
+            "links": []
+        },
+        "elevation_list": {
+            "index": 2,
+            "type": "FLOAT",
+            "links": []
+        },
+        "azimuth_list": {
+            "index": 3,
+            "type": "FLOAT",
+            "links": []
+        },
+        "orbit_center_X_list": {
+            "index": 4,
+            "type": "FLOAT",
+            "links": []
+        },
+        "orbit_center_Y_list": {
+            "index": 5,
+            "type": "FLOAT",
+            "links": []
+        },
+        "orbit_center_Z_list": {
+            "index": 6,
+            "type": "FLOAT",
+            "links": []
+        }
+    }
+}

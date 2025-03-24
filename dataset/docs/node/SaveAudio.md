@@ -1,0 +1,6 @@
+- `SaveAudio`: The SaveAudio node description.
+    - Parameters:
+        - `filename_prefix`: Type should be `STRING`.
+    - Inputs:
+        - `audio`: Type should be `AUDIO`.
+    - Outputs:

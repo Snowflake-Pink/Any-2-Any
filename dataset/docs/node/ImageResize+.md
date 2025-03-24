@@ -1,0 +1,14 @@
+- `ImageResize+`: The ImageResize+ node description.
+    - Parameters:
+        - `width`: Type should be `INT`.
+        - `height`: Type should be `INT`.
+        - `interpolation`: Type should be `['nearest', 'bilinear', 'bicubic', 'area', 'nearest-exact', 'lanczos']`.
+        - `method`: Type should be `['stretch', 'keep proportion', 'fill / crop', 'pad']`.
+        - `condition`: Type should be `['always', 'downscale if bigger', 'upscale if smaller', 'if bigger area', 'if smaller area']`.
+        - `multiple_of`: Type should be `INT`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.
+        - `width`: Type should be `INT`.
+        - `height`: Type should be `INT`.

@@ -1,0 +1,13 @@
+- `CogVideoImageEncode`: The CogVideoImageEncode node description.
+    - Parameters:
+        - `enable_tiling`: Type should be `BOOLEAN`.
+        - `noise_aug_strength`: Type should be `FLOAT`.
+        - `strength`: Type should be `FLOAT`.
+        - `start_percent`: Type should be `FLOAT`.
+        - `end_percent`: Type should be `FLOAT`.
+    - Inputs:
+        - `vae`: Type should be `VAE`.
+        - `start_image`: Type should be `IMAGE`.
+        - `end_image`: Type should be `IMAGE`.
+    - Outputs:
+        - `samples`: Type should be `LATENT`.

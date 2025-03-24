@@ -1,0 +1,29 @@
+- Nodes:
+    - N16:
+        - node_type: "EmptyImage"
+        - width: 512
+        - height: 512
+        - batch_size: 1
+        - color: 0
+    - N18:
+        - node_type: "CR Overlay Text"
+        - text: "Hello, world!"
+        - font_name: "comic.ttf"
+        - font_size: 50
+        - font_color: "custom"
+        - align: "center"
+        - justify: "center"
+        - margins: 0
+        - line_spacing: 0
+        - position_x: 0
+        - position_y: 0
+        - rotation_angle: 0
+        - rotation_options: "text center"
+        - font_color_hex: "#FFFFFF"
+    - N19:
+        - node_type: "SaveImage"
+        - filename_prefix: "ComfyUI"
+
+- Links:
+    - L3: N16.image -> N18.image
+    - L4: N18.image -> N19.images

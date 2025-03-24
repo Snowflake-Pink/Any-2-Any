@@ -1,0 +1,10 @@
+- `[Comfy3D] StableFast3D`: The [Comfy3D] StableFast3D node description.
+    - Parameters:
+        - `texture_resolution`: Type should be `INT`.
+        - `remesh_option`: Type should be `['None', 'Triangle']`.
+    - Inputs:
+        - `sf3d_model`: Type should be `SF3D_MODEL`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

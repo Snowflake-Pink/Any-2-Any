@@ -1,0 +1,13 @@
+# create nodes by instantiation
+loadimage_1 = LoadImage(image="""letter_r.jpg""")
+cliptextencode_2 = CLIPTextEncode(text="""a logo for a game app, bright color""")
+cliptextencode_3 = CLIPTextEncode(text="""watermark, blurry, distorted""")
+checkpointloadersimple_4 = CheckpointLoaderSimple(ckpt_name="""majicmixRealistic_v7.safetensors""")
+vaeloader_5 = VAELoader(vae_name="""vae-ft-mse-840000-ema-pruned.safetensors""")
+vaeencode_6 = VAEEncode()
+ksampler_7 = KSampler(seed=903203409270830, control_after_generate="""randomize""", steps=25, cfg=7, sampler_name="""dpmpp_2m""", scheduler="""karras""", denoise=1)
+vaedecode_8 = VAEDecode()
+saveimage_9 = SaveImage(filename_prefix="""green_apple""")
+controlnetloader_10 = ControlNetLoader(control_net_name="""control_v11p_sd15_lineart_fp16.safetensors""")
+controlnetapplyadvanced_11 = ControlNetApplyAdvanced(strength=0.5, start_percent=0, end_percent=1)
+aio_preprocessor_12 = AIO_Preprocessor(preprocessor="""LineArtPreprocessor""", resolution=512)

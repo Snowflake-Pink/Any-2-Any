@@ -1,0 +1,6 @@
+- `InvertMask`: The InvertMask node description.
+    - Parameters:
+    - Inputs:
+        - `mask`: Type should be `MASK`.
+    - Outputs:
+        - `MASK`: Type should be `MASK`.

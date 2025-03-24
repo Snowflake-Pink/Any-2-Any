@@ -1,0 +1,20 @@
+- `[Comfy3D] Mesh Orbit Renderer`: The [Comfy3D] Mesh Orbit Renderer node description.
+    - Parameters:
+        - `render_image_width`: Type should be `INT`.
+        - `render_image_height`: Type should be `INT`.
+        - `render_orbit_camera_fovy`: Type should be `FLOAT`.
+        - `render_background_color_r`: Type should be `FLOAT`.
+        - `render_background_color_g`: Type should be `FLOAT`.
+        - `render_background_color_b`: Type should be `FLOAT`.
+        - `force_cuda_rasterize`: Type should be `BOOLEAN`.
+        - `render_depth`: Type should be `BOOLEAN`.
+        - `render_normal`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `mesh`: Type should be `MESH`.
+        - `render_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+    - Outputs:
+        - `rendered_mesh_images`: Type should be `IMAGE`.
+        - `rendered_mesh_masks`: Type should be `MASK`.
+        - `all_rendered_depths`: Type should be `IMAGE`.
+        - `all_rendered_normals`: Type should be `IMAGE`.
+        - `all_rendered_viewcos`: Type should be `IMAGE`.

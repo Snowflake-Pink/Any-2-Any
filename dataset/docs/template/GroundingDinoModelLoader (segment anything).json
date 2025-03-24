@@ -1,0 +1,24 @@
+{
+    "id": null,
+    "type": "GroundingDinoModelLoader (segment anything)",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "GroundingDINO_SwinT_OGC (694MB)",
+                "GroundingDINO_SwinB (938MB)"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "GROUNDING_DINO_MODEL": {
+            "index": 0,
+            "type": "GROUNDING_DINO_MODEL",
+            "links": []
+        }
+    }
+}

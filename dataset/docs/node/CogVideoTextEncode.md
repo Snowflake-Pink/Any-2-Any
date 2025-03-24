@@ -1,0 +1,10 @@
+- `CogVideoTextEncode`: The CogVideoTextEncode node description.
+    - Parameters:
+        - `prompt`: Type should be `STRING`.
+        - `strength`: Type should be `FLOAT`.
+        - `force_offload`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `clip`: Type should be `CLIP`.
+    - Outputs:
+        - `conditioning`: Type should be `CONDITIONING`.
+        - `clip`: Type should be `CLIP`.

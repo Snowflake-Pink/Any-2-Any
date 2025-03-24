@@ -1,0 +1,13 @@
+- `DWPreprocessor`: The DWPreprocessor node description.
+    - Parameters:
+        - `detect_hand`: Type should be `['enable', 'disable']`.
+        - `detect_body`: Type should be `['enable', 'disable']`.
+        - `detect_face`: Type should be `['enable', 'disable']`.
+        - `resolution`: Type should be `INT`.
+        - `bbox_detector`: Type should be `['yolox_l.torchscript.pt', 'yolox_l.onnx', 'yolo_nas_l_fp16.onnx', 'yolo_nas_m_fp16.onnx', 'yolo_nas_s_fp16.onnx']`.
+        - `pose_estimator`: Type should be `['dw-ll_ucoco_384_bs5.torchscript.pt', 'dw-ll_ucoco_384.onnx', 'dw-ll_ucoco.onnx']`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.
+        - `POSE_KEYPOINT`: Type should be `POSE_KEYPOINT`.

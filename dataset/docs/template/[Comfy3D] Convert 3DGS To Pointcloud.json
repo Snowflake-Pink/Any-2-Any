@@ -1,0 +1,20 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Convert 3DGS To Pointcloud",
+    "title": null,
+    "parameters": {},
+    "inputs": {
+        "gs_ply": {
+            "index": 0,
+            "type": "GS_PLY",
+            "link": null
+        }
+    },
+    "outputs": {
+        "points_cloud": {
+            "index": 0,
+            "type": "POINTCLOUD",
+            "links": []
+        }
+    }
+}

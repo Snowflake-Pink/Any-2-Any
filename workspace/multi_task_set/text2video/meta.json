@@ -1,0 +1,102 @@
+{
+    "01001": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Create a video of a cup of coffee being poured, but instead of coffee, a miniature galaxy swirls out, with stars and planets floating in the liquid."
+    },
+    "01002": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Generate a video of a futuristic city at night where the lights of the buildings and streets move rhythmically like they are dancing to music."
+    },
+    "01003": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Create a video of glowing jellyfish performing a synchronized dance under the ocean, with light trails following their movements."
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Produce a time-lapse video showing a crystal forming and growing from a tiny seed, with colorful reflections and a shimmering glow."
+    },
+    "01005": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Generate a video of rain falling in a narrow cyberpunk alley, with each raindrop glowing in neon colors as it hits the ground."
+    },
+    "01006": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Create a video of floating islands drifting across the sky, with waterfalls cascading into the clouds below."
+    },
+    "01007": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Produce a video of paint splashes mixing and merging in mid-air, forming abstract shapes and patterns before fading away."
+    },
+    "01008": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Generate a video of a futuristic robot orchestra playing classical music, with each robot playing a different instrument in sync."
+    },
+    "01009": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Create a video that looks like an 8-bit retro arcade game, where a pixelated character jumps and dodges obstacles in a vibrant, colorful landscape."
+    },
+    "01010": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "video"
+        ],
+        "content": "Produce a video of a fireworks show on the surface of the moon, with the Earth visible in the background and colorful explosions lighting up the lunar surface."
+    }
+}

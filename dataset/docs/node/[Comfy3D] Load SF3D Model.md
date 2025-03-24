@@ -1,0 +1,6 @@
+- `[Comfy3D] Load SF3D Model`: The [Comfy3D] Load SF3D Model node description.
+    - Parameters:
+        - `model_name`: Type should be `['model.safetensors']`.
+    - Inputs:
+    - Outputs:
+        - `sf3d_model`: Type should be `SF3D_MODEL`.

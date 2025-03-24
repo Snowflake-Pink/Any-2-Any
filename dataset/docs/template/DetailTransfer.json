@@ -1,0 +1,61 @@
+{
+    "id": null,
+    "type": "DetailTransfer",
+    "title": null,
+    "parameters": {
+        "mode": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "add",
+                "multiply",
+                "screen",
+                "overlay",
+                "soft_light",
+                "hard_light",
+                "color_dodge",
+                "color_burn",
+                "difference",
+                "exclusion",
+                "divide"
+            ],
+            "link": null
+        },
+        "blur_sigma": {
+            "index": 1,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "blend_factor": {
+            "index": 2,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "target": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "source": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "mask": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

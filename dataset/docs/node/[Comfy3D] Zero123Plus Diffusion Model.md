@@ -1,0 +1,12 @@
+- `[Comfy3D] Zero123Plus Diffusion Model`: The [Comfy3D] Zero123Plus Diffusion Model node description.
+    - Parameters:
+        - `seed`: Type should be `INT`.
+        - `guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+    - Inputs:
+        - `zero123plus_pipe`: Type should be `DIFFUSERS_PIPE`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+    - Outputs:
+        - `multiviews`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

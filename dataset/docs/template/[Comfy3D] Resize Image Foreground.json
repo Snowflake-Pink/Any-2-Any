@@ -1,0 +1,37 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Resize Image Foreground",
+    "title": null,
+    "parameters": {
+        "foreground_ratio": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "images": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "masks": {
+            "index": 1,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "images": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "masks": {
+            "index": 1,
+            "type": "MASK",
+            "links": []
+        }
+    }
+}

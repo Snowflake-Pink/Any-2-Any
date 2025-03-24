@@ -1,0 +1,85 @@
+{
+    "id": null,
+    "type": "ImageResize+",
+    "title": null,
+    "parameters": {
+        "width": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "height": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "interpolation": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "nearest",
+                "bilinear",
+                "bicubic",
+                "area",
+                "nearest-exact",
+                "lanczos"
+            ],
+            "link": null
+        },
+        "method": {
+            "index": 3,
+            "value": null,
+            "type": [
+                "stretch",
+                "keep proportion",
+                "fill / crop",
+                "pad"
+            ],
+            "link": null
+        },
+        "condition": {
+            "index": 4,
+            "value": null,
+            "type": [
+                "always",
+                "downscale if bigger",
+                "upscale if smaller",
+                "if bigger area",
+                "if smaller area"
+            ],
+            "link": null
+        },
+        "multiple_of": {
+            "index": 5,
+            "value": null,
+            "type": "INT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "width": {
+            "index": 1,
+            "type": "INT",
+            "links": []
+        },
+        "height": {
+            "index": 2,
+            "type": "INT",
+            "links": []
+        }
+    }
+}

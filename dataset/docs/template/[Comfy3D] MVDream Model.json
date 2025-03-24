@@ -1,0 +1,72 @@
+{
+    "id": null,
+    "type": "[Comfy3D] MVDream Model",
+    "title": null,
+    "parameters": {
+        "prompt": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "prompt_neg": {
+            "index": 1,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "seed": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "mv_guidance_scale": {
+            "index": 3,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "num_inference_steps": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "elevation": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        }
+    },
+    "inputs": {
+        "mvdream_pipe": {
+            "index": 0,
+            "type": "DIFFUSERS_PIPE",
+            "link": null
+        },
+        "reference_image": {
+            "index": 1,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_mask": {
+            "index": 2,
+            "type": "MASK",
+            "link": null
+        }
+    },
+    "outputs": {
+        "multiview_images": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "orbit_camposes": {
+            "index": 1,
+            "type": "ORBIT_CAMPOSES",
+            "links": []
+        }
+    }
+}

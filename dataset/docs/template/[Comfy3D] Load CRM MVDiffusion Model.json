@@ -1,0 +1,33 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load CRM MVDiffusion Model",
+    "title": null,
+    "parameters": {
+        "model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "pixel-diffusion.pth",
+                "ccm-diffusion.pth"
+            ],
+            "link": null
+        },
+        "crm_config_path": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "sd_v2_base_ipmv_zero_SNR.yaml",
+                "sd_v2_base_ipmv_chin8_zero_snr.yaml"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "crm_mvdiffusion_sampler": {
+            "index": 0,
+            "type": "CRM_MVDIFFUSION_SAMPLER",
+            "links": []
+        }
+    }
+}

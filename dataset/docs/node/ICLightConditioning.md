@@ -1,0 +1,13 @@
+- `ICLightConditioning`: The ICLightConditioning node description.
+    - Parameters:
+        - `multiplier`: Type should be `FLOAT`.
+    - Inputs:
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `vae`: Type should be `VAE`.
+        - `foreground`: Type should be `LATENT`.
+        - `opt_background`: Type should be `LATENT`.
+    - Outputs:
+        - `positive`: Type should be `CONDITIONING`.
+        - `negative`: Type should be `CONDITIONING`.
+        - `empty_latent`: Type should be `LATENT`.

@@ -1,0 +1,8 @@
+- `[Comfy3D] Load CRM T2I V2 Models`: The [Comfy3D] Load CRM T2I V2 Models node description.
+    - Parameters:
+        - `crm_model_name`: Type should be `['pixel-diffusion.pth']`.
+        - `crm_config_path`: Type should be `['sd_v2_base_ipmv_zero_SNR.yaml']`.
+    - Inputs:
+    - Outputs:
+        - `t2iadapter_v2`: Type should be `T2IADAPTER_V2`.
+        - `crm_mvdiffusion_sampler_v2`: Type should be `CRM_MVDIFFUSION_SAMPLER_V2`.

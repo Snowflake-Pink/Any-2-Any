@@ -1,0 +1,43 @@
+- Nodes:
+    - N10:
+        - node_type: "CLIPLoader"
+        - clip_name: "t5_base.safetensors"
+        - type: "stable_audio"
+    - N12:
+        - node_type: "VAEDecodeAudio"
+    - N11:
+        - node_type: "EmptyLatentAudio"
+        - seconds: 47.6
+        - batch_size: 1
+    - N3:
+        - node_type: "KSampler"
+        - seed: 558241134136294
+        - control_after_generate: "randomize"
+        - steps: 50
+        - cfg: 4.98
+        - sampler_name: "dpmpp_3m_sde_gpu"
+        - scheduler: "exponential"
+        - denoise: 1
+    - N4:
+        - node_type: "CheckpointLoaderSimple"
+        - ckpt_name: "stable-audio-open-1_0.safetensors"
+    - N6:
+        - node_type: "CLIPTextEncode"
+        - text: "Calm and peaceful nature sounds, including gentle wind rustling through leaves, distant birds chirping, and a light trickling stream. The atmosphere is serene and tranquil, evoking a sense of harmony with nature. Suitable for relaxation or meditation."
+    - N7:
+        - node_type: "CLIPTextEncode"
+        - text: "No loud animal noises, no abrupt or sharp sounds, avoid any human-made noises such as traffic, machinery, or voices."
+    - N13:
+        - node_type: "SaveAudio"
+        - filename_prefix: "audio/ComfyUI"
+
+- Links:
+    - L4: N6.conditioning -> N3.positive
+    - L6: N7.conditioning -> N3.negative
+    - L12: N11.latent -> N3.latent_image
+    - L13: N3.latent -> N12.samples
+    - L14: N4.vae -> N12.vae
+    - L15: N12.audio -> N13.audio
+    - L18: N4.model -> N3.model
+    - L25: N10.clip -> N6.clip
+    - L26: N10.clip -> N7.clip

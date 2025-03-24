@@ -1,0 +1,25 @@
+{
+    "id": null,
+    "type": "Save_3D_Mesh",
+    "title": null,
+    "parameters": {
+        "save_path": {
+            "index": 0,
+            "value": null
+        }
+    },
+    "inputs": {
+        "mesh": {
+            "index": 0,
+            "type": "MESH",
+            "link": null
+        }
+    },
+    "outputs": {
+        "save_path": {
+            "index": 0,
+            "type": "STRING",
+            "links": []
+        }
+    }
+}

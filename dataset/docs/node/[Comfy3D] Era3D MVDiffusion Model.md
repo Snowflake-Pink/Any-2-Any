@@ -1,0 +1,16 @@
+- `[Comfy3D] Era3D MVDiffusion Model`: The [Comfy3D] Era3D MVDiffusion Model node description.
+    - Parameters:
+        - `image_crop_size`: Type should be `INT`.
+        - `seed`: Type should be `INT`.
+        - `guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+        - `eta`: Type should be `FLOAT`.
+        - `radius`: Type should be `FLOAT`.
+    - Inputs:
+        - `era3d_pipe`: Type should be `DIFFUSERS_PIPE`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+    - Outputs:
+        - `multiviews`: Type should be `IMAGE`.
+        - `multiview_normals`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

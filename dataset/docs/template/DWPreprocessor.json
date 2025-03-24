@@ -1,0 +1,81 @@
+{
+    "id": null,
+    "type": "DWPreprocessor",
+    "title": null,
+    "parameters": {
+        "detect_hand": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "enable",
+                "disable"
+            ],
+            "link": null
+        },
+        "detect_body": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "enable",
+                "disable"
+            ],
+            "link": null
+        },
+        "detect_face": {
+            "index": 2,
+            "value": null,
+            "type": [
+                "enable",
+                "disable"
+            ],
+            "link": null
+        },
+        "resolution": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "bbox_detector": {
+            "index": 4,
+            "value": null,
+            "type": [
+                "yolox_l.torchscript.pt",
+                "yolox_l.onnx",
+                "yolo_nas_l_fp16.onnx",
+                "yolo_nas_m_fp16.onnx",
+                "yolo_nas_s_fp16.onnx"
+            ],
+            "link": null
+        },
+        "pose_estimator": {
+            "index": 5,
+            "value": null,
+            "type": [
+                "dw-ll_ucoco_384_bs5.torchscript.pt",
+                "dw-ll_ucoco_384.onnx",
+                "dw-ll_ucoco.onnx"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "POSE_KEYPOINT": {
+            "index": 1,
+            "type": "POSE_KEYPOINT",
+            "links": []
+        }
+    }
+}

@@ -1,0 +1,22 @@
+- `[Comfy3D] Fitting Mesh With Multiview Images`: The [Comfy3D] Fitting Mesh With Multiview Images node description.
+    - Parameters:
+        - `reference_orbit_camera_fovy`: Type should be `FLOAT`.
+        - `mesh_albedo_width`: Type should be `INT`.
+        - `mesh_albedo_height`: Type should be `INT`.
+        - `training_iterations`: Type should be `INT`.
+        - `batch_size`: Type should be `INT`.
+        - `texture_learning_rate`: Type should be `FLOAT`.
+        - `train_mesh_geometry`: Type should be `BOOLEAN`.
+        - `geometry_learning_rate`: Type should be `FLOAT`.
+        - `ms_ssim_loss_weight`: Type should be `FLOAT`.
+        - `remesh_after_n_iteration`: Type should be `INT`.
+        - `invert_background_probability`: Type should be `FLOAT`.
+        - `force_cuda_rasterize`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `reference_images`: Type should be `IMAGE`.
+        - `reference_masks`: Type should be `MASK`.
+        - `reference_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+        - `mesh`: Type should be `MESH`.
+    - Outputs:
+        - `trained_mesh`: Type should be `MESH`.
+        - `baked_texture`: Type should be `IMAGE`.

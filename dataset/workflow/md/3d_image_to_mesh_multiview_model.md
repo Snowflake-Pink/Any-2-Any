@@ -1,0 +1,65 @@
+- Nodes:
+    - N4:
+        - node_type: "LoadImage"
+        - image: "Cat_Coffee_rgba.png"
+    - N5:
+        - node_type: "InvertMask"
+    - N1:
+        - node_type: "[Comfy3D] Load Large Multiview Gaussian Model"
+        - model_name: "model_fp16.safetensors"
+        - lgb_config: "big"
+    - N18:
+        - node_type: "[Comfy3D] MVDream Model"
+        - prompt: ""
+        - prompt_neg: "ugly, blurry, pixelated obscure, unnatural colors, poor lighting, dull, unclear, cropped, lowres, low quality, artifacts, duplicate"
+        - seed: 0
+        - mv_guidance_scale: "fixed"
+        - num_inference_steps: 5
+        - elevation: 30
+    - N12:
+        - node_type: "[Comfy3D] Switch 3DGS Axis"
+        - axis_x_to: "+x"
+        - axis_y_to: "-y"
+        - axis_z_to: "-z"
+    - N14:
+        - node_type: "[Comfy3D] Save 3D Mesh"
+        - save_path: "LGMTest/FatCat.obj"
+    - N9:
+        - node_type: "[Comfy3D] Save 3DGS"
+        - save_path: "LGMTest/FatCat.ply"
+    - N2:
+        - node_type: "[Comfy3D] Load Diffusers Pipeline"
+        - diffusers_pipeline_name: "MVDreamPipeline"
+        - repo_id: "ashawkey/imagedream-ipmv-diffusers"
+        - custom_pipeline: ""
+        - force_download: True
+        - checkpoint_sub_dir: ""
+    - N17:
+        - node_type: "[Comfy3D] Large Multiview Gaussian Model"
+    - N20:
+        - node_type: "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes"
+        - gs_config: "big"
+        - training_nerf_iterations: 512
+        - training_nerf_resolution: 128
+        - marching_cude_grids_resolution: 256
+        - marching_cude_grids_batch_size: 128
+        - marching_cude_threshold: 10
+        - training_mesh_iterations: 2048
+        - training_mesh_resolution: 512
+        - remesh_after_n_iteration: 512
+        - training_albedo_iterations: 512
+        - training_albedo_resolution: 512
+        - texture_resolution: 1024
+        - force_cuda_rast: False
+
+- Links:
+    - L3: N4.mask -> N5.mask
+    - L13: N12.switched_gs_ply -> N9.gs_ply
+    - L19: N17.gs_ply -> N12.gs_ply
+    - L22: N1.lgm_model -> N17.lgm_model
+    - L23: N2.pipe -> N18.mvdream_pipe
+    - L24: N4.image -> N18.reference_image
+    - L25: N5.mask -> N18.reference_mask
+    - L26: N18.multiview_images -> N17.multiview_images
+    - L28: N17.gs_ply -> N20.gs_ply
+    - L29: N20.mesh -> N14.mesh

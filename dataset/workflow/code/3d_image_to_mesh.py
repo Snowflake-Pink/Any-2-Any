@@ -1,0 +1,17 @@
+# create nodes by instantiation
+LeftBracketcomfy3dRightBracketSpacetriplaneSpacegaussianSpacetransformers_1 = LeftBracketComfy3DRightBracketSpaceTriplaneSpaceGaussianSpaceTransformers(cam_dist=1.9000000000000001)
+LeftBracketcomfy3dRightBracketSpaceloadSpacetriplaneSpacegaussianSpacetransformers_3 = LeftBracketComfy3DRightBracketSpaceLoadSpaceTriplaneSpaceGaussianSpaceTransformers(model_name="""model_lvis_rel.ckpt""")
+LeftBracketcomfy3dRightBracketSpaceswitchSpace3dgsSpaceaxis_5 = LeftBracketComfy3DRightBracketSpaceSwitchSpace3DGSSpaceAxis(axis_x_to="""-y""", axis_y_to="""-z""", axis_z_to="""+x""")
+LeftBracketcomfy3dRightBracketSpaceconvertSpace3dgsSpacetoSpacemeshSpacewithSpacenerfSpaceandSpacemarchingSpacecubes_6 = LeftBracketComfy3DRightBracketSpaceConvertSpace3DGSSpacetoSpaceMeshSpacewithSpaceNeRFSpaceandSpaceMarchingSpaceCubes(gs_config="""big""", training_nerf_iterations=512, training_nerf_resolution=128, marching_cude_grids_resolution=256, marching_cude_grids_batch_size=128, marching_cude_threshold=10, training_mesh_iterations=2048, training_mesh_resolution=512, remesh_after_n_iteration=512, training_albedo_iterations=512, training_albedo_resolution=512, texture_resolution=1024, force_cuda_rast=False)
+LeftBracketcomfy3dRightBracketSpacesaveSpace3dSpacemesh_7 = LeftBracketComfy3DRightBracketSpaceSaveSpace3DSpaceMesh(save_path="""pirate_cat.obj""")
+invertmask_2 = InvertMask()
+loadimage_4 = LoadImage(image="""PirateCat.png""")
+
+# link nodes by invocation
+tgs_model_3 = LeftBracketcomfy3dRightBracketSpaceloadSpacetriplaneSpacegaussianSpacetransformers_3()
+image_4, mask_4 = loadimage_4()
+mask_2 = invertmask_2(mask=mask_4)
+gs_ply_1 = LeftBracketcomfy3dRightBracketSpacetriplaneSpacegaussianSpacetransformers_1(reference_image=image_4, reference_mask=mask_2, tgs_model=tgs_model_3)
+switched_gs_ply_5 = LeftBracketcomfy3dRightBracketSpaceswitchSpace3dgsSpaceaxis_5(gs_ply=gs_ply_1)
+mesh_6, imgs_6, alphas_6 = LeftBracketcomfy3dRightBracketSpaceconvertSpace3dgsSpacetoSpacemeshSpacewithSpacenerfSpaceandSpacemarchingSpacecubes_6(gs_ply=switched_gs_ply_5)
+save_path_7 = LeftBracketcomfy3dRightBracketSpacesaveSpace3dSpacemesh_7(mesh=mesh_6)

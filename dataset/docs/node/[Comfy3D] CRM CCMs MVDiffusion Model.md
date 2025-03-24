@@ -1,0 +1,14 @@
+- `[Comfy3D] CRM CCMs MVDiffusion Model`: The [Comfy3D] CRM CCMs MVDiffusion Model node description.
+    - Parameters:
+        - `prompt`: Type should be `STRING`.
+        - `prompt_neg`: Type should be `STRING`.
+        - `seed`: Type should be `INT`.
+        - `mv_guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+    - Inputs:
+        - `crm_mvdiffusion_sampler`: Type should be `CRM_MVDIFFUSION_SAMPLER`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+        - `multiview_images`: Type should be `IMAGE`.
+    - Outputs:
+        - `multiview_CCMs`: Type should be `IMAGE`.

@@ -1,0 +1,157 @@
+{
+    "id": null,
+    "type": "CR Overlay Text",
+    "title": null,
+    "parameters": {
+        "text": {
+            "index": 0,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        },
+        "font_name": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "Roboto-Regular.ttf",
+                "Quicksand-Bold.ttf",
+                "Oswald-Bold.ttf",
+                "comic.ttf",
+                "AlumniSansCollegiateOne-Regular.ttf",
+                "NotoSansArabic-Regular.ttf",
+                "impact.ttf",
+                "PixelifySans-Bold.ttf",
+                "Caveat-VariableFont_wght.ttf",
+                "YoungSerif-Regular.ttf"
+            ],
+            "link": null
+        },
+        "font_size": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "font_color": {
+            "index": 3,
+            "value": null,
+            "type": [
+                "custom",
+                "white",
+                "black",
+                "red",
+                "green",
+                "blue",
+                "yellow",
+                "cyan",
+                "magenta",
+                "orange",
+                "purple",
+                "pink",
+                "brown",
+                "gray",
+                "lightgray",
+                "darkgray",
+                "olive",
+                "lime",
+                "teal",
+                "navy",
+                "maroon",
+                "fuchsia",
+                "aqua",
+                "silver",
+                "gold",
+                "turquoise",
+                "lavender",
+                "violet",
+                "coral",
+                "indigo"
+            ],
+            "link": null
+        },
+        "align": {
+            "index": 4,
+            "value": null,
+            "type": [
+                "center",
+                "top",
+                "bottom"
+            ],
+            "link": null
+        },
+        "justify": {
+            "index": 5,
+            "value": null,
+            "type": [
+                "center",
+                "left",
+                "right"
+            ],
+            "link": null
+        },
+        "margins": {
+            "index": 6,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "line_spacing": {
+            "index": 7,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "position_x": {
+            "index": 8,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "position_y": {
+            "index": 9,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "rotation_angle": {
+            "index": 10,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "rotation_options": {
+            "index": 11,
+            "value": null,
+            "type": [
+                "text center",
+                "image center"
+            ],
+            "link": null
+        },
+        "font_color_hex": {
+            "index": 12,
+            "value": null,
+            "type": "STRING",
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "IMAGE": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        },
+        "show_help": {
+            "index": 1,
+            "type": "STRING",
+            "links": []
+        }
+    }
+}

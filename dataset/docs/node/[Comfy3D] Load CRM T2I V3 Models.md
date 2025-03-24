@@ -1,0 +1,11 @@
+- `[Comfy3D] Load CRM T2I V3 Models`: The [Comfy3D] Load CRM T2I V3 Models node description.
+    - Parameters:
+        - `crm_model_name`: Type should be `['pixel-diffusion_Hyper.pth']`.
+        - `crm_t2i_v3_model_name`: Type should be `['pixel-diffusion_lora_80k_rank_60_Hyper.pth', 'pixel-diffusion_dora_90k_rank_128_Hyper.pth']`.
+        - `crm_config_path`: Type should be `['sd_v2_base_ipmv_zero_SNR_Hyper.yaml']`.
+        - `rank`: Type should be `INT`.
+        - `use_dora`: Type should be `BOOLEAN`.
+    - Inputs:
+    - Outputs:
+        - `t2iadapter_v2`: Type should be `T2IADAPTER_V2`.
+        - `crm_mvdiffusion_sampler_v3`: Type should be `CRM_MVDIFFUSION_SAMPLER_V3`.

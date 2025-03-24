@@ -1,0 +1,12 @@
+- `Zero123Plus_Diffusion_Model`: The Zero123Plus_Diffusion_Model node description.
+    - Parameters:
+        - `seed`: Type should be `FLOAT`.
+        - `guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `FLOAT`.
+    - Inputs:
+        - `zero123plus_pipe`: Type should be `DIFFUSERS_PIPE`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+    - Outputs:
+        - `multiviews`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

@@ -1,0 +1,7 @@
+- `[Comfy3D] Fast Normal Maps To Mesh`: The [Comfy3D] Fast Normal Maps To Mesh node description.
+    - Parameters:
+    - Inputs:
+        - `front_side_back_normal_maps`: Type should be `IMAGE`.
+        - `front_side_back_normal_masks`: Type should be `MASK`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

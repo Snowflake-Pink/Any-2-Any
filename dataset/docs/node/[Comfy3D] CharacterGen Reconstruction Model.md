@@ -1,0 +1,8 @@
+- `[Comfy3D] CharacterGen Reconstruction Model`: The [Comfy3D] CharacterGen Reconstruction Model node description.
+    - Parameters:
+    - Inputs:
+        - `character_lrm_pipe`: Type should be `CHARACTER_LRM_PIPE`.
+        - `multiview_images`: Type should be `IMAGE`.
+        - `multiview_masks`: Type should be `MASK`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

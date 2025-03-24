@@ -1,0 +1,11 @@
+# create nodes by instantiation
+ksampler_3 = KSampler(seed=52117596413767, control_after_generate="""randomize""", steps=20, cfg=7, sampler_name="""dpmpp_3m_sde_gpu""", scheduler="""sgm_uniform""", denoise=1)
+emptylatentimage_5 = EmptyLatentImage(width=768, height=768, batch_size=1)
+cliptextencode_6 = CLIPTextEncode(text="""a beautiful photograph of an old European city""")
+cliptextencode_7 = CLIPTextEncode(text="""""")
+vaedecode_8 = VAEDecode()
+saveimage_9 = SaveImage(filename_prefix="""Result""")
+unclipcheckpointloader_12 = unCLIPCheckpointLoader(ckpt_name="""sd21-unclip-l.ckpt""")
+clipvisionencode_13 = CLIPVisionEncode()
+unclipconditioning_14 = unCLIPConditioning(strength=1, noise_augmentation=0.1)
+loadimage_15 = LoadImage(image="""budapest.jpg""")

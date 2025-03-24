@@ -1,0 +1,15 @@
+- `[Comfy3D] ExplicitTarget Mesh Optimization`: The [Comfy3D] ExplicitTarget Mesh Optimization node description.
+    - Parameters:
+        - `reconstruction_steps`: Type should be `INT`.
+        - `coarse_reconstruct_resolution`: Type should be `INT`.
+        - `loss_expansion_weight`: Type should be `FLOAT`.
+        - `refinement_steps`: Type should be `INT`.
+        - `target_warmup_update_num`: Type should be `INT`.
+        - `target_update_interval`: Type should be `INT`.
+    - Inputs:
+        - `mesh`: Type should be `MESH`.
+        - `normal_maps`: Type should be `IMAGE`.
+        - `normal_masks`: Type should be `MASK`.
+        - `normal_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+    - Outputs:
+        - `mesh`: Type should be `MESH`.

@@ -1,0 +1,8 @@
+- `GrowMask`: The GrowMask node description.
+    - Parameters:
+        - `expand`: Type should be `INT`.
+        - `tapered_corners`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `mask`: Type should be `MASK`.
+    - Outputs:
+        - `MASK`: Type should be `MASK`.

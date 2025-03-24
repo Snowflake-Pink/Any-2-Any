@@ -1,0 +1,17 @@
+- `[Comfy3D] CharacterGen MVDiffusion Model`: The [Comfy3D] CharacterGen MVDiffusion Model node description.
+    - Parameters:
+        - `target_image_width`: Type should be `INT`.
+        - `target_image_height`: Type should be `INT`.
+        - `seed`: Type should be `INT`.
+        - `guidance_scale`: Type should be `FLOAT`.
+        - `num_inference_steps`: Type should be `INT`.
+        - `prompt`: Type should be `STRING`.
+        - `prompt_neg`: Type should be `STRING`.
+        - `radius`: Type should be `FLOAT`.
+    - Inputs:
+        - `character_mv_gen_pipe`: Type should be `CHARACTER_MV_GEN_PIPE`.
+        - `reference_image`: Type should be `IMAGE`.
+        - `reference_mask`: Type should be `MASK`.
+    - Outputs:
+        - `multiviews`: Type should be `IMAGE`.
+        - `orbit_camposes`: Type should be `ORBIT_CAMPOSES`.

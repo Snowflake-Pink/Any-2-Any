@@ -1,0 +1,6 @@
+- `IPAdapterModelLoader`: The IPAdapterModelLoader node description.
+    - Parameters:
+        - `ipadapter_file`: Type should be `['ip-adapter-faceid-plusv2_sd15.bin', 'ip-adapter-faceid-plusv2_sdxl.bin', 'ip-adapter-faceid_sd15.bin', 'ip-adapter-faceid_sdxl.bin', 'ip-adapter-full-face_sd15.safetensors', 'ip-adapter-plus-face_sd15.safetensors', 'ip-adapter-plus-face_sdxl_vit-h.safetensors', 'ip-adapter-plus_sd15.safetensors', 'ip-adapter-plus_sdxl_vit-h.safetensors', 'ip-adapter_sd15.safetensors', 'ip-adapter_sd15_light.safetensors', 'ip-adapter_sd15_vit-G.safetensors', 'ip-adapter_sdxl.safetensors', 'ip-adapter_sdxl_vit-h.safetensors']`.
+    - Inputs:
+    - Outputs:
+        - `IPADAPTER`: Type should be `IPADAPTER`.

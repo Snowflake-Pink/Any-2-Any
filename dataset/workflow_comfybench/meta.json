@@ -1,0 +1,122 @@
+{
+    "text_to_image": {
+        "description": "./dataset/workflow_comfybench/desc/text_to_image.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/text_to_image.json",
+        "code": "./dataset/workflow_comfybench/code/text_to_image.py",
+        "markdown": "./dataset/workflow_comfybench/md/text_to_image.md"
+    },
+    "image_style_cloning": {
+        "description": "./dataset/workflow_comfybench/desc/image_style_cloning.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_style_cloning.json",
+        "code": "./dataset/workflow_comfybench/code/image_style_cloning.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_style_cloning.md"
+    },
+    "character_face_refinement": {
+        "description": "./dataset/workflow_comfybench/desc/character_face_refinement.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/character_face_refinement.json",
+        "code": "./dataset/workflow_comfybench/code/character_face_refinement.py",
+        "markdown": "./dataset/workflow_comfybench/md/character_face_refinement.md"
+    },
+    "subtle_image_repaint": {
+        "description": "./dataset/workflow_comfybench/desc/subtle_image_repaint.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/subtle_image_repaint.json",
+        "code": "./dataset/workflow_comfybench/code/subtle_image_repaint.py",
+        "markdown": "./dataset/workflow_comfybench/md/subtle_image_repaint.md"
+    },
+    "video_frame_interpolation": {
+        "description": "./dataset/workflow_comfybench/desc/video_frame_interpolation.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/video_frame_interpolation.json",
+        "code": "./dataset/workflow_comfybench/code/video_frame_interpolation.py",
+        "markdown": "./dataset/workflow_comfybench/md/video_frame_interpolation.md"
+    },
+    "replace_any_object": {
+        "description": "./dataset/workflow_comfybench/desc/replace_any_object.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/replace_any_object.json",
+        "code": "./dataset/workflow_comfybench/code/replace_any_object.py",
+        "markdown": "./dataset/workflow_comfybench/md/replace_any_object.md"
+    },
+    "text_to_video": {
+        "description": "./dataset/workflow_comfybench/desc/text_to_video.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/text_to_video.json",
+        "code": "./dataset/workflow_comfybench/code/text_to_video.py",
+        "markdown": "./dataset/workflow_comfybench/md/text_to_video.md"
+    },
+    "image_pose_cloning": {
+        "description": "./dataset/workflow_comfybench/desc/image_pose_cloning.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_pose_cloning.json",
+        "code": "./dataset/workflow_comfybench/code/image_pose_cloning.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_pose_cloning.md"
+    },
+    "image_text_overlay": {
+        "description": "./dataset/workflow_comfybench/desc/image_text_overlay.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_text_overlay.json",
+        "code": "./dataset/workflow_comfybench/code/image_text_overlay.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_text_overlay.md"
+    },
+    "remove_any_object": {
+        "description": "./dataset/workflow_comfybench/desc/remove_any_object.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/remove_any_object.json",
+        "code": "./dataset/workflow_comfybench/code/remove_any_object.py",
+        "markdown": "./dataset/workflow_comfybench/md/remove_any_object.md"
+    },
+    "image_screen_extension": {
+        "description": "./dataset/workflow_comfybench/desc/image_screen_extension.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_screen_extension.json",
+        "code": "./dataset/workflow_comfybench/code/image_screen_extension.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_screen_extension.md"
+    },
+    "creative_image_repaint": {
+        "description": "./dataset/workflow_comfybench/desc/creative_image_repaint.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/creative_image_repaint.json",
+        "code": "./dataset/workflow_comfybench/code/creative_image_repaint.py",
+        "markdown": "./dataset/workflow_comfybench/md/creative_image_repaint.md"
+    },
+    "image_super_resolution": {
+        "description": "./dataset/workflow_comfybench/desc/image_super_resolution.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_super_resolution.json",
+        "code": "./dataset/workflow_comfybench/code/image_super_resolution.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_super_resolution.md"
+    },
+    "object_scene_enhancement": {
+        "description": "./dataset/workflow_comfybench/desc/object_scene_enhancement.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/object_scene_enhancement.json",
+        "code": "./dataset/workflow_comfybench/code/object_scene_enhancement.py",
+        "markdown": "./dataset/workflow_comfybench/md/object_scene_enhancement.md"
+    },
+    "image_area_composition": {
+        "description": "./dataset/workflow_comfybench/desc/image_area_composition.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_area_composition.json",
+        "code": "./dataset/workflow_comfybench/code/image_area_composition.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_area_composition.md"
+    },
+    "image_content_cloning": {
+        "description": "./dataset/workflow_comfybench/desc/image_content_cloning.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_content_cloning.json",
+        "code": "./dataset/workflow_comfybench/code/image_content_cloning.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_content_cloning.md"
+    },
+    "character_face_swap": {
+        "description": "./dataset/workflow_comfybench/desc/character_face_swap.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/character_face_swap.json",
+        "code": "./dataset/workflow_comfybench/code/character_face_swap.py",
+        "markdown": "./dataset/workflow_comfybench/md/character_face_swap.md"
+    },
+    "image_to_video": {
+        "description": "./dataset/workflow_comfybench/desc/image_to_video.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/image_to_video.json",
+        "code": "./dataset/workflow_comfybench/code/image_to_video.py",
+        "markdown": "./dataset/workflow_comfybench/md/image_to_video.md"
+    },
+    "character_portrait_conversion": {
+        "description": "./dataset/workflow_comfybench/desc/character_portrait_conversion.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/character_portrait_conversion.json",
+        "code": "./dataset/workflow_comfybench/code/character_portrait_conversion.py",
+        "markdown": "./dataset/workflow_comfybench/md/character_portrait_conversion.md"
+    },
+    "scribble_image_repaint": {
+        "description": "./dataset/workflow_comfybench/desc/scribble_image_repaint.md",
+        "workflow_comfybench": "./dataset/workflow_comfybench/raw/scribble_image_repaint.json",
+        "code": "./dataset/workflow_comfybench/code/scribble_image_repaint.py",
+        "markdown": "./dataset/workflow_comfybench/md/scribble_image_repaint.md"
+    }
+}

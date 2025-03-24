@@ -1,0 +1,102 @@
+{
+    "01001": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Generate an electronic dance music audio file inspired by a theme of 'heaven church.' Use an empty latent audio sample as the base, apply conditioning from a text description, and finally save the generated audio file as 'electronic_audio'."
+    },
+    "01002": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Convert the text into audio narration with a smooth jazz background, creating a relaxed, soulful ambiance."
+    },
+    "01003": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Generate spoken audio for the text with a classical music background, using soft orchestral tones to convey a refined atmosphere."
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Produce audio narration from the text with a subtle hip-hop beat, adding an energetic, rhythmic undertone."
+    },
+    "01005": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Create a calming spoken version of the text, layered over ambient music, evoking a meditative, tranquil feeling."
+    },
+    "01006": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Transform the text into audio with a rock-inspired background, using light guitar riffs for a lively and edgy vibe."
+    },
+    "01007": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Turn the text into an audio clip set to a lo-fi beat, providing a chill, laid-back mood suitable for relaxed listening."
+    },
+    "01008": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Generate audio from the text with a pop music backdrop, incorporating upbeat, catchy melodies to enhance the narration."
+    },
+    "01009": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Create an audio track that blends classical symphonic elements with electronic beats, starting with soft piano and strings that gradually build into a powerful, synth-driven rhythm. The style should be dynamic, evolving from calm to energetic, with a mix of traditional and modern sounds."
+    },
+    "01010": {
+        "complexity": 3,
+        "source": [
+            "text"
+        ],
+        "target": [
+            "audio"
+        ],
+        "content": "Convert the text to spoken audio with an electronic music background, giving it a futuristic, upbeat soundscape."
+    }
+}

@@ -1,0 +1,21 @@
+- `ReActorFaceSwap`: The ReActorFaceSwap node description.
+    - Parameters:
+        - `enabled`: Type should be `BOOLEAN`.
+        - `swap_model`: Type should be `['inswapper_128.onnx']`.
+        - `facedetection`: Type should be `['retinaface_resnet50', 'retinaface_mobile0.25', 'YOLOv5l', 'YOLOv5n']`.
+        - `face_restore_model`: Type should be `['none', 'codeformer-v0.1.0.pth', 'GFPGANv1.3.pth', 'GFPGANv1.4.pth', 'GPEN-BFR-1024.onnx', 'GPEN-BFR-2048.onnx', 'GPEN-BFR-512.onnx']`.
+        - `face_restore_visibility`: Type should be `FLOAT`.
+        - `codeformer_weight`: Type should be `FLOAT`.
+        - `detect_gender_input`: Type should be `['no', 'female', 'male']`.
+        - `detect_gender_source`: Type should be `['no', 'female', 'male']`.
+        - `input_faces_index`: Type should be `STRING`.
+        - `source_faces_index`: Type should be `STRING`.
+        - `console_log_level`: Type should be `[0, 1, 2]`.
+    - Inputs:
+        - `input_image`: Type should be `IMAGE`.
+        - `source_image`: Type should be `IMAGE`.
+        - `face_model`: Type should be `FACE_MODEL`.
+        - `face_boost`: Type should be `FACE_BOOST`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.
+        - `FACE_MODEL`: Type should be `FACE_MODEL`.

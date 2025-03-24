@@ -1,0 +1,102 @@
+{
+    "01001": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given a image named 'yosemite_outpaint_example.png'.Please outpaint the scenary of the given image and output a image called 'scene_outpainted'."
+    },
+    "01002": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'mountains.png'. Please outpaint the scenery of the given image and output an image called 'mountain_outpainted.png'."
+    },
+    "01003": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'aurora_snowy_landscape.png'. Please outpaint the scenery of the given image and output an image called 'aurora_snowy_landscape_outpainted.png'."
+    },
+    "01004": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'futuristic_cityscape.png'. Please outpaint the scenery of the given image and output an image called 'futuristic_cityscape_outpainted.png'."
+    },
+    "01005": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'lake_scene.png'. Please outpaint the scenery of the given image and output an image called 'lake_scene_outpainted.png'."
+    },
+    "01006": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named ''waterfall_jungle.png'. Please outpaint the scenery of the given image and output an image called ''waterfall_jungle_outpainted.png'."
+    },
+    "01007": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'ancient_ruins.png'. Please outpaint the scenery of the given image and output an image called 'ancient_ruins_outpainted'."
+    },
+    "01008": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'open_meadow.png'. Please outpaint the scenery of the given image and output an image called 'open_meadow_outpainted.png'."
+    },
+    "01009": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'desert_dunes.png'. Please outpaint the scenery of the given image and output an image called 'desert_dunes_outpainted.png'."
+    },
+    "01010": {
+        "complexity": 3,
+        "source": [
+            "image"
+        ],
+        "target": [
+            "image"
+        ],
+        "content": "You are given an image named 'starry_mountain_night.png'. Please outpaint the scenery of the given image and output an image called 'starry_mountain_night_outpainted.png'."
+    }
+}

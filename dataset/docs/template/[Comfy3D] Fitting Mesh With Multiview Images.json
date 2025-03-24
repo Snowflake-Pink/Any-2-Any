@@ -1,0 +1,113 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Fitting Mesh With Multiview Images",
+    "title": null,
+    "parameters": {
+        "reference_orbit_camera_fovy": {
+            "index": 0,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "mesh_albedo_width": {
+            "index": 1,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "mesh_albedo_height": {
+            "index": 2,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "training_iterations": {
+            "index": 3,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "batch_size": {
+            "index": 4,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "texture_learning_rate": {
+            "index": 5,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "train_mesh_geometry": {
+            "index": 6,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        },
+        "geometry_learning_rate": {
+            "index": 7,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "ms_ssim_loss_weight": {
+            "index": 8,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "remesh_after_n_iteration": {
+            "index": 9,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "invert_background_probability": {
+            "index": 10,
+            "value": null,
+            "type": "FLOAT",
+            "link": null
+        },
+        "force_cuda_rasterize": {
+            "index": 11,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "reference_images": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        },
+        "reference_masks": {
+            "index": 1,
+            "type": "MASK",
+            "link": null
+        },
+        "reference_orbit_camera_poses": {
+            "index": 2,
+            "type": "ORBIT_CAMPOSES",
+            "link": null
+        },
+        "mesh": {
+            "index": 3,
+            "type": "MESH",
+            "link": null
+        }
+    },
+    "outputs": {
+        "trained_mesh": {
+            "index": 0,
+            "type": "MESH",
+            "links": []
+        },
+        "baked_texture": {
+            "index": 1,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

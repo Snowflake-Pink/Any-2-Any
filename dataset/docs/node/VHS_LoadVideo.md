@@ -1,0 +1,18 @@
+- `VHS_LoadVideo`: The VHS_LoadVideo node description.
+    - Parameters:
+        - `video`: Type should be `['baseball_game.mp4', 'basketball.mp4', 'male_idol.mp4', 'passing_car.mp4', 'pour_water.mp4', 'speaking_man.mp4', 'taylor_swift.mp4', 'two_babies.mp4']`.
+        - `force_rate`: Type should be `INT`.
+        - `force_size`: Type should be `['Disabled', 'Custom Height', 'Custom Width', 'Custom', '256x?', '?x256', '256x256', '512x?', '?x512', '512x512']`.
+        - `custom_width`: Type should be `INT`.
+        - `custom_height`: Type should be `INT`.
+        - `frame_load_cap`: Type should be `INT`.
+        - `skip_first_frames`: Type should be `INT`.
+        - `select_every_nth`: Type should be `INT`.
+    - Inputs:
+        - `meta_batch`: Type should be `VHS_BatchManager`.
+        - `vae`: Type should be `VAE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.
+        - `frame_count`: Type should be `INT`.
+        - `audio`: Type should be `AUDIO`.
+        - `video_info`: Type should be `VHS_VIDEOINFO`.

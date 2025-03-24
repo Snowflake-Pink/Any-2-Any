@@ -1,0 +1,36 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Load CRM T2I V2 Models",
+    "title": null,
+    "parameters": {
+        "crm_model_name": {
+            "index": 0,
+            "value": null,
+            "type": [
+                "pixel-diffusion.pth"
+            ],
+            "link": null
+        },
+        "crm_config_path": {
+            "index": 1,
+            "value": null,
+            "type": [
+                "sd_v2_base_ipmv_zero_SNR.yaml"
+            ],
+            "link": null
+        }
+    },
+    "inputs": {},
+    "outputs": {
+        "t2iadapter_v2": {
+            "index": 0,
+            "type": "T2IADAPTER_V2",
+            "links": []
+        },
+        "crm_mvdiffusion_sampler_v2": {
+            "index": 1,
+            "type": "CRM_MVDIFFUSION_SAMPLER_V2",
+            "links": []
+        }
+    }
+}

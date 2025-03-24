@@ -1,0 +1,33 @@
+{
+    "id": null,
+    "type": "[Comfy3D] Split Image Grid",
+    "title": null,
+    "parameters": {
+        "grid_side_num": {
+            "index": 0,
+            "value": null,
+            "type": "INT",
+            "link": null
+        },
+        "use_rows": {
+            "index": 1,
+            "value": null,
+            "type": "BOOLEAN",
+            "link": null
+        }
+    },
+    "inputs": {
+        "image": {
+            "index": 0,
+            "type": "IMAGE",
+            "link": null
+        }
+    },
+    "outputs": {
+        "images": {
+            "index": 0,
+            "type": "IMAGE",
+            "links": []
+        }
+    }
+}

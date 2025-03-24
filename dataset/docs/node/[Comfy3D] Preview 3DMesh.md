@@ -1,0 +1,5 @@
+- `[Comfy3D] Preview 3DMesh`: The [Comfy3D] Preview 3DMesh node description.
+    - Parameters:
+        - `mesh_file_path`: Type should be `STRING`.
+    - Inputs:
+    - Outputs:

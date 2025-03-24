@@ -1,0 +1,6 @@
+- `Image Remove Background (rembg)`: The Image Remove Background (rembg) node description.
+    - Parameters:
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `IMAGE`: Type should be `IMAGE`.

@@ -1,0 +1,15 @@
+- `zero123Loader`: The zero123Loader node description.
+    - Parameters:
+        - `empty_latent_width`: Type should be `FLOAT`.
+        - `empty_latent_height`: Type should be `FLOAT`.
+        - `batch_size`: Type should be `FLOAT`.
+        - `elevation`: Type should be `FLOAT`.
+        - `azimuth`: Type should be `FLOAT`.
+    - Inputs:
+        - `ckpt_name`: Type should be `['stable_zero123.ckpt']`.
+        - `vae_name`: Type should be `['Baked VAE', 'ae.safetensors', 'animevae.pt', 'basil mix.safetensors', 'blessed2.vae.pt', 'kl-f8-anime.ckpt', 'orangemix.vae.pt', 'sdxl_vae.safetensors', 'stage_a.safetensors', 'vae-ft-mse-840000-ema-pruned.ckpt', 'vae-ft-mse-840000-ema-pruned.safetensors']`.
+        - `init_image`: Type should be `IMAGE`.
+    - Outputs:
+        - `pipe`: Type should be `PIPE_LINE`.
+        - `model`: Type should be `MODEL`.
+        - `vae`: Type should be `VAE`.

@@ -1,0 +1,15 @@
+- `ADE_AnimateDiffLoaderWithContext`: The ADE_AnimateDiffLoaderWithContext node description.
+    - Parameters:
+        - `model_name`: Type should be `['AnimateLCM_sd15_t2v.ckpt', 'animatediff_lightning_8step_comfyui.safetensors', 'mm_sd_v14.ckpt', 'mm_sd_v15_v2.ckpt', 'mm_sdxl_v10_beta.ckpt', 'motionModel_v01.ckpt', 'sd15_t2v_beta_motion.ckpt', 'temporaldiff-v1-animatediff.safetensors', 'v3_sd15_mm.ckpt']`.
+        - `beta_schedule`: Type should be `['autoselect', 'use existing', 'sqrt_linear (AnimateDiff)', 'linear (AnimateDiff-SDXL)', 'linear (HotshotXL/default)', 'avg(sqrt_linear,linear)', 'lcm avg(sqrt_linear,linear)', 'lcm', 'lcm[100_ots]', 'lcm >> sqrt_linear', 'sqrt', 'cosine', 'squaredcos_cap_v2']`.
+        - `motion_scale`: Type should be `FLOAT`.
+        - `apply_v2_models_properly`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `model`: Type should be `MODEL`.
+        - `context_options`: Type should be `CONTEXT_OPTIONS`.
+        - `motion_lora`: Type should be `MOTION_LORA`.
+        - `ad_settings`: Type should be `AD_SETTINGS`.
+        - `sample_settings`: Type should be `SAMPLE_SETTINGS`.
+        - `ad_keyframes`: Type should be `AD_KEYFRAMES`.
+    - Outputs:
+        - `MODEL`: Type should be `MODEL`.

@@ -1,0 +1,21 @@
+- `easy ipadapterApply`: The easy ipadapterApply node description.
+    - Parameters:
+        - `preset`: Type should be `['LIGHT - SD1.5 only (low strength)', 'STANDARD (medium strength)', 'VIT-G (medium strength)', 'PLUS (high strength)', 'PLUS (kolors genernal)', 'PLUS FACE (portraits)', 'FULL FACE - SD1.5 only (portraits stronger)', 'COMPOSITION', 'FACEID', 'FACEID PLUS - SD1.5 only', 'FACEID PLUS KOLORS', 'FACEID PLUS V2', 'FACEID PORTRAIT (style transfer)', 'FACEID PORTRAIT UNNORM - SDXL only (strong)']`.
+        - `lora_strength`: Type should be `FLOAT`.
+        - `provider`: Type should be `['CPU', 'CUDA', 'ROCM', 'DirectML', 'OpenVINO', 'CoreML']`.
+        - `weight`: Type should be `FLOAT`.
+        - `weight_faceidv2`: Type should be `FLOAT`.
+        - `start_at`: Type should be `FLOAT`.
+        - `end_at`: Type should be `FLOAT`.
+        - `cache_mode`: Type should be `['insightface only', 'clip_vision only', 'ipadapter only', 'all', 'none']`.
+        - `use_tiled`: Type should be `BOOLEAN`.
+    - Inputs:
+        - `model`: Type should be `MODEL`.
+        - `image`: Type should be `IMAGE`.
+        - `attn_mask`: Type should be `MASK`.
+        - `optional_ipadapter`: Type should be `IPADAPTER`.
+    - Outputs:
+        - `model`: Type should be `MODEL`.
+        - `images`: Type should be `IMAGE`.
+        - `masks`: Type should be `MASK`.
+        - `ipadapter`: Type should be `IPADAPTER`.

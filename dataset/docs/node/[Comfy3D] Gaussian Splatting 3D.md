@@ -1,0 +1,36 @@
+- `[Comfy3D] Gaussian Splatting 3D`: The [Comfy3D] Gaussian Splatting 3D node description.
+    - Parameters:
+        - `reference_orbit_camera_fovy`: Type should be `FLOAT`.
+        - `training_iterations`: Type should be `INT`.
+        - `batch_size`: Type should be `INT`.
+        - `ms_ssim_loss_weight`: Type should be `FLOAT`.
+        - `alpha_loss_weight`: Type should be `FLOAT`.
+        - `offset_loss_weight`: Type should be `FLOAT`.
+        - `offset_opacity_loss_weight`: Type should be `FLOAT`.
+        - `invert_background_probability`: Type should be `FLOAT`.
+        - `feature_learning_rate`: Type should be `FLOAT`.
+        - `opacity_learning_rate`: Type should be `FLOAT`.
+        - `scaling_learning_rate`: Type should be `FLOAT`.
+        - `rotation_learning_rate`: Type should be `FLOAT`.
+        - `position_learning_rate_init`: Type should be `FLOAT`.
+        - `position_learning_rate_final`: Type should be `FLOAT`.
+        - `position_learning_rate_delay_mult`: Type should be `FLOAT`.
+        - `position_learning_rate_max_steps`: Type should be `INT`.
+        - `initial_gaussians_num`: Type should be `INT`.
+        - `K_nearest_neighbors`: Type should be `INT`.
+        - `percent_dense`: Type should be `FLOAT`.
+        - `density_start_iterations`: Type should be `INT`.
+        - `density_end_iterations`: Type should be `INT`.
+        - `densification_interval`: Type should be `INT`.
+        - `opacity_reset_interval`: Type should be `INT`.
+        - `densify_grad_threshold`: Type should be `FLOAT`.
+        - `gaussian_sh_degree`: Type should be `INT`.
+    - Inputs:
+        - `reference_images`: Type should be `IMAGE`.
+        - `reference_masks`: Type should be `MASK`.
+        - `reference_orbit_camera_poses`: Type should be `ORBIT_CAMPOSES`.
+        - `points_cloud_to_initialize_gaussian`: Type should be `POINTCLOUD`.
+        - `ply_to_initialize_gaussian`: Type should be `GS_PLY`.
+        - `mesh_to_initialize_gaussian`: Type should be `MESH`.
+    - Outputs:
+        - `gs_ply`: Type should be `GS_PLY`.

@@ -1,0 +1,7 @@
+- `Image To Mask`: The Image To Mask node description.
+    - Parameters:
+        - `method`: Type should be `['intensity', 'alpha']`.
+    - Inputs:
+        - `image`: Type should be `IMAGE`.
+    - Outputs:
+        - `MASK`: Type should be `MASK`.

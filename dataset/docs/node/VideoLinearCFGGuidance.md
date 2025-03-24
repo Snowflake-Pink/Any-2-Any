@@ -1,0 +1,7 @@
+- `VideoLinearCFGGuidance`: The VideoLinearCFGGuidance node description.
+    - Parameters:
+        - `min_cfg`: Type should be `FLOAT`.
+    - Inputs:
+        - `model`: Type should be `MODEL`.
+    - Outputs:
+        - `MODEL`: Type should be `MODEL`.

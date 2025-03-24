@@ -1,0 +1,6 @@
+- `[Comfy3D] Load 3DGS`: The [Comfy3D] Load 3DGS node description.
+    - Parameters:
+        - `gs_file_path`: Type should be `STRING`.
+    - Inputs:
+    - Outputs:
+        - `gs_ply`: Type should be `GS_PLY`.

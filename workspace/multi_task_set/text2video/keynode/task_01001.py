@@ -1,0 +1,4 @@
+# create nodes by instantiation
+cogvideotextencode_30 = CogVideoTextEncode(prompt="""A golden retriever, sporting sleek black sunglasses, with its lengthy fur flowing in the breeze, sprints playfully across a rooftop terrace, recently refreshed by a light rain. The scene unfolds from a distance, the dog's energetic bounds growing larger as it approaches the camera, its tail wagging with unrestrained joy, while droplets of water glisten on the concrete behind it. The overcast sky provides a dramatic backdrop, emphasizing the vibrant golden coat of the canine as it dashes towards the viewer.  """, strength=1, force_offload=False)
+cogvideotextencode_31 = CogVideoTextEncode(prompt="""""", strength=1, force_offload=True)
+emptylatentimage_37 = EmptyLatentImage(width=720, height=480, batch_size=1)
