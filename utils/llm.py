@@ -20,6 +20,7 @@ OPENAI_BASE_URL = openai_config['base_url']
 OPENAI_API_KEY = openai_config['api_key']
 OPENAI_EMBEDDING_MODEL = openai_config['embedding_model']
 OPENAI_EMBEDDING_BASE_URL = openai_config['embedding_base_url']
+OPENAI_EMBEDDING_API_KEY = openai_config['embedding_api_key']
 OPENAI_COMPLETION_MODEL = openai_config['completion_model']
 
 CLAUDE_API_KEY = claude_config['api_key']
@@ -51,7 +52,7 @@ def retrieve_references(requirement, model='OpenAI', count=3):
         embedding = OpenAIEmbeddings(
             model=OPENAI_EMBEDDING_MODEL,
             base_url=OPENAI_EMBEDDING_BASE_URL,
-            api_key=OPENAI_API_KEY
+            api_key=OPENAI_EMBEDDING_API_KEY
         )
     elif model == 'BERT':
         embedding = HuggingFaceEmbeddings(

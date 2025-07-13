@@ -5,9 +5,11 @@ proxy:
 openai:
   base_url: null
   api_key: ""
-  embedding_model: "text-embedding-3-large"
-  embedding_base_url: null
   completion_model: "chatgpt-4o-latest"
+  embedding_base_url: null
+  embedding_api_key: ""
+  embedding_model: "text-embedding-3-large"
+  
 
 comfyui:
   server_address: "127.0.0.1:8188"
