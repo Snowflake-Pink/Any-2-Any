@@ -8,19 +8,24 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.embeddings import HuggingFaceEmbeddings
-import anthropic
+# import anthropic
 
 with open('./config.yaml', 'r') as file:
     config = yaml.load(file, Loader=yaml.FullLoader)
     openai_config = config['openai']
+    claude_config = config['claude']
     
 
 OPENAI_BASE_URL = openai_config['base_url']
 OPENAI_API_KEY = openai_config['api_key']
 OPENAI_EMBEDDING_MODEL = openai_config['embedding_model']
+OPENAI_EMBEDDING_BASE_URL = openai_config['embedding_base_url']
 OPENAI_COMPLETION_MODEL = openai_config['completion_model']
-ANTHROPIC_API_KEY = config['claude']['api_key']
-ANTHROPIC_COMPLETION_MODEL = config['claude']['completion_model']
+
+CLAUDE_API_KEY = claude_config['api_key']
+CLAUDE_BASE_URL = claude_config['base_url']
+CLAUDE_COMPLETION_MODEL = claude_config['completion_model']
+
 USE_COMFYBENCH_WORKFLOW = config['use_comfybench_workflow']
 
 workspace = "workflow_comfybench" if USE_COMFYBENCH_WORKFLOW else "workflow"
@@ -45,7 +50,7 @@ def retrieve_references(requirement, model='OpenAI', count=3):
     if model == 'OpenAI':
         embedding = OpenAIEmbeddings(
             model=OPENAI_EMBEDDING_MODEL,
-            base_url=OPENAI_BASE_URL,
+            base_url=OPENAI_EMBEDDING_BASE_URL,
             api_key=OPENAI_API_KEY
         )
     elif model == 'BERT':
@@ -112,19 +117,31 @@ def invoke_completion(message):
     return answer, usage
 
 def invoke_completion_claude(message):
-    client = anthropic.Anthropic(
-        api_key=ANTHROPIC_API_KEY,
+    # client = anthropic.Anthropic(
+    #     api_key=ANTHROPIC_API_KEY,
+    # )
+    client = OpenAI(
+        base_url=CLAUDE_BASE_URL,
+        api_key=CLAUDE_API_KEY
     )
     try:
-        response = client.messages.create(
-            model=ANTHROPIC_COMPLETION_MODEL,
+        # response = client.messages.create(
+        #     model=ANTHROPIC_COMPLETION_MODEL,
+        #     messages=[{
+        #         "role": "user", 
+        #         "content": message
+        #     }]
+        # )
+        response = client.chat.completions.create(
+            model=CLAUDE_COMPLETION_MODEL,
             messages=[{
-                "role": "user", 
-                "content": message
+                'role': 'user',
+                'content': message
             }]
         )
     
-        answer = response.content[0].text
+        # answer = response.content[0].text
+        answer = response.choices[0].message.content
         usage = response.usage
 
     except Exception as error:
