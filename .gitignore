@@ -1,3 +1,6 @@
 checkpoint/*
 debug/*
 config.yaml
+.idea/
+model-context/
+project-context/

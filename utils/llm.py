@@ -9,6 +9,7 @@ from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.embeddings import HuggingFaceEmbeddings
 # import anthropic
+from openai.types.chat import ChatCompletionMessage
 
 with open('./config.yaml', 'r') as file:
     config = yaml.load(file, Loader=yaml.FullLoader)
@@ -112,7 +113,7 @@ def invoke_completion(message):
         usage = response.usage
 
     except Exception as error:
-        answer = f'Error: {error}'
+        answer = ChatCompletionMessage(content=f'Error: {error}', role='assistant')
         usage = None
 
     return answer, usage
@@ -142,11 +143,11 @@ def invoke_completion_claude(message):
         )
     
         # answer = response.content[0].text
-        answer = response.choices[0].message.content
+        answer = response.choices[0].message
         usage = response.usage
 
     except Exception as error:
-        answer = f'Error: {error}'
+        answer = ChatCompletionMessage(content=f'Error: {error}', role='assistant')
         usage = None
 
     return answer, usage
